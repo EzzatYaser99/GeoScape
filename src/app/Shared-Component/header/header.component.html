@@ -1,0 +1,17 @@
+<div class="w-11 m-auto">
+  <div class="header-style mt-6">
+<p-menubar [model]="headerItems">
+  <ng-template pTemplate="start">
+    <img src="assets/images/icon-svg/logo.svg" height="71" width="71" >
+  </ng-template>
+  <ng-template pTemplate="item" let-item let-headerItems="headerItems">
+      <a (click)="handleItemClick(item)" pRipple class="flex align-items-center p-menuitem-link"
+         [ngClass]="{ active: item.isActive }" routerLink="/main/{{ item.routerLink }}">
+        <span class="ml-2">{{ item.label }}</span>
+      </a>
+
+  </ng-template>
+
+</p-menubar>
+  </div>
+</div>
