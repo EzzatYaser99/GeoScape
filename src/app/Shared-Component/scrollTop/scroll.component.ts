@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './scroll.component.scss'
 })
 export class ScrollComponent {
-
+  scrollTotop($event: MouseEvent) {
+    $event.preventDefault();
+    document.documentElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+    setTimeout(() => {
+      document.documentElement.scrollTop = 0;
+    }, 500)
+  }
 }
