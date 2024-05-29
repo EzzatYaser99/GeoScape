@@ -52,7 +52,7 @@ export class HeaderComponent  implements OnInit {
         routerLink: 'about',
       },
       {
-        label: 'Contact',
+        label: 'Contacts',
         isActive: false,
         routerLink: 'contacts',
       },
