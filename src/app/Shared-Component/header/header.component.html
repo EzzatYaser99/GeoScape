@@ -2,7 +2,7 @@
   <div class="header-style mt-6">
 <p-menubar [model]="headerItems">
   <ng-template pTemplate="start">
-    <img src="assets/images/icon-svg/logo.svg" height="71" width="71" >
+    <img src="assets/images/logo.jpeg" height="71" width="71" >
   </ng-template>
   <ng-template pTemplate="item" let-item let-headerItems="headerItems">
       <a (click)="handleItemClick(item)" pRipple class="flex align-items-center p-menuitem-link"
@@ -11,7 +11,10 @@
       </a>
 
   </ng-template>
+  <ng-template pTemplate="end">
+    <app-social-media-info></app-social-media-info>
 
+  </ng-template>
 </p-menubar>
   </div>
 </div>

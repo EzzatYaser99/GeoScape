@@ -1,5 +1,11 @@
+
+$GreenColor: #86BB46;
+$box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
+
+//@import 'src/assets/scss/variable';
+
 .header-style{
-  border-top: 10px solid #86BB46
+  border-top: 10px solid $GreenColor
 
 }
 
@@ -7,9 +13,8 @@
 
   .p-menubar {
     border: 0;
-    //box-shadow: 0px 9px 31.3px 0px rgb(146 39 143 / 6%);
     background-color: white;
-    box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
+    box-shadow: $box-shadow;
   }
 
   /* start refactor menu list */
@@ -39,31 +44,25 @@
   .p-menuitem-link {
     background-color: rgb(105 139 60 / 3%);;
     border-bottom: 1.5px solid #86BB46;
-    //box-shadow: 0px 4px 10.4px 0px #673a8e26;
-    box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
+    box-shadow: $box-shadow;
   }
 
    .p-menubar-root-list .p-focus .p-menuitem-content {
     background-color: rgb(105 139 60 / 3%);
     border-bottom: 1.7px solid #86BB46;
-    //box-shadow: 0px 4px 10.4px 0px #673a8e26;
-    box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
+    box-shadow: $box-shadow;
   }
 
    .p-menuitem-content .active {
-    //background-color: #rgb(105 139 60 / 19%);
     background-color: rgb(105 139 60 / 3%);
     border-bottom: 2px solid #86BB46;
-    //box-shadow: 0px 4px 10.4px 0px #673a8e26;
-    box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
+    box-shadow: $box-shadow;
   }
 
    .p-menubar-root-list .p-menuitem-content:hover {
-    //background-color: #rgb(105 139 60 / 19%);
     background-color: rgb(105 139 60 / 3%);
     border-bottom: 2px solid #86BB46;
-    //box-shadow: 0px 4px 10.4px 0px #673a8e26;
-    box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
+    box-shadow: $box-shadow;
   }
 
 
@@ -76,7 +75,6 @@
 
   .p-menubar .p-menubar-button {
     margin-left: 25px;
-    //color: #673a8e;
   }
 
 }

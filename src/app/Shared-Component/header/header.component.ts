@@ -3,6 +3,8 @@ import {RouterLink} from "@angular/router";
 import {MenubarModule} from "primeng/menubar";
 import {RippleModule} from "primeng/ripple";
 import {NgClass, NgOptimizedImage} from "@angular/common";
+import {FooterInfo} from "../footer/FooterInfo";
+import {SocialMediaInfoComponent} from "../social-media-info/social-media-info.component";
 
 @Component({
   selector: 'app-header',
@@ -12,14 +14,15 @@ import {NgClass, NgOptimizedImage} from "@angular/common";
     MenubarModule,
     RippleModule,
     NgClass,
-    NgOptimizedImage
+    NgOptimizedImage,
+    SocialMediaInfoComponent
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent  implements OnInit {
   headerItems: any[] | undefined;
-
+  socialMediaInfo: Array<FooterInfo> = [];
   ngOnInit() {
     this.headerItems = [
       {
@@ -53,6 +56,34 @@ export class HeaderComponent  implements OnInit {
         isActive: false,
         routerLink: 'contacts',
       },
+    ];
+
+    this.socialMediaInfo= [
+      {
+        iconClass: ' pi pi-facebook',
+        herf: 'https://www.facebook.com/ntgclaritynetworks',
+        title: 'facebook'
+      },
+      {
+        iconClass: 'pi pi-google',
+        herf: 'https://ntgclarity.com/',
+        title: 'google'
+      },
+      {
+        iconClass: 'pi pi-linkedin',
+        herf: 'https://www.linkedin.com/company/ntg-clarity/mycompany/verification/',
+        title: 'linkedin'
+      },
+      {
+        iconClass: 'pi pi-twitter',
+        herf: 'https://twitter.com/NTGClarityStage',
+        title: 'twitter'
+      },
+      {
+        iconClass: 'pi pi-instagram',
+        herf: 'https://www.instagram.com/explore/locations/1017721966/ntg-clarity-networks-inc/',
+        title: 'instagram'
+      }
     ];
   }
 
