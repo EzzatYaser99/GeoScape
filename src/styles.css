@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #0c0c0c;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  overflow: auto;
+}
+.greenColor {
+  color: #86BB46;
+}

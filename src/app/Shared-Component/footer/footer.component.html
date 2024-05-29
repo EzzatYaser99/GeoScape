@@ -1,4 +1,4 @@
-<section style="margin-top:600px;">
+<section style="margin-top:50px;">
   <footer class="p-5">
     <div class="w-100 m-auto px-5">
       <div class="grid">
@@ -6,22 +6,25 @@
           <div class="contentOne">
             <h2>Contact Us</h2>
             <ul class="p-0">
-              @for (item of contactDetailsInformation; track item) {
+              @for (item of contactDetailsInfo; track item) {
                 <li>
-                  <a [href]="item.herf" target="_blank">
-                    <i class="{{item.Icon}} mr-2"></i>
+                  <a [href]="item.herf" target="{{(item.id ==3)? '_self': '_blank' }}">
+                    <i class="{{item.Icon}} mr-2 greenColor"></i>
                     {{ item.Title }}</a>
                 </li>
               }
             </ul>
+            <span style="color:white; font-size: 28px" class="font-bold"> Follow Us </span>
+            <app-social-media-info></app-social-media-info>
           </div>
         </div>
         <div class="col-12 md:col-12 lg:col-4 ">
           <div class="contentOne">
-            <h2><a href="#">Feane</a></h2>
-            <p class="ml-md-4 mr-md-5 ml-sm-5 ">Necessary, making this the first true generator
-              on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
-            <app-social-media-info></app-social-media-info>
+            <img class="bg-white border-round" src="assets/images/logo.png" width="100" height="100">
+            <p class="ml-md-4 mr-md-5 ml-sm-5 ">GEOSCAPE delivers top-tier professional landscape services that add here to
+              the highest quality standards, sourcing the finest products from both the Saudi Arabian and international
+              markets. Our comprehensive offerings include landscape design in both 2D and 3D, seamless installation,
+              and guaranteed satisfaction. Choose from a range of maintenance plans tailored to your specific requirements.</p>
           </div>
         </div>
         <div class="col-12 md:col-12 lg:col-4 ">
@@ -38,8 +41,8 @@
       <div class="grid">
         <div class="col-12 md:col-12 lg:col-12">
           <div class="contentTwo m-auto mt-5">
-            <p>© copyright 2024 ,All Rright reserved By GeoScape <i class="pi pi-heart-fill p-1"></i></p>
-            <p>© Distributed By <span style="color:#86BB46">GeoScape</span></p>
+            <p>© copyright 2024 ,All Rright reserved By GeoScape </p>
+            <p>© Distributed By <span class="greenColor" >GeoScape</span></p>
           </div>
         </div>
       </div>

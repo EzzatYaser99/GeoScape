@@ -13,22 +13,22 @@ import {SocialMediaInfoComponent} from "../social-media-info/social-media-info.c
 })
 export class FooterComponent implements OnInit{
   openDays: Array<FooterInfo> = [];
-  contactDetailsInformation: Array<FooterInfo> = [];
+  contactDetailsInfo: Array<FooterInfo> = [];
   ngOnInit(): void {
   this.openDays = [
     {openDays: 'Sunday to Thursday'},
-    {openDays: '9.00 Am - 6.00 Pm'},
+    {openDays: '9.00 Am - 6.00 Pm (KSA time)'},
   ];
 
-  this.contactDetailsInformation = [
-    {Icon: 'pi pi-map-marker', Title: 'location ', herf: 'https://maps.app.goo.gl/tAMe31CRJtVjrR717'},
-    {Icon: 'pi pi-phone', Title: '+966 54 664 4283', herf: '#'},
-    {
+  this.contactDetailsInfo = [
+    {id:1 ,Icon: 'pi pi-map-marker', Title: 'location ', herf: 'https://maps.app.goo.gl/tAMe31CRJtVjrR717'},
+    {id:2 ,Icon: 'pi pi-phone', Title: '+966 54 664 4283', herf: '#'},
+    {id:3,
       Icon: 'pi pi-globe',
       Title: 'https://geoscape.net/',
       herf: ''
     },
-    {
+    {id:4,
       Icon: 'pi pi-inbox',
       Title: 'info@geoscape.net',
       herf: 'https://accounts.google.com/v3/signin/identifier?dsh=S-569605920%3A1679139941662845&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=ar&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession'
