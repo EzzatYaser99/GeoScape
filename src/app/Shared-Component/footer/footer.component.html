@@ -8,7 +8,7 @@
             <ul class="p-0">
               @for (item of contactDetailsInfo; track item) {
                 <li>
-                  <a [href]="item.herf" target="{{(item.id ==3)? '_self': '_blank' }}">
+                  <a  [href]="item.herf" target="{{(item.id ==3)? '_self': '_blank' }}">
                     <i class="{{item.Icon}} mr-2 greenColor"></i>
                     {{ item.Title }}</a>
                 </li>

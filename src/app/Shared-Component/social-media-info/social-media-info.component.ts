@@ -16,26 +16,26 @@ constructor() {
     {
       title: 'facebook',
       iconClass: ' pi pi-facebook facebook',
-      herf: 'https://www.facebook.com/ntgclaritynetworks',
+      herf: '',
 
     },
     {
       title: 'whatsapp',
       iconClass: 'pi pi-whatsapp whatsapp',
-      herf: 'https://twitter.com/NTGClarityStage',
+      herf: 'https://wa.me/966546644283',
 
     },
 
     {
       title: 'linkedin',
       iconClass: 'pi pi-linkedin linkedin',
-      herf: 'https://www.linkedin.com/company/ntg-clarity/mycompany/verification/',
+      herf: '',
 
     },
     {
       title: 'instagram',
       iconClass: 'pi pi-instagram instagram',
-      herf: 'https://www.instagram.com/explore/locations/1017721966/ntg-clarity-networks-inc/',
+      herf: '',
     },
 
 
