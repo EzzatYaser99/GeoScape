@@ -6,7 +6,7 @@ import {FooterInfo} from "../footer/FooterInfo";
   standalone: true,
   imports: [],
   templateUrl: './social-media-info.component.html',
-  styleUrl: './social-media-info.component.css'
+  styleUrl: './social-media-info.component.scss'
 })
 export class SocialMediaInfoComponent {
   socialMediaInfo: Array<FooterInfo> = [];
