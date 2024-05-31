@@ -1,0 +1,14 @@
+.header{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:9999999;
+  background:white;
+}
+.content{
+  position:relative;
+  top:135px;
+  z-index:9999;
+  padding-bottom: 60px;
+}
