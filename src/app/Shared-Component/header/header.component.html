@@ -1,5 +1,6 @@
-<div class="w-11 m-auto">
-  <div class="header-style mt-6">
+<div class="w-11 m-auto mt-0">
+  <div class="w-full h-2rem" ></div>
+  <div class="header-style">
 <p-menubar [model]="headerItems">
   <ng-template pTemplate="start">
     <img src="assets/images/logo.png" height="71" width="71" >
@@ -12,7 +13,7 @@
 
   </ng-template>
   <ng-template pTemplate="end">
-    <app-social-media-info></app-social-media-info>
+    <app-social-media-info class="social-media-responsive"></app-social-media-info>
 
   </ng-template>
 </p-menubar>
