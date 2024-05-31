@@ -29,7 +29,7 @@ constructor() {
     {
       title: 'linkedin',
       iconClass: 'pi pi-linkedin linkedin',
-      herf: '',
+      herf: 'https://www.linkedin.com/company/geoscape-landscape/about/',
 
     },
     {
