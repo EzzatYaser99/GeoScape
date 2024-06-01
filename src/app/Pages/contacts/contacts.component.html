@@ -29,7 +29,7 @@
   <div class="sm:col-6 mt-2">
     <div class="mt-5 "><h1>Get In Touch</h1></div>
       <div><input class="w-11 md:w-8 lg:w-7 mt-1" type="text"  pInputText [(ngModel)]="name" placeholder="Name"/></div>
-      <div><input class="w-11 md:w-8 lg:w-7 mt-1"type="text" pInputText [(ngModel)]="email" placeholder="Email"/></div>
+      <div><input class="w-11 md:w-8 lg:w-7 mt-1" type="email" pInputText [(ngModel)]="email" placeholder="Email"/></div>
       <div><input class="w-11 md:w-8 lg:w-7 mt-1" type="text" pInputText [(ngModel)]="subject" placeholder="Subject"/></div>
       <div><textarea class="w-11 md:w-8 lg:w-7 mt-1"
         rows="5"
@@ -38,9 +38,8 @@
         [(ngModel)]="message"
         placeholder="Message">
     </textarea></div>
-    <div> <button  pButton pRipple label="Submit"   class="p-button-success w-11 md:w-8 lg:w-7 mt-1 green-Bg-Color"></button></div>
-
-
+    <div> <button [disabled]="isSubmitting"  pButton pRipple label="Submit" (click)="submitForm()"
+                  class="p-button-success w-11 md:w-8 lg:w-7 mt-1 green-Bg-Color"></button></div>
   </div>
 
 
