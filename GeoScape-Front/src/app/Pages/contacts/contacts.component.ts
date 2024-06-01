@@ -32,7 +32,7 @@ export class ContactsComponent {
   isError: boolean;
 
 
-  constructor(private emailService: EmailService ,private  _http:HttpClient ) {
+  constructor(private  _http:HttpClient ) {
     this.isSubmitting = false;
     this.isSuccess = false;
     this.isError = false;
