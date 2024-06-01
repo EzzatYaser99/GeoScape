@@ -4,9 +4,8 @@ import {InputTextareaModule} from "primeng/inputtextarea";
 import {ChipsModule} from "primeng/chips";
 import {ButtonModule} from "primeng/button";
 import {RippleModule} from "primeng/ripple";
-import {HttpClientModule} from "@angular/common/http";
 import {NgIf} from "@angular/common";
-import {EmailService} from "../../Services/email.service";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-contacts',
@@ -17,15 +16,14 @@ import {EmailService} from "../../Services/email.service";
     ChipsModule,
     ButtonModule,
     RippleModule,
-    NgIf,
-    HttpClientModule
+    NgIf
   ],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.scss'
 })
 export class ContactsComponent {
 
-    name:any ;
+  name:any ;
   email: any;
   subject: any;
   message: any;
@@ -34,14 +32,14 @@ export class ContactsComponent {
   isError: boolean;
 
 
-  constructor(private emailService: EmailService) {
+  constructor(private emailService: EmailService ,private  _http:HttpClient ) {
     this.isSubmitting = false;
     this.isSuccess = false;
     this.isError = false;
   }
 
   submitForm() {
-    this.emailService.sendEmail(this.name, this.email, this.message,this.subject).subscribe(
+    this.sendEmail(this.name, this.email, this.message,this.subject).subscribe(
       response => {
         console.log('Email sent successfully!');
       },
@@ -51,8 +49,16 @@ export class ContactsComponent {
     );
   }
 
-
-
+  private emailUrl = 'http://localhost:3000/send-email'; // Replace with your backend URL
+  sendEmail(name: any, email: any, message: any, subject: any) {
+    const data = {
+      name: name,
+      email: email,
+      message: message,
+      subject: subject
+    };
+    return this._http.post(this.emailUrl, data);
+  }
 
 
   resetForm() {
