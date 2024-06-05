@@ -2,7 +2,6 @@
      style='background-image: url("assets/images/ContactHero.jpg")'>
   <div><h1 class="text-white">Contact Us</h1></div>
 </div>
-
 <div class="grid address-card px-2 sm:px-0 mt-5">
   <div class="sm:col-6 mt-2 ">
     <div class="mt-5 "><h1>Address</h1></div>
@@ -29,9 +28,24 @@
   <div class="sm:col-6 mt-2">
     <div class="mt-5 "><h1>Get In Touch</h1></div>
       <div><input class="w-11 md:w-8 lg:w-7 mt-1" type="text"  pInputText [(ngModel)]="name" placeholder="Name"/></div>
-      <div><input class="w-11 md:w-8 lg:w-7 mt-1" type="email" pInputText [(ngModel)]="email" placeholder="Email"/></div>
-      <div><input class="w-11 md:w-8 lg:w-7 mt-1" type="text" pInputText [(ngModel)]="subject" placeholder="Subject"/></div>
-      <div><textarea class="w-11 md:w-8 lg:w-7 mt-1"
+    <div><input class="w-11 md:w-8 lg:w-7 mt-1" type="email" pInputText [(ngModel)]="email" placeholder="Email"/></div>
+    <div><input class="w-11 md:w-8 lg:w-7 mt-1" type="text"  pInputText [(ngModel)]="phone" placeholder="Phone no"/></div>
+    <div class="w-11 md:w-8 lg:w-7 mt-1">
+      <p-multiSelect class="w-full"
+        [options]="Services"
+        [(ngModel)]="selectedServices"
+        optionLabel="name"
+        placeholder="Select Services Type" />
+
+    </div>
+    <div class="w-11 md:w-8 lg:w-7 mt-1">
+      <p-dropdown class="w-full"
+        [options]="Services"
+        [(ngModel)]="selectedProduct"
+        optionLabel="name"
+        placeholder="Select Product" />
+    </div>
+    <div><textarea class="w-11 md:w-8 lg:w-7 mt-1"
         rows="5"
         cols="30"
         pInputTextarea

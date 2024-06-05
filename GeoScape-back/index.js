@@ -10,36 +10,44 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post('/send-email', (req, res) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const message = req.body.message;
-    const subject = req.body.subject;
+    const ccEmails= `info123@geoscape.net`
+    const name = req.body.name || '';
+    const phone = req.body.phone || '';
+    const email = req.body.email || '';
+    const message = req.body.message || '';
+    const service = req.body.service || '';
+    const product = req.body.product || '';
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'restaurant.chef2022@gmail.com', // Replace with your email address
-            pass: 'ldsn opps eeug qrux' // Replace with your email password
+            user: 'restaurant.chef2022@gmail.com',
+            pass: 'ldsn opps eeug qrux'
         }
     });
-
     const mailOptions = {
-        from: `${email}`,
-        to: 'restaurant.chef2022@gmail.com', // Replace with recipient email address
-        subject:`${subject}` ,
+        from: 'restaurant.chef2022@gmail.com',
+        to: `${email}`,
+        cc: `${ccEmails}`,
+        subject:'Thank You for Contacting Geoscape Landscape!' ,
         text: `
-      Name: ${name + 'mmmm'}
-      Email: ${email}
-      Message: ${message}
+      Dear  ${name + ','} ,
+      Thank you for your interest in our ${service} / ${product}.
+       We will review your message and get back to you shortly via the ${phone}.
+        you have left this message ,
+         "${message}" 
+        , and we will read it carefully.
+
+     Best regards,
+     
+     The Geoscape Landscape Team
     `
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.log(error);
             res.status(500).send('Error sending email');
         } else {
-            console.log('Email sent:', info.response);
             res.status(200).send('Email sent successfully');
         }
     });
