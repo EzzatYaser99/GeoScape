@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c1a0aa1-9316-458a-8a70-2c7d2c8c2f06" name="Changes" comment="refactor contact details" />
+    <list default="true" id="7c1a0aa1-9316-458a-8a70-2c7d2c8c2f06" name="Changes" comment="refactor contact details">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.config.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717606601379</updated>
       <workItem from="1717606602487" duration="35000" />
-      <workItem from="1717606644890" duration="379000" />
+      <workItem from="1717606644890" duration="5453000" />
     </task>
     <task id="LOCAL-00004" summary="refactor contact details">
       <option name="closed" value="true" />
@@ -135,11 +139,30 @@
       <option name="project" value="LOCAL" />
       <updated>1717607001047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor contact details">
+      <option name="closed" value="true" />
+      <created>1717607029025</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717607029025</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
