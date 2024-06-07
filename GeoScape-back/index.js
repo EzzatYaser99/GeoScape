@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post('/send-email', (req, res) => {
-    const ccEmails= `info123@geoscape.net`
+    const ccEmails = `info123@geoscape.net`
     const name = req.body.name || '';
     const phone = req.body.phone || '';
     const email = req.body.email || '';
@@ -20,26 +20,25 @@ app.post('/send-email', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'restaurant.chef2022@gmail.com',
-            pass: 'ldsn opps eeug qrux'
+            user: 'infogeoscape0@gmail.com',
+            pass: 'nrbj cgfj jlee voug'
         }
     });
     const mailOptions = {
-        from: 'restaurant.chef2022@gmail.com',
+        from: 'infogeoscape0@gmail.com',
         to: `${email}`,
         cc: `${ccEmails}`,
-        subject:'Thank You for Contacting Geoscape Landscape!' ,
+        subject: 'Thank You for Contacting Geoscape Landscape!',
         text: `
-      Dear  ${name + ','} ,
-      Thank you for your interest in our ${service}.
-       We will review your message and get back to you shortly via the ${phone}.
-        you have left this message ,
-         "${message}" 
-        , and we will read it carefully.
-
-     Best regards,
-     
-     The Geoscape Landscape Team
+      Dear  ${name + ','}
+      Thank you for your interest in our 
+      [ ${service} ] Services,
+      We will review your message and get back to you shortly via the ${phone}.
+      you have left this message ,
+         "${message}",
+        and we will read it carefully.
+        Best regards,
+        The Geoscape Landscape Team
     `
     };
 

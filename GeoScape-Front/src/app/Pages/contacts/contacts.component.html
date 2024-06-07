@@ -25,11 +25,16 @@
     </div>
   </div>
 
-  <div class="col-12 sm:col-6 mt-2">
+  <div class="col-12 sm:col-6 mt-2 get-in-Touch">
     <div class="mt-5 "><h1>Get In Touch</h1></div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="text"  pInputText [(ngModel)]="name" placeholder="Name"/></div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="email" pInputText [(ngModel)]="email" placeholder="Email"/></div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="text"  pInputText [(ngModel)]="phone" placeholder="Phone no"/></div>
+    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="text" (change)="onChangeName($event)"  pInputText [(ngModel)]="name" placeholder="Name *"/>
+    <span *ngIf="invalidName" class="block"> please add your name * </span> </div>
+    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="email" (change)="onChangeEmail($event)"  pInputText [(ngModel)]="email" placeholder="example@gmail.com *"/>
+      <span *ngIf="invalidEmail" class="block"> please add valid email * </span>
+    </div>
+    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="text" (change)="onChangePhoneNumber($event)"  pInputText [(ngModel)]="phone" placeholder="Phone no *"/>
+    <span *ngIf="invalidPhoneNumber" class="block"> please add valid phone number *</span>
+    </div>
     <div class="w-11 md:w-8 lg:w-7 mt-1">
       <p-multiSelect
         [options]="Services"

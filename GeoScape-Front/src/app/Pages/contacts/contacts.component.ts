@@ -20,7 +20,7 @@ import {DropdownModule} from "primeng/dropdown";
     RippleModule,
     NgIf,
     NgFor,
-    MultiSelectModule,DropdownModule
+    MultiSelectModule, DropdownModule,
 
   ],
   templateUrl: './contacts.component.html',
@@ -38,37 +38,70 @@ export class ContactsComponent implements OnInit {
   isSuccess: boolean = false;
   isError: boolean = false;
   Services: any;
+  invalidName: boolean = false;
+  invalidEmail: boolean = false;
+  invalidPhoneNumber: boolean = false;
 
 
   constructor(private _http: HttpClient) {
   }
   ngOnInit(): void {
     this.Services = [
-      {id: 1 , name: 'Maintenance' ,image:'Landscape-Maintenance.jpg'},
-      {id: 2 , name: 'Landscape Design' ,image:'Landscape-Design.jpg'},
+      {id: 1 , name: 'Landscape Design' ,image:'Landscape-Design.jpg'},
+      {id: 2 , name: 'SoftScape' ,image:'Soft-Landscape.jpg'},
       {id: 3 , name: 'Nursery' ,image:'Nursery.jpg'},
       {id: 4 , name: 'Irrigation' ,image:'Irrigation.jpeg'},
       {id: 5 , name: 'Water Features' ,image:'Water-Features.jpg'},
       {id: 6 , name: 'Water & Drainage Systems' ,image:'Water-Systems.jpg'},
       {id: 7 , name: 'HardScape' ,image:'Hard-Landscape.jpg'},
-      {id: 8 , name: 'SoftScape' ,image:'Soft-Landscape.jpg'},
+      {id: 8 , name: 'Maintenance' ,image:'Landscape-Maintenance.jpg'},
+      {id: 9 , name: 'Street Lighting' ,image:'Street-Lighting.jpg'},
+      {id: 10 , name: 'Street Furniture' ,image:'Street-Furniture.jpg'},
+      {id: 11 , name: 'Playground Equipment' ,image:'Playground-Equipment.jpg'},
+      {id: 12 , name: 'Covers and Grates' ,image:'covers-and-grates.jpg'},
 
     ];
+  }
+  onChangeName(event: any) {
+    this.name = event.target.value;
+    if(this.name != '' && this.name) {
+      this.invalidName = false;
+    }else{
+      this.invalidName = true;
+    }
+  }
+
+  onChangeEmail(event: any) {
+    this.email = event.target.value;
+    if(this.email?.match('^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$') != null) {
+      this.invalidEmail = false;
+    }else{
+      this.invalidEmail = true;
+
+    }
+  }
+  onChangePhoneNumber(event:any) {
+    this.phone = event.target.value;
+    if(this.phone?.match(/^((\+?)\d{1,3}[- ]?)?\d{10,11}$/) && !(this.phone?.match(/0{5,}/))) {
+      this.invalidPhoneNumber = false;
+    }else{
+      this.invalidPhoneNumber = true;
+    }
   }
 
 
   submitForm() {
-
+    this.invalidName = !(this.name != '' && this.name);
+    const selectedServiceNames = this.selectedServices.map((item:any) => item.name);
     const data = {
       name: this.name,
       phone: this.phone,
       email: this.email,
-      service:this.selectedServices,
+      service:selectedServiceNames,
       message:this.message,
 
     };
 
-    if (this.name && this.phone && this.email && this.message && this.selectedServices ) {
       this.sendEmail(data).subscribe(
         response => {
           console.log('Email sent successfully!');
@@ -77,39 +110,19 @@ export class ContactsComponent implements OnInit {
           console.log('Error sending email:', error);
         }
       );
-    } else {
-      alert('please complete mandatory data')
-    }
+
   }
 
 
   sendEmail(data:any) {
   let emailUrl = 'http://localhost:3000/send-email';
-
     return this._http.post(emailUrl, data);
   }
 
 
-  resetForm() {
-    this.name = '';
-    this.email = '';
-    this.phone = '';
-    this.selectedServices = '';
-    this.message = '';
-
-  }
-
-
-  onChangeServicesType(event:any) {
-
-  }
-  onChangeProduct(event:any) {
-
-  }
-
 
   validateDisable() {
-    return !(this.name && this.phone && this.email && this.message && this.selectedServices );
+    return !(this.name && this.phone && this.email);
 
   }
 

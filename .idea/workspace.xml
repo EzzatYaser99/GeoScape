@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c1a0aa1-9316-458a-8a70-2c7d2c8c2f06" name="Changes" comment="edit provider for browser Animation">
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Hard-Landscape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Irrigation.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Landscape-Design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Landscape-Maintenance.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Nursery.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Soft-Landscape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Water-Features.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Water-Systems.jpg" afterDir="false" />
+    <list default="true" id="7c1a0aa1-9316-458a-8a70-2c7d2c8c2f06" name="Changes" comment="complete contacts pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Water-Features.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/Services/Water-Features.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-back/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-back/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +59,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.back.executor": "Debug",
     "npm.start (1).executor": "Run",
     "npm.start.executor": "Run",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -144,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717606601379</updated>
       <workItem from="1717606602487" duration="35000" />
-      <workItem from="1717606644890" duration="21550000" />
+      <workItem from="1717606644890" duration="35194000" />
     </task>
     <task id="LOCAL-00004" summary="refactor contact details">
       <option name="closed" value="true" />
@@ -170,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717663763046</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="complete contacts pages">
+      <option name="closed" value="true" />
+      <created>1717748420834</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717748420834</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +197,7 @@
     <MESSAGE value="create back end complete" />
     <MESSAGE value="refactor contact details" />
     <MESSAGE value="edit provider for browser Animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit provider for browser Animation" />
+    <MESSAGE value="complete contacts pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete contacts pages" />
   </component>
 </project>
