@@ -18,6 +18,22 @@
     height: 3px;
   }
 }
-:host ::ng-deep  .p-dropdown{
-  width:100%
+:host ::ng-deep {
+  .p-multiselect {
+    width: 100%;
+
+  }
+  .p-multiselect-items-wrapper {
+    max-height: 300px !important;
+    //height: auto !important;
+  }
+}
+
+.image-radius {
+  border-radius: 5px;
+}
+
+.p-multiselect-items-wrapper {
+  max-height: unset;
+  height: auto;
 }

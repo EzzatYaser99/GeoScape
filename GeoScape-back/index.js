@@ -16,7 +16,6 @@ app.post('/send-email', (req, res) => {
     const email = req.body.email || '';
     const message = req.body.message || '';
     const service = req.body.service || '';
-    const product = req.body.product || '';
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -32,7 +31,7 @@ app.post('/send-email', (req, res) => {
         subject:'Thank You for Contacting Geoscape Landscape!' ,
         text: `
       Dear  ${name + ','} ,
-      Thank you for your interest in our ${service} / ${product}.
+      Thank you for your interest in our ${service}.
        We will review your message and get back to you shortly via the ${phone}.
         you have left this message ,
          "${message}" 

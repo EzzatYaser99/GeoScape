@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {InputTextareaModule} from "primeng/inputtextarea";
 import {ChipsModule} from "primeng/chips";
 import {ButtonModule} from "primeng/button";
 import {RippleModule} from "primeng/ripple";
-import {NgIf} from "@angular/common";
+import {NgFor, NgIf} from "@angular/common";
 import {HttpClient} from "@angular/common/http";
 import {MultiSelectModule} from "primeng/multiselect";
 import {DropdownModule} from "primeng/dropdown";
@@ -19,42 +19,40 @@ import {DropdownModule} from "primeng/dropdown";
     ButtonModule,
     RippleModule,
     NgIf,
+    NgFor,
     MultiSelectModule,DropdownModule
 
   ],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.scss',
 })
-export class ContactsComponent  {
+export class ContactsComponent implements OnInit {
 
   name: string | undefined;
   email: string | undefined;
   message: string | undefined;
   phone: string | undefined;
   selectedServices: any | undefined;
-  selectedProduct: any | undefined;
 
   isSubmitting: boolean = false;
   isSuccess: boolean = false;
   isError: boolean = false;
   Services: any;
-  Products: any
 
 
   constructor(private _http: HttpClient) {
-    // this.Services=[
-    //   {name:"hello" ,value:1},
-    //   {name:"world",value:2},
-    //
-    // ];
   }
   ngOnInit(): void {
     this.Services = [
-      {name: 'New York', code: 'NY'},
-      {name: 'Rome', code: 'RM'},
-      {name: 'London', code: 'LDN'},
-      {name: 'Istanbul', code: 'IST'},
-      {name: 'Paris', code: 'PRS'}
+      {id: 1 , name: 'Maintenance' ,image:'Landscape-Maintenance.jpg'},
+      {id: 2 , name: 'Landscape Design' ,image:'Landscape-Design.jpg'},
+      {id: 3 , name: 'Nursery' ,image:'Nursery.jpg'},
+      {id: 4 , name: 'Irrigation' ,image:'Irrigation.jpeg'},
+      {id: 5 , name: 'Water Features' ,image:'Water-Features.jpg'},
+      {id: 6 , name: 'Water & Drainage Systems' ,image:'Water-Systems.jpg'},
+      {id: 7 , name: 'HardScape' ,image:'Hard-Landscape.jpg'},
+      {id: 8 , name: 'SoftScape' ,image:'Soft-Landscape.jpg'},
+
     ];
   }
 
@@ -66,12 +64,11 @@ export class ContactsComponent  {
       phone: this.phone,
       email: this.email,
       service:this.selectedServices,
-      product:this.selectedProduct,
       message:this.message,
 
     };
 
-    if (this.name && this.phone && this.email && this.message && this.selectedServices && this.selectedProduct ) {
+    if (this.name && this.phone && this.email && this.message && this.selectedServices ) {
       this.sendEmail(data).subscribe(
         response => {
           console.log('Email sent successfully!');
@@ -98,7 +95,6 @@ export class ContactsComponent  {
     this.email = '';
     this.phone = '';
     this.selectedServices = '';
-    this.selectedProduct = '';
     this.message = '';
 
   }
@@ -111,6 +107,11 @@ export class ContactsComponent  {
 
   }
 
+
+  validateDisable() {
+    return !(this.name && this.phone && this.email && this.message && this.selectedServices );
+
+  }
 
 
 
