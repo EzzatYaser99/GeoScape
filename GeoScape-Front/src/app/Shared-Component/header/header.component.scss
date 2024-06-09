@@ -5,7 +5,8 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
 //@import 'src/assets/scss/variable';
 
 .header-style{
-  border-top: 10px solid $GreenColor
+  border-top: 10px solid $GreenColor;
+  border-radius:6px 6px 0px 0px;
 
 }
 
@@ -15,6 +16,7 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
     border: 0;
     background-color: white;
     box-shadow: $box-shadow;
+    border-radius:0px
   }
 
   /* start refactor menu list */
