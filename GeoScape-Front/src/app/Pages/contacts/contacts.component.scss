@@ -26,7 +26,9 @@
 
   }
   .p-multiselect-items-wrapper {
+
     max-height: 350px !important;
+    min-height: 350px !important;
     //height: auto !important;
   }
 }
@@ -35,10 +37,6 @@
   border-radius: 5px;
 }
 
-.p-multiselect-items-wrapper {
-  max-height: unset;
-  height: auto;
-}
 .get-in-Touch span{
   color:red;
   margin-left: 10px;
