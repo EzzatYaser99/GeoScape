@@ -30,18 +30,18 @@ app.post('/send-email', (req, res) => {
         cc: `${ccEmails}`,
         subject: 'Thank You for Contacting Geoscape Landscape!',
         text: `
-      Dear  ${name + ','}
-      Thank you for your interest in our 
-      [ ${service} ] Services,
-      We will review your message and get back to you shortly via the ${phone}.
-      you have left this message ,
-         "${message}",
-        and we will read it carefully.
-        Best regards,
-        The Geoscape Landscape Team
-    `
-    };
+    Dear ${name},
 
+Thank you for your interest in our [${service}] Services. We appreciate your message:
+
+"${message}"
+
+Our team will review your message and get back to you shortly via the provided phone number: ${phone}. Please expect a response from us soon.
+
+Best regards,
+The Geoscape Landscape Team
+        `
+    };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             res.status(500).send('Error sending email');
