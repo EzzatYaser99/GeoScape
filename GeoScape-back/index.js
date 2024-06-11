@@ -44,9 +44,9 @@ The Geoscape Landscape Team
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            res.status(500).send('Error sending email');
+            res.status(500).json({message: 'Error sending email'});
         } else {
-            res.status(200).send('Email sent successfully');
+            res.status(200).json({message: 'Email sent successfully'});
         }
     });
 });

@@ -8,6 +8,8 @@ import {NgFor, NgIf} from "@angular/common";
 import {HttpClient} from "@angular/common/http";
 import {MultiSelectModule} from "primeng/multiselect";
 import {DropdownModule} from "primeng/dropdown";
+import {MessagesModule} from "primeng/messages";
+import { MessageService} from "primeng/api";
 
 @Component({
   selector: 'app-contacts',
@@ -20,11 +22,12 @@ import {DropdownModule} from "primeng/dropdown";
     RippleModule,
     NgIf,
     NgFor,
-    MultiSelectModule, DropdownModule,
+    MultiSelectModule, DropdownModule, MessagesModule
 
   ],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.scss',
+  providers:[MessageService]
 })
 export class ContactsComponent implements OnInit {
 
@@ -41,9 +44,12 @@ export class ContactsComponent implements OnInit {
   invalidName: boolean = false;
   invalidEmail: boolean = false;
   invalidPhoneNumber: boolean = false;
+  successMessage: any;
+  errorMessage: any;
+  showMessage: boolean= false;
+  isLoading: boolean = false
 
-
-  constructor(private _http: HttpClient) {
+  constructor(private _http: HttpClient ,private messageService: MessageService) {
   }
   ngOnInit(): void {
     this.Services = [
@@ -91,6 +97,7 @@ export class ContactsComponent implements OnInit {
 
 
   submitForm() {
+    this.isLoading = true
     this.invalidName = !(this.name != '' && this.name);
     const selectedServiceNames = this.selectedServices.map((item:any) => item.name);
     const data = {
@@ -102,14 +109,33 @@ export class ContactsComponent implements OnInit {
 
     };
 
-      this.sendEmail(data).subscribe(
-        response => {
-          console.log('Email sent successfully!');
-        },
-        error => {
-          console.log('Error sending email:', error);
-        }
-      );
+    this.sendEmail(data).subscribe(
+      response => {
+        this.showMessage = true;
+        this.successMessage = [
+          {severity: 'success', summary: 'Email sent successfully!'},
+        ];
+        setTimeout(() => {
+          this.showMessage = false;
+        }, 3000);
+
+        setTimeout(() => {
+          this.isLoading = false;
+        }, 4000);
+      },
+      error => {
+        this.showMessage = true;
+        this.errorMessage = [
+          {severity: 'error', detail: 'Error sending email'},
+        ];
+        setTimeout(() => {
+          this.showMessage = false;
+        }, 3000);
+        setTimeout(() => {
+          this.isLoading = false;
+        }, 4000);
+      }
+    );
 
   }
 
@@ -122,7 +148,7 @@ export class ContactsComponent implements OnInit {
 
 
   validateDisable() {
-    return !(this.name && this.phone && this.email);
+    return !(this.name && this.phone && this.email && !this.isLoading);
 
   }
 

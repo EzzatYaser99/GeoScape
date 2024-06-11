@@ -71,6 +71,16 @@
     </textarea></div>
     <div> <button [disabled]="validateDisable()"  pButton pRipple label="Submit" (click)="submitForm()"
                   class="p-button-success w-11 md:w-8 lg:w-7 mt-1 green-Bg-Color"></button></div>
+
+    @if (showMessage){
+    <div  class="w-11 md:w-8 lg:w-7 mt-1 successMessage">
+    <p-messages [(value)]="successMessage" [enableService]="false" />
+    </div>
+      <div  class="w-11 md:w-8 lg:w-7 mt-1 errorMessage">
+    <p-messages [(value)]="errorMessage" [enableService]="false" />
+    </div>
+    }
+
   </div>
 
 
