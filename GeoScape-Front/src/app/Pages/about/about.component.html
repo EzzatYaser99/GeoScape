@@ -1,4 +1,5 @@
-<div class="bg-image-contact flex justify-content-center align-items-center"
+<div class="bg-image-contact flex justify-content-center align-items-center
+ zoomin animation-duration-1000 animation-iteration-1"
      style='background-image: url("assets/images/about/about.jpeg")'>
   <div><h2 class="text-white">About Us</h2></div>
 </div>
@@ -42,7 +43,7 @@
     <div>
       <h2>Our Services</h2>
 
-      <p>
+      <p  class="">
 
         At GeoScape, we offer a comprehensive suite of professional landscape services
         designed to meet the highest standards of quality. We leverage the best products
@@ -66,7 +67,7 @@
   <div class="col-12 md:col-6 px-5 flex  align-items-center ">
     <div>
       <h2>Our Mission</h2>
-      <p>
+      <p  class="">
 
         To be an integral part of our clients’ daily lives by offering
         top-tier local services, delivering professional technological
@@ -121,13 +122,13 @@
       <p>
         At GeoScape Co., we provide an extensive range of products to elevate and beautify outdoor environments:
       </p>
-        <span class="block"><h4>* Urban Furniture</h4> Elegant and durable furniture solutions for both public and private settings.
+      <span class="block"><h4>* Urban Furniture</h4> Elegant and durable furniture solutions for both public and private settings.
 </span>
-        <span class="block"><h4>* Play Equipment</h4> Safe and captivating play structures suitable for children of all ages.
+      <span class="block"><h4>* Play Equipment</h4> Safe and captivating play structures suitable for children of all ages.
 </span>
-        <span class="block"><h4>* Sports and Fitness Equipment</h4> Premium quality gear designed to encourage physical activity and well-being.
+      <span class="block"><h4>* Sports and Fitness Equipment</h4> Premium quality gear designed to encourage physical activity and well-being.
 </span>
-        <span class="block"><h4>* Wood Plastic Composites</h4> Eco-friendly and versatile materials ideal for numerous applications.
+      <span class="block"><h4>* Wood Plastic Composites</h4> Eco-friendly and versatile materials ideal for numerous applications.
 </span>
 
     </div>
@@ -138,11 +139,21 @@
 <div class="w-full line "></div>
 
 
-<div>
+<div class="w-full">
   <h2> Company Profile</h2>
-  <p>
+  <div class="flex align-items-center">
+    <p>
+      For a detailed overview of our company, services, and products, please download our comprehensive
+      Company Profile.
+    </p>
+    <p-button class="mx-4" (click)="showProfilePdf=!showProfilePdf" label="{{showProfilePdf?'hide':'show'}}"
+              [outlined]="true" severity="info"/>
+  </div>
 
-    For a detailed overview of our company, services, and products, please download our comprehensive
-    Company Profile.
-  </p>
+  @if (showProfilePdf) {
+    <div class="m-auto w-12 md:w-9 text-center mt-5 scalein animation-duration-1000 animation-iteration-1 ">
+      <embed src="assets/GEOSCAPE%20Profile%20after%20updates%20_2024-5-27.pdf" type="application/pdf" width="100%"
+             height="500px"/>
+    </div>
+  }
 </div>
