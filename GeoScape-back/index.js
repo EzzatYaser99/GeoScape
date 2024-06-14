@@ -30,7 +30,7 @@ app.post('/send-email', (req, res) => {
         cc: `${ccEmails}`,
         subject: 'Thank You for Contacting Geoscape Landscape!',
         text: `
-    Dear ${name},
+Dear ${name},
 
 Thank you for your interest in our [${service}] Services. We appreciate your message:
 
