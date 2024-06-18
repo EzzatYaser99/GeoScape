@@ -6,6 +6,7 @@ import {CardModule} from "primeng/card";
 import {FieldsetModule} from "primeng/fieldset";
 import {AvatarModule} from "primeng/avatar";
 import {Ripple} from "primeng/ripple";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-services',
@@ -28,7 +29,7 @@ export class ServicesComponent implements OnInit{
   responsiveOptions:any;
   services: any;
 
-  constructor() {
+  constructor(private  _router:Router) {
 
 }
 
@@ -82,4 +83,7 @@ export class ServicesComponent implements OnInit{
   }
 
 
+  navigateToServiceDetails(service:any) {
+    this._router.navigate(['main/services-Details/'+service.id]);
+  }
 }

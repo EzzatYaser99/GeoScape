@@ -1,6 +1,6 @@
 <section class="carsoul-bg px-3 zoomin animation-duration-1000 animation-iteration-1"
 
-         style='background-image: url("assets/images/Services/ourServices.jpg")'>
+         style='background-image: url("assets/images/services/ourServices.jpg")'>
   <p-carousel
     [autoplayInterval]="5000" [circular]="true" [numScroll]="1" [numVisible]="1"
     [responsiveOptions]="responsiveOptions"
@@ -15,14 +15,11 @@
        justify-content-sm-center">
         <div class="product-item-content  md:w-4 sm:w-7 ">
           <div class="zoom-img relative overflow-hidden">
-            <img class="product-image" [src]="'assets/images/Services/'+ service.image">
+            <img class="product-image" [src]="'assets/images/services/'+ service.image">
           </div>
           <div class="mt-4">
             <h2>{{ service.name }}</h2>
             <p class="text-white font-bold">{{ service.description }}</p>
-            <button class="p-component p-element mt-2 greenColor " label="Read More"
-                    pButton>
-            </button>
           </div>
         </div>
       </div>
@@ -52,18 +49,19 @@
 <section class=" my-5">
   <div class="grid">
     @for (service of services; track service) {
-      <div  class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto">
+      <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto">
         <div class="card flex justify-content-center">
           <p-card header="{{ service.name }}">
             <ng-template pTemplate="header">
-              <img alt="Card" [src]="'assets/images/Services/'+ service.image"/>
+              <img alt="Card" [src]="'assets/images/services/'+ service.image"/>
             </ng-template>
             <p class="m-0" style="min-height: 145px;">
               {{ service.description }}
             </p>
             <ng-template pTemplate="footer">
               <div class="flex gap-3 mt-1">
-                <button pButton  label="Read More" class="w-full green-Bg-Color" ></button>
+                <button pButton label="Read More" class="w-full green-Bg-Color"
+                        (click)="navigateToServiceDetails(service)"></button>
               </div>
             </ng-template>
           </p-card>
