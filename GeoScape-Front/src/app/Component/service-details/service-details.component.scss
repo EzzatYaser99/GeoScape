@@ -1,0 +1,24 @@
+.gallery{
+  border-right:2px solid  #86BB46;
+
+}
+.appear-in-mobile{
+  display:none;
+}
+@media screen and (max-width: 770px) {
+    :host ::ng-deep {
+      .p-listbox-list {
+        max-height: 300px;
+      }
+    }
+    .gallery{
+      border-right:unset;
+    }
+  .disappear-in-mobile{
+    display:none;
+  }
+  .appear-in-mobile{
+    display:unset;
+  }
+}
+
