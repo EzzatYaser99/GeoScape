@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes} from '@angular/router';
 import {HomeComponent} from "./Pages/home/home.component";
 import {ProjectsComponent} from "./Pages/projects/projects.component";
 import {ServicesComponent} from "./Pages/services/services.component";
@@ -8,9 +8,6 @@ import {ContactsComponent} from "./Pages/contacts/contacts.component";
 import {ServiceDetailsComponent} from "./Component/service-details/service-details.component";
 
 export const routes: Routes = [
-  {
-    path: 'login', loadComponent: () => import('./Pages/login/login.component').then((m) => m.LoginComponent),
-  },
   {
     path: 'main',
     loadComponent: () =>
@@ -26,6 +23,6 @@ export const routes: Routes = [
       { path: '', pathMatch: 'full', redirectTo: 'main'},
     ],
   },
-  { path: '**', redirectTo: 'main' },
+  { path: '**', redirectTo: 'main',},
 
 ];
