@@ -4,10 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6529c244-398b-4f07-b90b-8c19a328d277" name="Changes" comment="">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="refactor images and download images for services">
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/design-landscape/design-landscape-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/water-features/water-features-4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-back/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-back/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/water-features/water-features-9.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,23 +44,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "EzzatYaser99"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EzzatYaser99&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EzzatYaser99/GeoScape.git",
-    "accountId": "253e5082-3390-4b0e-aaf6-6ff85fd3920d"
-  }
-}]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2hmoL6fMl6Ud19QjX4QHFqvNDRI" />
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EzzatYaser99/GeoScape.git&quot;,
+    &quot;accountId&quot;: &quot;253e5082-3390-4b0e-aaf6-6ff85fd3920d&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2i4GLX3tWZ4qqkgLS6XcHIXwh84" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,16 +70,17 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-back/package.json&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.back.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.front.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -58,7 +88,6 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
-        <option value="NodeJSConfigurationType" />
         <option value="js.build_tools.npm" />
       </set>
     </option>
@@ -74,7 +103,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+    <configuration name="front" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/GeoScape-Front/package.json" />
       <command value="run" />
       <scripts>
@@ -85,7 +114,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.start" />
+      <item itemvalue="npm.front" />
       <item itemvalue="npm.back" />
     </list>
   </component>
@@ -100,17 +129,45 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6529c244-398b-4f07-b90b-8c19a328d277" name="Changes" comment="" />
-      <created>1718208558959</created>
+      <changelist id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="impelmet sevices details component and refactor header component" />
+      <created>1718742379765</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1718208558959</updated>
-      <workItem from="1718208560684" duration="4261000" />
-      <workItem from="1718252146836" duration="6754000" />
+      <updated>1718742379765</updated>
+      <workItem from="1718742381157" duration="1862000" />
+      <workItem from="1718744252383" duration="20685000" />
     </task>
+    <task id="LOCAL-00001" summary="remove login module">
+      <option name="closed" value="true" />
+      <created>1718744028444</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718744028444</updated>
+    </task>
+    <task id="LOCAL-00002" summary="solve problem when navigate from page to page">
+      <option name="closed" value="true" />
+      <created>1718744214350</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718744214350</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="impelmet sevices details component and refactor header component" />
+    <MESSAGE value="remove login module" />
+    <MESSAGE value="solve problem when navigate from page to page" />
+    <MESSAGE value="refactor images and download images for services" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor images and download images for services" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

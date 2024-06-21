@@ -33,6 +33,7 @@ export class ServiceDetailsComponent implements OnInit {
         description: 'Expertly crafted 2D and 3D designs tailored to your vision, ' +
           'combining aesthetics and functionality for stunning outdoor spaces.',
         subImages: [
+          {id: 1, image: 'design-landscape/design-landscape-1.jpg'},
           {id: 2, image: 'design-landscape/design-landscape-2.jpg'},
           {id: 3, image: 'design-landscape/design-landscape-3.jpg'},
           {id: 4, image: 'design-landscape/design-landscape-4.jpg'},
@@ -62,6 +63,10 @@ export class ServiceDetailsComponent implements OnInit {
         , subImages: [
           {id: 1, image: 'soft-landscape/soft-landscape-1.jpg'},
           {id: 2, image: 'soft-landscape/soft-landscape-2.jpg'},
+          {id: 3, image: 'soft-landscape/soft-landscape-3.jpg'},
+          {id: 4, image: 'soft-landscape/soft-landscape-4.jpg'},
+          {id: 5, image: 'soft-landscape/soft-landscape-5.jpg'},
+          {id: 6, image: 'soft-landscape/soft-landscape-6.jpg'},
 
         ],
         whatWeDo: 'We enhance your outdoor area with carefully selected plants, ' +
@@ -85,8 +90,12 @@ export class ServiceDetailsComponent implements OnInit {
         description: ' A wide selection of high-quality plants and garden products with expert ' +
           'advice to help you choose the best options for your landscape.'
         , subImages: [
-          {id: 1, image: 'hard-landscape/hard-landscape-1.jpg'},
-          {id: 2, image: 'hard-landscape/hard-landscape-2.jpg'},
+          {id: 1, image: 'nursery/nursery-landscape-1.jpg'},
+          {id: 2, image: 'nursery/nursery-landscape-2.jpg'},
+          {id: 3, image: 'nursery/nursery-landscape-3.jpeg'},
+          {id: 4, image: 'nursery/nursery-landscape-4.jpg'},
+          {id: 5, image: 'nursery/nursery-landscape-5.jpeg'},
+          {id: 6, image: 'nursery/nursery-landscape-6.jpeg'},
 
         ],
         whatWeDo: 'Our nursery provides a diverse selection of high-quality plants and garden' +
@@ -109,8 +118,12 @@ export class ServiceDetailsComponent implements OnInit {
         description: 'Efficient systems designed to conserve water and ensure your landscape thrives,' +
           ' with customized installation and maintenance services.'
         , subImages: [
-          {id: 1, image: 'hard-landscape/hard-landscape-1.jpg'},
-          {id: 2, image: 'hard-landscape/hard-landscape-2.jpg'},
+          {id: 1, image: 'irrigation/irrigation-landscape-1.jpeg'},
+          {id: 2, image: 'irrigation/irrigation-landscape-2.jpeg'},
+          {id: 3, image: 'irrigation/irrigation-landscape-3.jpeg'},
+          {id: 4, image: 'irrigation/irrigation-landscape-4.jpeg'},
+          {id: 5, image: 'irrigation/irrigation-landscape-5.jpeg'},
+          {id: 6, image: 'irrigation/irrigation-landscape-6.jpeg'},
 
         ],
         whatWeDo: 'We design and install efficient irrigation systems that conserve water ' +
@@ -137,6 +150,11 @@ export class ServiceDetailsComponent implements OnInit {
         , subImages: [
           {id: 1, image: 'water-features/water-features-1.jpg'},
           {id: 2, image: 'water-features/water-features-2.jpg'},
+          {id: 3, image: 'water-features/water-features-3.jpg'},
+          {id: 4, image: 'water-features/water-features-4.jpg'},
+          {id: 5, image: 'water-features/water-features-5.jpg'},
+          {id: 6, image: 'water-features/water-features-6.jpg'},
+
 
         ],
         whatWeDo: 'We design and install elegant water features such as fountains, ' +
@@ -166,11 +184,9 @@ export class ServiceDetailsComponent implements OnInit {
           {id: 4, image: 'water-drainage-systems/water-drainage-systems-4.jpg'},
           {id: 5, image: 'water-drainage-systems/water-drainage-systems-5.jpg'},
           {id: 6, image: 'water-drainage-systems/water-drainage-systems-6.jpg'},
-          {id: 7, image: 'water-drainage-systems/water-drainage-systems-7.jpg'},
-          {id: 8, image: 'water-drainage-systems/water-drainage-systems-8.jpg'},
-          {id: 9, image: 'water-drainage-systems/water-drainage-systems-9.jpg'},
+
         ],
-        whatWeDo: 'We implement reliable water and drainage systems to prevent water logging and manage runoff. ' +
+        whatWeDo: 'We implement reliable water and drainage systems to prevent waterlogging and manage runoff. ' +
           'Our solutions ensure' +
           ' proper water flow and soil health, protecting your landscape from damage.' +
           ' We start with a detailed site assessment to identify potential drainage issues ' +
@@ -198,7 +214,6 @@ export class ServiceDetailsComponent implements OnInit {
           {id: 4, image: 'hard-landscape/hard-landscape-4.jpg'},
           {id: 5, image: 'hard-landscape/hard-landscape-5.jpg'},
           {id: 6, image: 'hard-landscape/hard-landscape-6.jpg'},
-          {id: 7, image: 'hard-landscape/hard-landscape-7.jpg'},
         ],
         whatWeDo: 'We construct durable and aesthetically pleasing hardscape elements like patios,' +
           ' walkways, and retaining walls. These features provide structure and functionality, ' +
@@ -223,6 +238,8 @@ export class ServiceDetailsComponent implements OnInit {
           {id: 2, image: 'maintenance-landscape/maintenance-landscape-2.jpg'},
           {id: 3, image: 'maintenance-landscape/maintenance-landscape-3.jpg'},
           {id: 4, image: 'maintenance-landscape/maintenance-landscape-4.jpg'},
+          {id: 5, image: 'maintenance-landscape/maintenance-landscape-5.jpg'},
+          {id: 6, image: 'maintenance-landscape/maintenance-landscape-6.jpg'},
         ],
         whatWeDo: 'We offer comprehensive maintenance plans to keep your landscape looking its best year-round.' +
           ' Our services include pruning, mowing, fertilization, pest control,' +
@@ -242,14 +259,13 @@ export class ServiceDetailsComponent implements OnInit {
         description: 'High-quality solutions for safety and aesthetic appeal, with energy-efficient ' +
           'installations for both public and private spaces.'
         , subImages: [
-          {id: 1, image: 'hard-landscape/hard-landscape-1.jpg'},
-          {id: 2, image: 'hard-landscape/hard-landscape-2.jpg'},
-          {id: 3, image: 'hard-landscape/hard-landscape-3.jpg'},
-          {id: 4, image: 'hard-landscape/hard-landscape-4.jpg'},
-          {id: 5, image: 'hard-landscape/hard-landscape-5.jpg'},
-          {id: 6, image: 'hard-landscape/hard-landscape-6.jpg'},
-          {id: 7, image: 'hard-landscape/hard-landscape-7.jpg'},
-          {id: 8, image: 'hard-landscape/hard-landscape-8.jpg'},
+          {id: 1, image: 'street-lighting/street-lighting-1.jpg'},
+          {id: 2, image: 'street-lighting/street-lighting-2.jpg'},
+          {id: 3, image: 'street-lighting/street-lighting-3.jpg'},
+          {id: 4, image: 'street-lighting/street-lighting-4.jpg'},
+          {id: 5, image: 'street-lighting/street-lighting-5.jpg'},
+          {id: 6, image: 'street-lighting/street-lighting-6.jpg'},
+
         ],
         whatWeDo: 'We install and maintain high-quality street lighting solutions that enhance safety' +
           ' and aesthetic appeal. Our energy-efficient lighting systems are suitable for both public ' +
@@ -269,14 +285,13 @@ export class ServiceDetailsComponent implements OnInit {
         id: 10, name: 'Street Furniture', image: 'Street-Furniture.jpg',
         description: 'Functional and stylish furnishings that enhance urban spaces, including benches, bins, and other outdoor furniture.'
         , subImages: [
-          {id: 1, image: 'hard-landscape/hard-landscape-1.jpg'},
-          {id: 2, image: 'hard-landscape/hard-landscape-2.jpg'},
-          {id: 3, image: 'hard-landscape/hard-landscape-3.jpg'},
-          {id: 4, image: 'hard-landscape/hard-landscape-4.jpg'},
-          {id: 5, image: 'hard-landscape/hard-landscape-5.jpg'},
-          {id: 6, image: 'hard-landscape/hard-landscape-6.jpg'},
-          {id: 7, image: 'hard-landscape/hard-landscape-7.jpg'},
-          {id: 8, image: 'hard-landscape/hard-landscape-8.jpg'},
+          {id: 1, image: 'street-furniture/street-furniture-1.jpg'},
+          {id: 2, image: 'street-furniture/street-furniture-2.jpg'},
+          {id: 3, image: 'street-furniture/street-furniture-3.jpg'},
+          {id: 4, image: 'street-furniture/street-furniture-4.jpg'},
+          {id: 5, image: 'street-furniture/street-furniture-5.jpg'},
+          {id: 6, image: 'street-furniture/street-furniture-6.jpg'},
+
         ],
         whatWeDo: 'We provide functional and stylish street furniture, including benches, bins,' +
           ' and bike racks. Our products are designed to enhance the usability and' +
@@ -296,14 +311,11 @@ export class ServiceDetailsComponent implements OnInit {
         id: 11, name: 'Playground Equipment', image: 'Playground-Equipment.jpg',
         description: 'Safe and fun installations for children of all ages, designed for durability and enjoyment in various settings.'
         , subImages: [
-          {id: 1, image: 'hard-landscape/hard-landscape-1.jpg'},
-          {id: 2, image: 'hard-landscape/hard-landscape-2.jpg'},
-          {id: 3, image: 'hard-landscape/hard-landscape-3.jpg'},
-          {id: 4, image: 'hard-landscape/hard-landscape-4.jpg'},
-          {id: 5, image: 'hard-landscape/hard-landscape-5.jpg'},
-          {id: 6, image: 'hard-landscape/hard-landscape-6.jpg'},
-          {id: 7, image: 'hard-landscape/hard-landscape-7.jpg'},
-          {id: 8, image: 'hard-landscape/hard-landscape-8.jpg'},
+          {id: 1, image: 'playground-equipment/playground-equipment-1.jpeg'},
+          {id: 2, image: 'playground-equipment/playground-equipment-2.jpeg'},
+          {id: 3, image: 'playground-equipment/playground-equipment-3.jpeg'},
+          {id: 4, image: 'playground-equipment/playground-equipment-4.jpeg'},
+
         ],
         whatWeDo: ' We design and install safe, durable, and engaging playground equipment ' +
           'for children of all ages. Our installations meet the highest safety standards and' +
@@ -322,14 +334,13 @@ export class ServiceDetailsComponent implements OnInit {
         id: 12, name: 'Covers and Grates', image: 'covers-and-grates.jpg',
         description: 'Sturdy solutions ensuring safety and proper drainage, blending seamlessly with your landscape design.'
         , subImages: [
-          {id: 1, image: 'hard-landscape/hard-landscape-1.jpg'},
-          {id: 2, image: 'hard-landscape/hard-landscape-2.jpg'},
-          {id: 3, image: 'hard-landscape/hard-landscape-3.jpg'},
-          {id: 4, image: 'hard-landscape/hard-landscape-4.jpg'},
-          {id: 5, image: 'hard-landscape/hard-landscape-5.jpg'},
-          {id: 6, image: 'hard-landscape/hard-landscape-6.jpg'},
-          {id: 7, image: 'hard-landscape/hard-landscape-7.jpg'},
-          {id: 8, image: 'hard-landscape/hard-landscape-8.jpg'},
+          {id: 1, image: 'covers-and-grates/covers-and-grates-1.jpg'},
+          {id: 2, image: 'covers-and-grates/covers-and-grates-2.jpg'},
+          {id: 3, image: 'covers-and-grates/covers-and-grates-3.jpg'},
+          {id: 4, image: 'covers-and-grates/covers-and-grates-4.jpg'},
+          {id: 5, image: 'covers-and-grates/covers-and-grates-5.jpg'},
+          {id: 6, image: 'covers-and-grates/covers-and-grates-6.jpg'},
+
         ],
         whatWeDo: 'We supply and install robust covers and grates that ensure safety and efficient drainage in your landscape.' +
           ' Our solutions are designed to blend seamlessly with your ' +
