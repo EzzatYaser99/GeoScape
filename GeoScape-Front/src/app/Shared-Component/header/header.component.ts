@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {RouterLink} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {MenubarModule} from "primeng/menubar";
 import {RippleModule} from "primeng/ripple";
 import {NgClass, NgOptimizedImage} from "@angular/common";
@@ -23,13 +23,13 @@ import {SocialMediaInfoComponent} from "../social-media-info/social-media-info.c
 export class HeaderComponent  implements OnInit {
   headerItems: any[] | undefined;
   socialMediaInfo: Array<FooterInfo> = [];
-  ngOnInit() {
-    // this.handleItemClick('home');
+  constructor(private _router:Router) {}
 
+    ngOnInit() {
     this.headerItems = [
       {
         label: 'Home',
-        isActive: true,
+        isActive: false,
         routerLink: 'home',
       },
 
@@ -59,6 +59,7 @@ export class HeaderComponent  implements OnInit {
         routerLink: 'contacts',
       },
     ];
+      this.getActivePage()
 
     this.socialMediaInfo= [
       {
@@ -91,12 +92,22 @@ export class HeaderComponent  implements OnInit {
 
 
   handleItemClick(item: any) {
-debugger
     // Reset isActive property for all items
     this.headerItems?.forEach((obj: any) => (obj.isActive = false));
 
     // Toggle isActive property
     item.isActive = !item.isActive;
 
+  }
+
+  private getActivePage() {
+    const url = this._router.url;
+    const urlParts = url.split('/');
+    const word = urlParts[urlParts.length - 1];
+    this.headerItems?.forEach((obj: any) => {
+      if(obj.routerLink == word){
+        obj.isActive = true;
+      }
+    });
   }
 }

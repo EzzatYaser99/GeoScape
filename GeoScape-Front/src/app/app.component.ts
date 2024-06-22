@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
     ).subscribe(() => {
       window.scrollTo(0, 0);
     });
-    this.router.navigate(['main/home'])
   }
 
 
