@@ -1,4 +1,4 @@
-import { Routes} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from "./Pages/home/home.component";
 import {ProjectsComponent} from "./Pages/projects/projects.component";
 import {ServicesComponent} from "./Pages/services/services.component";
@@ -16,13 +16,13 @@ export const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'services', component: ServicesComponent },
-      { path: 'services-Details/:id', component: ServiceDetailsComponent },
+      { path: 'services/:id', component: ServiceDetailsComponent },
       { path: 'partners', component: PartnersComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contacts', component: ContactsComponent },
-      { path: '', pathMatch: 'full', redirectTo: 'main'},
     ],
   },
-  { path: '**', redirectTo: 'main',},
+  { path: '',  pathMatch: 'full', redirectTo: 'main/home' },
+  { path: '**', redirectTo: 'main/home' },
 
 ];

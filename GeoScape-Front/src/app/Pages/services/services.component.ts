@@ -84,6 +84,6 @@ export class ServicesComponent implements OnInit{
 
 
   navigateToServiceDetails(service:any) {
-    this._router.navigate(['main/services-Details/'+service.id]);
+    this._router.navigate(['main/services/'+service.id]);
   }
 }

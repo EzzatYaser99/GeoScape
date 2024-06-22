@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ButtonDirective} from "primeng/button";
 import {CardModule} from "primeng/card";
 import {PrimeTemplate} from "primeng/api";
@@ -380,7 +380,6 @@ export class ServiceDetailsComponent implements OnInit {
 
 
   private getServices() {
-    debugger;
     this.selectedServices = []
     let id: string | null = this.route
       .snapshot

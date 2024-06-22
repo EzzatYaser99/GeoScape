@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="refactor images and download images for services">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="implement home page  and edit on services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,7 @@
       <updated>1718742379765</updated>
       <workItem from="1718742381157" duration="1862000" />
       <workItem from="1718744252383" duration="20685000" />
-      <workItem from="1718991534246" duration="8441000" />
+      <workItem from="1718991534246" duration="10118000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -138,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718991574215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implement home page  and edit on services">
+      <option name="closed" value="true" />
+      <created>1719016342970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719016342970</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +158,8 @@
     <MESSAGE value="remove login module" />
     <MESSAGE value="solve problem when navigate from page to page" />
     <MESSAGE value="refactor images and download images for services" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor images and download images for services" />
+    <MESSAGE value="implement home page  and edit on services" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement home page  and edit on services" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

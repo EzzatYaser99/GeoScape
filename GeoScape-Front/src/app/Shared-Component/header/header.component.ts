@@ -24,10 +24,12 @@ export class HeaderComponent  implements OnInit {
   headerItems: any[] | undefined;
   socialMediaInfo: Array<FooterInfo> = [];
   ngOnInit() {
+    // this.handleItemClick('home');
+
     this.headerItems = [
       {
         label: 'Home',
-        isActive: false,
+        isActive: true,
         routerLink: 'home',
       },
 
@@ -87,9 +89,9 @@ export class HeaderComponent  implements OnInit {
     ];
   }
 
-  doSearch(value: string) {}
 
   handleItemClick(item: any) {
+debugger
     // Reset isActive property for all items
     this.headerItems?.forEach((obj: any) => (obj.isActive = false));
 
