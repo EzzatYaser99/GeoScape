@@ -5,36 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="refactor images and download images for services">
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/design-landscape/design-landscape-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/irrigation/irrigation-landscape-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/nursery/nursery-landscape-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/water-features/water-features-4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/maintenance-landscape/maintenance-landscape-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/soft-landscape/soft-landscape-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/water-features/water-features-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,8 +97,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -136,6 +112,7 @@
       <updated>1718742379765</updated>
       <workItem from="1718742381157" duration="1862000" />
       <workItem from="1718744252383" duration="20685000" />
+      <workItem from="1718991534246" duration="8441000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -153,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718744214350</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor images and download images for services">
+      <option name="closed" value="true" />
+      <created>1718991574215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718991574215</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
