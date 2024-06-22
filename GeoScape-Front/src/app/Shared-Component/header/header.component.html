@@ -3,8 +3,7 @@
   <div class="header-style">
 <p-menubar [model]="headerItems">
   <ng-template pTemplate="start">
-    <img class="cursor-pointer" routerLink="/main/home"
-         src="assets/images/logo.png" height="71" width="71" >
+    <img src="assets/images/logo.png" height="71" width="71" >
   </ng-template>
   <ng-template pTemplate="item" let-item let-headerItems="headerItems">
       <a (click)="handleItemClick(item)" pRipple class="flex align-items-center p-menuitem-link"
