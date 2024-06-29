@@ -28,37 +28,60 @@ zoomin animation-duration-1000 animation-iteration-1"
 </div>
 
 
-<div class="mb-5 	pb-6 px-5">
+<div class="mb-5 px-5">
   <div class="text-center mb-7"><h1 class="mb-6" style="font-family: 'FreeSerif'">Why Choose Us ?</h1></div>
   <div class="grid">
     <div class="md:col-6 lg:col-3">
       <div class="card">
-      <h3>Expertise</h3>
-      <p>With 12 years of experience in the industry, we bring a wealth of knowledge
-        and a passion for landscape design to every project.</p>
+        <h3>Expertise</h3>
+        <p>With 12 years of experience in the industry, we bring a wealth of knowledge
+          and a passion for landscape design to every project.</p>
       </div>
     </div>
     <div class="md:col-6 lg:col-3 mt-5 md:mt-0 lg:mt-5">
       <div class="card green-Bg-Color">
-      <h3>Personalized Approach</h3>
-      <p>We tailor our services to meet your specific needs and preferences,
-        ensuring a unique and satisfying experience.</p>
+        <h3>Personalized Approach</h3>
+        <p>We tailor our services to meet your specific needs and preferences,
+          ensuring a unique and satisfying experience.</p>
       </div>
     </div>
     <div class="md:col-6 lg:col-3 mt-5 md:mt-0 ">
       <div class="card">
-      <h3>Sustainability</h3>
-      <p>We prioritize eco-friendly practices and sustainable solutions to create landscapes
-        that are both beautiful and environmentally responsible.</p></div>
+        <h3>Sustainability</h3>
+        <p>We prioritize eco-friendly practices and sustainable solutions to create landscapes
+          that are both beautiful and environmentally responsible.</p></div>
     </div>
     <div class="md:col-6 lg:col-3 mt-5 md:mt-0 lg:mt-5">
       <div class="card green-Bg-Color">
-      <h3>Customer Satisfaction</h3>
-      <p>Our commitment to quality and customer satisfaction is unmatched.
-        We’re dedicated to exceeding your expectations every step of the way.</p>
+        <h3>Customer Satisfaction</h3>
+        <p>Our commitment to quality and customer satisfaction is unmatched.
+          We’re dedicated to exceeding your expectations every step of the way.</p>
       </div>
     </div>
 
   </div>
-
 </div>
+
+<section class="p-5 w-full relative">
+
+  <div class= "flex align-items-center justify-content-center w-full ">
+    <div class="line w-3 "></div>
+  <h2 class="px-2 py-1"> Company Government Documents:</h2>
+    <div class="line w-3 "></div>
+  </div>
+  <div class="grid mt-5 px-5">
+    @for (document of documents.slice(1,9); track document) {
+      <div class="col-6 sm:col-3  md:col-4 lg:col-3 m-auto">
+        <div class="document text-center">
+
+          <img [routerLink]="'/main/uploadPdf/'+document.id"
+               class="block m-auto" [src]="'assets/document/'+ document.imgSrc" width="80%" alt="{{ document.name }}">
+          <a class="block mt-4" target="_self" [routerLink]="'/main/uploadPdf/'+document.id"> {{ document.name }}
+
+          </a>
+        </div>
+      </div>
+    }
+  </div>
+
+</section>
