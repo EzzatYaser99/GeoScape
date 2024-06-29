@@ -6,6 +6,7 @@ import {ActivatedRoute} from "@angular/router";
 import {ListboxModule} from "primeng/listbox";
 import {FormsModule} from "@angular/forms";
 import {GalleriaModule} from "primeng/galleria";
+import {ImageModule} from "primeng/image";
 
 @Component({
   selector: 'app-services-details',
@@ -16,7 +17,8 @@ import {GalleriaModule} from "primeng/galleria";
     PrimeTemplate,
     ListboxModule,
     FormsModule,
-    GalleriaModule
+    GalleriaModule,
+    ImageModule
   ],
   templateUrl: './service-details.component.html',
   styleUrl: './service-details.component.scss'

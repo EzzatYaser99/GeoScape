@@ -105,6 +105,14 @@ h2 {
 
 
 }
+
+.card{
+  transition: all .3s;
+  &:hover{
+    transform:scale(1.07);
+  }
+}
+
 /* End fieldset Style*/
 
 

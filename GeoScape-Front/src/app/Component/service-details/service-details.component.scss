@@ -22,3 +22,29 @@
   }
 }
 
+:host ::ng-deep {
+  .p-image-toolbar {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    display: flex;
+    z-index: 10000000;
+  }
+
+  .p-image-preview {
+    transition: transform .15s;
+    width: 50vw;
+    height: 50vh;
+    margin-top:100px
+  }
+
+  .p-image-preview-container {
+    width: 85%
+  }
+
+  .p-galleria .p-galleria-item-nav {
+    width: 3rem;
+    height: 3rem;
+  }
+
+}
