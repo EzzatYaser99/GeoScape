@@ -43,7 +43,7 @@
     <div>
       <h2>Our Services</h2>
 
-      <p  class="">
+      <p class="">
 
         At GeoScape, we offer a comprehensive suite of professional landscape services
         designed to meet the highest standards of quality. We leverage the best products
@@ -67,7 +67,7 @@
   <div class="col-12 md:col-6 px-5 flex  align-items-center ">
     <div>
       <h2>Our Mission</h2>
-      <p  class="">
+      <p class="">
 
         To be an integral part of our clients’ daily lives by offering
         top-tier local services, delivering professional technological
@@ -146,14 +146,11 @@
       For a detailed overview of our company, services, and products, please download our comprehensive
       Company Profile.
     </p>
-    <p-button class="mx-4" (click)="showProfilePdf=!showProfilePdf" label="{{showProfilePdf?'hide':'show'}}"
-              [outlined]="true" severity="info"/>
+    <a target="_blank" routerLink="/main/uploadPdf/1">
+      <p-button class="mx-4" label="Perview Profile"
+                [outlined]="true" severity="info"/>
+    </a>
   </div>
 
-  @if (showProfilePdf) {
-    <div class="m-auto w-12 md:w-9 text-center mt-5 scalein animation-duration-1000 animation-iteration-1 ">
-      <embed src="assets/GEOSCAPE%20Profile%20after%20updates%20_2024-5-27.pdf" type="application/pdf" width="100%"
-             height="500px"/>
-    </div>
-  }
+
 </div>

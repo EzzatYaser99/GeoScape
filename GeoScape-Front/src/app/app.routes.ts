@@ -20,10 +20,10 @@ export const routes: Routes = [
       { path: 'services/:id', component: ServiceDetailsComponent },
       { path: 'partners', component: PartnersComponent },
       { path: 'about', component: AboutComponent },
-      { path: 'uploadPdf/:id', component: UploadedPdfComponent },
       { path: 'contacts', component: ContactsComponent },
     ],
   },
+  { path: 'main/uploadPdf/:id', component: UploadedPdfComponent },
   { path: '',  pathMatch: 'full', redirectTo: 'main/home' },
   { path: '**', redirectTo: 'main/home' },
 
