@@ -33,6 +33,11 @@ constructor() {
 
     },
     {
+      title: 'twitter',
+      iconClass: 'pi pi-twitter twitter',
+      herf: '',
+    },
+    {
       title: 'instagram',
       iconClass: 'pi pi-instagram instagram',
       herf: '',
