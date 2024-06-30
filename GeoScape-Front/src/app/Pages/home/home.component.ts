@@ -47,10 +47,26 @@ export class HomeComponent implements OnInit{
         id: 7, name: 'سجل التوهج للمقاولات', pdfSrc: 'سجل-التوهج-للمقاولات.pdf',imgSrc: 'سجل-التوهج-للمقاولات.png'
       },
       {
-        id: 9, name: 'العنوان الوطني العليا التوهج الدائم', pdfSrc: 'العنوان-الوطني-العليا-التوهج-الدائم.pdf',imgSrc: 'العنوان-الوطني-العليا-التوهج-الدائم.png'
+        id: 8, name: 'العنوان الوطني العليا التوهج الدائم', pdfSrc: 'العنوان-الوطني-العليا-التوهج-الدائم.pdf',imgSrc: 'العنوان-الوطني-العليا-التوهج-الدائم.png'
       },
       {
-        id: 8, name: 'سجل جندلة الرئيسي', pdfSrc: 'سجل-جندلة-الرئيسي.pdf',imgSrc: 'سجل-جندلة-الرئيسي.png'
+        id: 9, name: 'سجل جندلة الرئيسي', pdfSrc: 'سجل-جندلة-الرئيسي.pdf',imgSrc: 'سجل-جندلة-الرئيسي.png'
+      },
+      {
+        id: 10, name: 'شهادة الأيزو', pdfSrc: 'شهادة-الأيزو.pdf',imgSrc: 'شهادة-الأيزو.png'
+      },
+
+      {
+        id: 11, name: 'ذا لاين', pdfSrc: 'ذا-لاين.pdf',imgSrc: 'ذا-لاين.png'
+      },
+      {
+        id: 12, name: 'مؤسسة المسار الرياضي', pdfSrc: 'مؤسسة-المسار-الرياضي.pdf',imgSrc: 'مؤسسة-المسار-الرياضي.jpeg'
+      },
+      {
+        id: 13, name: 'Royal Commission for AlUla', pdfSrc: 'Royal-Commission-for-AlUla.pdf',imgSrc: 'Royal-Commission-for-AlUla.png'
+      },
+      {
+        id: 14, name: 'misk city ', pdfSrc: 'misk-city.pdf',imgSrc: 'misk-city.png'
       },
 
     ];

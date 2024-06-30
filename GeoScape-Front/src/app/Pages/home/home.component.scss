@@ -70,21 +70,22 @@
   }
 
 }
-section {
-  h2{
+.government-documents , .approvals-documents {
+  h2 {
     border-radius: 5px;
     background: #86BB46;
-    border:none;
-    color:white;
-    text-align:center;
+    border: none;
+    color: white;
+    text-align: center;
   }
+
   .line {
     height: 2px;
     background: #86BB46;
     border: none;
     width: 300px;
   }
-
+}
   .document {
     img {
       max-height: 180px;
@@ -99,7 +100,26 @@ section {
       font-weight: bold;
     }
   }
+
+.approvals-documents {
+  .approvals {
+    img {
+      max-height: 250px;
+      min-height: 250px;
+      border: 2px solid #86BB46;
+      cursor: pointer;
+    }
+
+    min-height: 300px;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+
+    }
   }
+}
 @media screen and (max-width: 992px) {
   section h2 {
     font-size: 20px;
