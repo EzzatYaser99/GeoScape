@@ -10,15 +10,19 @@
 
 }
 
+
 .home-text {
-  font-size: 28px;
-  color: #fff;
-  font-weight: 700;
-  text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
-  max-width: 600px;
-  line-height: 1.3em;
-  transform: translate3d(10%, 0, 0);
-  transition: all 1200ms 400ms ease;
+  z-index: 10000000;
+  h4 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    line-height: 1.3em;
+    transform: translate3d(10%, 0, 0);
+    transition: all 1200ms 400ms ease;
+  }
 }
 
 /* Start fieldset Style*/
@@ -95,5 +99,31 @@ section {
       font-weight: bold;
     }
   }
-
+  }
+@media screen and (max-width: 992px) {
+  section h2 {
+    font-size: 20px;
+  }
+  .line {
+    width: 20% !important;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  section h2 {
+    font-size: 18px;
+  }
+  .line {
+    width: 20% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section h2 {
+    font-size: 16px;
+  }
+  .line {
+    width: 15% !important;
+  }
+}
+
