@@ -8,7 +8,7 @@
   <ng-template pTemplate="item" let-item let-headerItems="headerItems">
       <a (click)="handleItemClick(item)" pRipple class="flex align-items-center p-menuitem-link"
          [ngClass]="{ active: item.isActive }" routerLink="/main/{{ item.routerLink }}">
-        <span class="ml-2">{{ item.label }}</span>
+        <span class="">{{ item.label }}</span>
       </a>
 
   </ng-template>
