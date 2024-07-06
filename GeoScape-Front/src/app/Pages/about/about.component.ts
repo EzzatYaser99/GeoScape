@@ -1,21 +1,15 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {Button, ButtonDirective} from "primeng/button";
 import {Ripple} from "primeng/ripple";
 import {RouterLink} from "@angular/router";
-import {CarouselModule} from "primeng/carousel";
+import {Carousel, CarouselModule} from "primeng/carousel";
 import {TagModule} from "primeng/tag";
 
-class Product {
+class Client {
   id?: string
-  code?: string
   name?: string
-  description?: string
   image?: string
-  price?: number
-  category?: string
-  quantity?: number
-  inventoryStatus?: string
-  rating?: number
+
 }
 
 @Component({
@@ -33,10 +27,9 @@ class Product {
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-  clients: Product[] =[{
+  clients: Client[] =[{
       id: '',
       name: ' ',
-      description: ' ',
       image: '.',
   }];
 
@@ -49,7 +42,6 @@ export class AboutComponent {
         {
         id: '1',
         name: 'Sports Boulevard',
-        description: 'Product Description',
         image: 'sports-boulevard.jpeg',
       },
         {
