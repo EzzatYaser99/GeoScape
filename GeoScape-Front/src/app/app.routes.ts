@@ -15,6 +15,7 @@ export const routes: Routes = [
       import('./Pages/main/main.component').then((m) => m.MainComponent),
     children: [
       { path: 'home', component: HomeComponent },
+      { path: 'products', component: ProjectsComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'services', component: ServicesComponent },
       { path: 'services/:id', component: ServiceDetailsComponent },

@@ -32,11 +32,10 @@ export class HeaderComponent  implements OnInit {
         isActive: false,
         routerLink: 'home',
       },
-
       {
-        label: 'Projects',
+        label: 'Products',
         isActive: false,
-        routerLink: 'projects',
+        routerLink: 'products',
       },
       {
         label: 'Services',
@@ -44,14 +43,19 @@ export class HeaderComponent  implements OnInit {
         routerLink: 'services',
       },
       {
-        label: 'Partners',
+        label: 'Projects',
         isActive: false,
-        routerLink: 'partners',
+        routerLink: 'projects',
       },
       {
         label: 'About ',
         isActive: false,
         routerLink: 'about',
+      },
+      {
+        label: 'Partners',
+        isActive: false,
+        routerLink: 'partners',
       },
       {
         label: 'Contacts',
