@@ -35,7 +35,7 @@ constructor() {
     {
       title: 'twitter',
       iconClass: 'pi pi-twitter twitter',
-      herf: '',
+      herf: 'https://x.com/infogeoscape0',
     },
     {
       title: 'instagram',
