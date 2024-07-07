@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="about patch">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="implement partners content">
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/benito-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/partners-page/ourPartners.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,26 +43,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/eyasser/Desktop/about_patch.patch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.back.executor": "Run",
-    "npm.front.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/node_modules/typescript/lib",
-    "vcs.patch.path": "/home/eyasser/Desktop",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eyasser/Desktop/about_patch.patch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.back.executor&quot;: &quot;Run&quot;,
+    &quot;npm.front.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/node_modules/typescript/lib&quot;,
+    &quot;vcs.patch.path&quot;: &quot;/home/eyasser/Desktop&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -112,6 +115,7 @@
       <workItem from="1718742381157" duration="1862000" />
       <workItem from="1718744252383" duration="20685000" />
       <workItem from="1718991534246" duration="10118000" />
+      <workItem from="1720104873917" duration="29186000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -153,13 +157,65 @@
       <option name="project" value="LOCAL" />
       <updated>1719787584848</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="edit layout">
+      <option name="closed" value="true" />
+      <created>1720109052384</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720109052384</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add section our clients to About page">
+      <option name="closed" value="true" />
+      <created>1720260639171</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720260639171</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update on Add section our clients to About page">
+      <option name="closed" value="true" />
+      <created>1720262268229</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720262268229</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create products component">
+      <option name="closed" value="true" />
+      <created>1720308611847</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720308611847</updated>
+    </task>
+    <task id="LOCAL-00010" summary="implement partners content">
+      <option name="closed" value="true" />
+      <created>1720309849720</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720309849720</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="impelmet sevices details component and refactor header component" />
     <MESSAGE value="remove login module" />
     <MESSAGE value="solve problem when navigate from page to page" />
@@ -168,7 +224,12 @@
     <MESSAGE value="add twitter" />
     <MESSAGE value="decrease space" />
     <MESSAGE value="about patch" />
-    <option name="LAST_COMMIT_MESSAGE" value="about patch" />
+    <MESSAGE value="edit layout" />
+    <MESSAGE value="Add section our clients to About page" />
+    <MESSAGE value="update on Add section our clients to About page" />
+    <MESSAGE value="create products component" />
+    <MESSAGE value="implement partners content" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement partners content" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
