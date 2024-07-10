@@ -57,10 +57,10 @@ export class UploadedPdfComponent implements OnInit {
         id: 12, name: 'مؤسسة المسار الرياضي', pdfSrc: 'مؤسسة-المسار-الرياضي.pdf',imgSrc: 'مؤسسة-المسار-الرياضي.jpeg'
       },
       {
-        id: 13, name: 'Royal Commission for AlUla', pdfSrc: 'atkinis.pdf',imgSrc: 'atkinis.png'
+        id: 13, name: 'Royal Commission for AlUla', pdfSrc: 'Royal-Commission-for-AlUla.pdf',imgSrc: 'Royal-Commission-for-AlUla.png'
       },
       {
-        id: 14, name: 'misk city ', pdfSrc: 'misk-city-company.pdf',imgSrc: 'misk-city-company.png'
+        id: 14, name: 'misk city ', pdfSrc: 'misk-city.pdf',imgSrc: 'misk-city.png'
       },
 
     ];
