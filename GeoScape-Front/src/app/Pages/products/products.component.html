@@ -44,7 +44,7 @@
         <p-avatar
           [image]="'assets/images/logo.png'"
           shape="square"/>
-        <span class="font-bold"> GEOSCAPE Trees </span>
+        <span class="font-bold"> GEOSCAPE Trees <i class="fa-solid fa-tree greenColor"></i> </span>
       </div>
     </ng-template>
 
@@ -56,13 +56,13 @@
           <div class="card flex justify-content-center">
             <p-card header="{{ tree.name }}">
               <ng-template pTemplate="header">
-                <img alt="Card" [src]="'assets/images//'+ tree.image"/>
+                <img height="250" alt="Card" [src]="'assets/images/products-page/'+ tree.imageSrc"/>
               </ng-template>
 
               <p class="m-0">
                 <span class="font-bold"> Gategory : </span> {{ tree.category }}  <i class="fa-solid fa-tree greenColor"></i>
               </p>
-              <p class="m-0" style="min-height: 100px;">
+              <p class="m-0" style="min-height: 100px; font-size:14px;">
                 {{ tree.description }}
               </p>
             </p-card>
