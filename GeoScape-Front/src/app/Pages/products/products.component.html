@@ -1,1 +1,140 @@
-<p>products works!</p>
+<div class="bg-image-contact flex justify-content-center align-items-center
+ zoomin animation-duration-1000 animation-iteration-1"
+     style='background-image: url("assets/images/products-page/our-products.jpg")'>
+</div>
+<div class="my-6">
+  <p-fieldset>
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center gap-1 px-2">
+        <p-avatar
+          [image]="'assets/images/logo.png'"
+          shape="circle"/>
+        <span class="font-bold">GEOSCAPE Plants
+   </span>
+      </div>
+    </ng-template>
+    <p class="m-0">
+      At GeoScape Co, we offer a diverse selection of plants suitable for various landscaping
+      and urban beautification projects. Our nursery includes</p>
+  </p-fieldset>
+</div>
+<section class=" mt-1">
+  <div class="grid">
+    @for (plant of plants; track plant) {
+      <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
+        <div class="card flex justify-content-center">
+          <p-card header="{{ plant.name }}">
+            <ng-template pTemplate="header">
+              <img class="" height="250" width="80%" [alt]="plant.name"
+                   [src]="'assets/images/products-page/plants/'+ plant.imageSrc"/>
+            </ng-template>
+            <p class="m-0" style="min-height: 80px;">
+              {{ plant.description }}
+            </p>
+          </p-card>
+        </div>
+      </div>
+    }
+  </div>
+</section>
+
+<div class="my-6">
+  <p-fieldset>
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center gap-1 px-2">
+        <p-avatar
+          [image]="'assets/images/benito-logo.jpg'"
+          shape="square"/>
+        <span class="font-bold"> BENITO Urban </span>
+      </div>
+    </ng-template>
+
+    <p class="m-0">We are excited to introduce our esteemed partner, BENITO Urban. BENITO Urban is a renowned
+      leader in urban furniture, playgrounds and outdoor fitness solutions. Their commitment to
+      innovation, quality, and sustainability aligns perfectly with our values and mission.</p>
+  </p-fieldset>
+</div>
+
+<section class=" my-5">
+  <div class="grid">
+    @for (product of benitoProducts; track product) {
+      <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
+        <div class="card flex justify-content-center">
+          <p-card header="{{ product.name }}">
+            <ng-template pTemplate="header">
+              <img alt="Card" [src]="'assets/images/services/'+ product.image"/>
+            </ng-template>
+            <p class="m-0" style="min-height: 80px;">
+              {{ product.description }}
+            </p>
+          </p-card>
+        </div>
+      </div>
+    }
+  </div>
+</section>
+
+
+<div  class="mt-5">
+/////////////////////////////////////
+
+
+#### Trees
+
+1. *CERATONIA SILIQUA (Carob Tree)*
+- ![CERATONIA SILIQUA](#)
+- *Description*: CERATONIA SILIQUA, commonly known as the Carob Tree, is suitable for transplantation with proper timing. It is a robust tree ideal for various landscape projects.
+<br><br>
+2. *Pithecellobium dulce (Madras Thorn)*
+- ![Pithecellobium dulce](#)
+- *Description*: Pithecellobium dulce, also known as Madras Thorn, serves as an alternative to the Carob Tree. It is available for transplantation in October.
+  <br><br>
+
+3. *Melia Azedarach (Chinaberry Tree)*
+- ![Melia Azedarach](#)
+- *Description*: Melia Azedarach, or Chinaberry Tree, is another alternative to the Carob Tree. It is suitable for transplantation in October.
+  <br><br>
+
+#### Shrubs
+
+1. *General Shrubs*
+- ![Shrubs](#)
+- *Description*: Various shrubs that should be placed against walls to avoid strong winds. These shrubs are ideal for creating sheltered garden spaces.
+  <br><br>
+
+#### Herbaceous Plants
+
+1. *SALVIA AEGYPTIACA (Egyptian Sage)*
+- ![SALVIA AEGYPTIACA](#)
+- *Description*: SALVIA AEGYPTIACA, or Egyptian Sage, is available for transplantation in October. It is a versatile herbaceous plant perfect for adding texture to gardens.
+  <br><br>
+
+2. *SALVIA OFFICINALIS (Common Sage)*
+- ![SALVIA OFFICINALIS](#)
+- *Description*: SALVIA OFFICINALIS, also known as Common Sage, serves as an alternative to Egyptian Sage. It is known for its aromatic leaves and medicinal properties.
+  <br><br>
+
+3. *Mentha longifolia (Wild Mint)*
+- *Description*: Mentha longifolia, or Wild Mint, is another alternative to Egyptian Sage. It is characterized by its fragrant foliage and is suitable for various garden settings.
+  <br><br>
+
+#### Succulents
+
+1. *General Succulents*
+- ![Succulents](#)
+- *Description*: A variety of succulents suitable for the landscape, known for their drought resistance and unique forms. They are perfect for low-maintenance gardens.
+  <br><br>
+
+#### Climbers
+
+1. *General Climbers*
+- ![Climbers](#)
+- *Description*: Climbing plants ideal for vertical gardens, adding green coverage to walls and trellises. They are excellent for creating living walls and enhancing vertical spaces.
+  <br><br>
+
+#### Grass (Lawn)
+
+1. *General Grass*
+- ![Grass](#)
+- *Description*: Suitable grass species for lawn areas, providing lush green coverage that is ideal for recreational and aesthetic purposes.
+</div>

@@ -7,6 +7,7 @@ import {AboutComponent} from "./Pages/about/about.component";
 import {ContactsComponent} from "./Pages/contacts/contacts.component";
 import {ServiceDetailsComponent} from "./Component/service-details/service-details.component";
 import {UploadedPdfComponent} from "./Component/uploaded-pdf/uploaded-pdf.component";
+import {ProductsComponent} from "./Pages/products/products.component";
 
 export const routes: Routes = [
   {
@@ -15,7 +16,7 @@ export const routes: Routes = [
       import('./Pages/main/main.component').then((m) => m.MainComponent),
     children: [
       { path: 'home', component: HomeComponent },
-      { path: 'products', component: ProjectsComponent },
+      { path: 'products', component: ProductsComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'services', component: ServicesComponent },
       { path: 'services/:id', component: ServiceDetailsComponent },
