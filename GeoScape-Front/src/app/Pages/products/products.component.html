@@ -74,7 +74,7 @@
   </p-fieldset>
 </div>
 
-<div class="my-4">
+<div class="mt-4">
   <p-fieldset>
     <ng-template pTemplate="header">
       <div class="flex align-items-center gap-1 px-2">
@@ -102,9 +102,6 @@
           >
             <ng-template let-product pTemplate="item">
               <div class="flex align-items-center gap-2">
-                <!--            <img-->
-                <!--              [src]="'assets/images/services/'+ service.image"-->
-                <!--              style="width: 50px"/>-->
                 <div>{{ product.name }}</div>
               </div>
             </ng-template>
@@ -122,7 +119,6 @@
               [containerStyle]="{ 'max-width': '100%' }"
               [numVisible]="6">
               <ng-template pTemplate="item" let-item>
-                <!--          [style.background-color]="'rgba(0,0,0,0.9)'"-->
                 <img class="w-full" [style.border]="'2px solid #86BB46'"
                      [src]="'assets/images/products-page/benito-products/'+ item?.imageSrc"
                      alt="Image"
@@ -154,9 +150,6 @@
             [listStyle]="{'max-height': '350px'}">
             <ng-template let-service pTemplate="item">
               <div class="flex align-items-center gap-2">
-                <!--          <img-->
-                <!--            [src]="'assets/images/services/'+ service.image"-->
-                <!--            style="width: 50px"/>-->
                 <div>{{ service.name }}</div>
               </div>
             </ng-template>
