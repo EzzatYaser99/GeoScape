@@ -68,3 +68,10 @@
   }
 
 }
+.card {
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}

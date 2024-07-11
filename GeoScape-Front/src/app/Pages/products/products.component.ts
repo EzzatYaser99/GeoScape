@@ -92,8 +92,7 @@ export class ProductsComponent implements OnInit {
         },
         {
           id: 2, category: 'Trees', name: 'Pithecellobium dulce (Madras Thorn)', imageSrc: 'Pennisetum-Setaceum.jpg',
-          description: 'CERATONIA SILIQUA, commonly known as the Carob Tree, is suitable for transplantation with proper' +
-            ' timing. It is a robust tree ideal for various landscape projects.'
+          description: 'Pithecellobium dulce, also known as Madras Thorn, serves as an alternative to the Carob Tree. It is available for transplantation in October.'
         },
         {
           id: 3, category: 'Trees', name: 'Melia Azedarach (Chinaberry Tree)', imageSrc: 'Sesuvium-Portulacastrum.JPG',
@@ -105,11 +104,11 @@ export class ProductsComponent implements OnInit {
         },
         {
           id: 5, category: 'Herbaceous', name: 'SALVIA AEGYPTIACA (Egyptian Sage)', imageSrc: 'Agave-Angustifolia.jpg',
-          description: 'A striking succulent with narrow leaves, well-suited for desert landscapes.'
+          description: 'SALVIA AEGYPTIACA, or Egyptian Sage, is available for transplantation in October. It is a versatile herbaceous plant perfect for adding texture to gardens.'
         },
         {
           id: 6, category: 'Herbaceous', name: 'SALVIA OFFICINALIS (Common Sage)', imageSrc: 'Agave-Sisalana.jpg',
-          description: 'Known for its long, sturdy leaves, commonly used in fiber production and as an ornamental plant.\n'
+          description: 'SALVIA OFFICINALIS, also known as Common Sage, serves as an alternative to Egyptian Sage. It is known for its aromatic leaves and medicinal properties.'
         },
         {
           id: 7, category: 'Herbaceous', name: 'Mentha longifolia (Wild Mint)', imageSrc: 'Aloe-Arborescensa.jpeg',

@@ -16,23 +16,23 @@
     <p class="m-0">
       At GeoScape Co, we offer a diverse selection of plants suitable for various landscaping
       and urban beautification projects. Our nursery includes</p>
-      <div class="grid mt-5">
-        @for (plant of plants; track plant) {
-          <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
-            <div class="card flex justify-content-center">
-              <p-card header="{{ plant.name }}">
-                <ng-template pTemplate="header">
-                  <img class="" height="250" width="80%" [alt]="plant.name"
-                       [src]="'assets/images/products-page/plants/'+ plant.imageSrc"/>
-                </ng-template>
-                <p class="m-0" style="min-height: 80px;">
-                  {{ plant.description }}
-                </p>
-              </p-card>
-            </div>
+    <div class="grid mt-5">
+      @for (plant of plants; track plant) {
+        <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
+          <div class="card flex justify-content-center">
+            <p-card header="{{ plant.name }}">
+              <ng-template pTemplate="header">
+                <img class="" height="250" width="80%" [alt]="plant.name"
+                     [src]="'assets/images/products-page/plants/'+ plant.imageSrc"/>
+              </ng-template>
+              <p class="m-0" style="min-height: 80px;">
+                {{ plant.description }}
+              </p>
+            </p-card>
           </div>
-        }
-      </div>
+        </div>
+      }
+    </div>
 
   </p-fieldset>
 </div>
@@ -60,7 +60,7 @@
               </ng-template>
 
               <p class="m-0">
-                <span class="font-bold"> Gategory : </span> {{ tree.category }}
+                <span class="font-bold"> Gategory : </span> {{ tree.category }}  <i class="fa-solid fa-tree greenColor"></i>
               </p>
               <p class="m-0" style="min-height: 100px;">
                 {{ tree.description }}
@@ -167,81 +167,6 @@
 
     </div>
   </p-fieldset>
-</div>
-
-
-
-<div class="mt-5">
-
-
-  #### Trees
-
-  1. *CERATONIA SILIQUA (Carob Tree)*
-  - ![CERATONIA SILIQUA](#)
-  - <br>*Description*: <br> CERATONIA SILIQUA, commonly known as the Carob Tree, is suitable for transplantation with proper timing. It is a
-  robust tree ideal for various landscape projects.
-  <br><br>
-  2. *Pithecellobium dulce (Madras Thorn)*
-  - ![Pithecellobium dulce](#)
-  - <br>*Description*: <br> Pithecellobium dulce, also known as Madras Thorn, serves as an alternative to the Carob Tree. It is available
-  for transplantation in October.
-  <br><br>
-
-  3. *Melia Azedarach (Chinaberry Tree)*
-  - ![Melia Azedarach](#)
-  - <br>*Description*: <br> Melia Azedarach, or Chinaberry Tree, is another alternative to the Carob Tree. It is suitable for
-  transplantation in October.
-  <br><br>
-
-  #### Shrubs
-
-  1. *General Shrubs*
-  - ![Shrubs](#)
-  - <br>*Description*: <br> Various shrubs that should be placed against walls to avoid strong winds. These shrubs are ideal for creating
-  sheltered garden spaces.
-  <br><br>
-
-  #### Herbaceous Plants
-
-  1. *SALVIA AEGYPTIACA (Egyptian Sage)*
-  - ![SALVIA AEGYPTIACA](#)
-  - <br>*Description*: <br> SALVIA AEGYPTIACA, or Egyptian Sage, is available for transplantation in October. It is a versatile herbaceous
-  plant perfect for adding texture to gardens.
-  <br><br>
-
-  2. *SALVIA OFFICINALIS (Common Sage)*
-  - ![SALVIA OFFICINALIS](#)
-  - <br>*Description*: <br> SALVIA OFFICINALIS, also known as Common Sage, serves as an alternative to Egyptian Sage. It is known for its
-  aromatic leaves and medicinal properties.
-  <br><br>
-
-  3. *Mentha longifolia (Wild Mint)*
-  - <br>*Description*: <br> Mentha longifolia, or Wild Mint, is another alternative to Egyptian Sage. It is characterized by its fragrant
-  foliage and is suitable for various garden settings.
-  <br><br>
-
-  #### Succulents
-
-  1. *General Succulents*
-  - ![Succulents](#)
-  - <br>*Description*: <br> A variety of succulents suitable for the landscape,
-  known for their drought resistance and unique forms. They are perfect for low-maintenance gardens.
-  <br><br>
-
-  #### Climbers
-
-  1. *General Climbers*
-  - ![Climbers](#)
-  - <br>*Description*: <br> Climbing plants ideal for vertical gardens, adding green coverage to walls
-  and trellises. They are excellent for creating living walls and enhancing vertical spaces.
-  <br><br>
-
-  #### Grass (Lawn)
-
-  1. *General Grass*
-  - ![Grass](#)
-  - <br>*Description*: <br> Suitable grass species for lawn areas, providing lush green coverage
-  that is ideal for recreational and aesthetic purposes.
 </div>
 
 
