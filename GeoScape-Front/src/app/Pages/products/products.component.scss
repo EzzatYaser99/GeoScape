@@ -8,18 +8,63 @@
   height: 350px;
   border-radius: 0px 0px 6px 6px;
 }
+
 /* Start fieldset Style*/
 :host ::ng-deep {
   .p-fieldset .p-fieldset-legend {
     padding: 6px;
-    background-color:unset;
+    background-color: unset;
   }
+
   .p-card .p-card-title {
     font-size: .8rem
   }
 
   .p-card .p-card-content {
     padding: 0px;
+  }
+
+}
+
+.gallery {
+  border-right: 2px solid #86BB46;
+
+}
+
+.appear-in-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  :host ::ng-deep {
+    .p-listbox-list {
+      max-height: 300px;
+    }
+  }
+  .gallery {
+    border-right: unset;
+  }
+  .disappear-in-mobile {
+    display: none;
+  }
+  .appear-in-mobile {
+    display: unset;
+  }
+}
+
+:host ::ng-deep {
+  .p-image-toolbar {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    display: flex;
+    z-index: 10000000;
+  }
+
+  .p-galleria .p-galleria-item-nav {
+    width: 2rem;
+    height: 2rem;
+    color:black;
   }
 
 }

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="update upload pdf">
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/products-page/our-products.jpg" afterDir="false" />
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="update images for plants">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,7 @@
       <workItem from="1718991534246" duration="10118000" />
       <workItem from="1720104873917" duration="33487000" />
       <workItem from="1720513085046" duration="1218000" />
-      <workItem from="1720624621998" duration="18694000" />
+      <workItem from="1720624621998" duration="30374000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -215,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720625557457</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update images for plants">
+      <option name="closed" value="true" />
+      <created>1720705631632</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720705631632</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +255,8 @@
     <MESSAGE value="implement partners content" />
     <MESSAGE value="update partners page" />
     <MESSAGE value="update upload pdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="update upload pdf" />
+    <MESSAGE value="update images for plants" />
+    <option name="LAST_COMMIT_MESSAGE" value="update images for plants" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
