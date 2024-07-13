@@ -4,6 +4,9 @@ import {Ripple} from "primeng/ripple";
 import {RouterLink} from "@angular/router";
 import {Carousel, CarouselModule} from "primeng/carousel";
 import {TagModule} from "primeng/tag";
+import {AvatarModule} from "primeng/avatar";
+import {FieldsetModule} from "primeng/fieldset";
+import {HeaderComponent} from "../../Shared-Component/header/header.component";
 
 class Client {
   id?: string
@@ -21,7 +24,10 @@ class Client {
     Button,
     RouterLink,
     CarouselModule,
-    TagModule
+    TagModule,
+    AvatarModule,
+    FieldsetModule,
+    HeaderComponent
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'

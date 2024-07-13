@@ -10,8 +10,12 @@
 }
 
 p {
-  line-height: 2rem;
+  line-height: 1.5rem;
   letter-spacing: .5px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 h2, h4 {
@@ -29,46 +33,30 @@ h2, h4 {
   }
 }
 
-.separated-title {
-  h2 {
-    border-radius: 5px;
-    background: #86BB46;
-    border: none;
-    color: white;
-    text-align: center;
+
+/* Start fieldset Style*/
+:host ::ng-deep {
+  .p-fieldset .p-fieldset-legend {
+    padding: 6px;
+    background-color: unset;
   }
 
-  .line {
-    height: 3px;
-    background: #86BB46;
-    border: none;
-    width: 300px;
+  .p-card .p-card-title {
+    font-size: .8rem
+
   }
+
+  .p-card .p-card-content {
+    padding: 0px;
+
+  }
+
 }
 
-@media screen and (max-width: 992px) {
-  separated-title h2 {
-    font-size: 20px;
-  }
-  .line {
-    width: 30% !important;
-  }
-}
+.zoom-img {
+  width: 85%;
 
-@media screen and (max-width: 768px) {
-  separated-title h2 {
-    font-size: 18px;
-  }
-  .line {
-    width: 30% !important;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  separated-title h2 {
-    font-size: 16px;
-  }
-  .line {
-    width: 25% !important;
+  img {
+    height: 270px
   }
 }
