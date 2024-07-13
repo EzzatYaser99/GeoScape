@@ -43,34 +43,33 @@
       Arabian and international markets. Our team designs your landscape area in both 2D and 3D,
       ensuring precise and detailed plans. We handle the installation and offer a variety of
       maintenance plans to suit your needs, guaranteeing all our services. </p>
+    <div class="grid mt-5">
+      @for (service of services; track service) {
+        <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
+          <div class="card flex justify-content-center">
+            <p-card header="{{ service.name }}">
+              <ng-template pTemplate="header">
+                <img alt="Card" [src]="'assets/images/services/'+ service.image"/>
+              </ng-template>
+              <p class="m-0" style="min-height: 145px;">
+                {{ service.description }}
+              </p>
+              <ng-template pTemplate="footer">
+                <div class="flex gap-3 mt-1">
+                  <button pButton label="Read More" class="w-full green-Bg-Color"
+                          (click)="navigateToServiceDetails(service)"></button>
+                </div>
+              </ng-template>
+            </p-card>
+          </div>
+        </div>
+      }
+
+
+    </div>
+
   </p-fieldset>
 </div>
 
-<section class=" mt-5">
-  <div class="grid">
-    @for (service of services; track service) {
-      <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
-        <div class="card flex justify-content-center">
-          <p-card header="{{ service.name }}">
-            <ng-template pTemplate="header">
-              <img alt="Card" [src]="'assets/images/services/'+ service.image"/>
-            </ng-template>
-            <p class="m-0" style="min-height: 145px;">
-              {{ service.description }}
-            </p>
-            <ng-template pTemplate="footer">
-              <div class="flex gap-3 mt-1">
-                <button pButton label="Read More" class="w-full green-Bg-Color"
-                        (click)="navigateToServiceDetails(service)"></button>
-              </div>
-            </ng-template>
-          </p-card>
-        </div>
-      </div>
-    }
 
-
-  </div>
-
-</section>
 

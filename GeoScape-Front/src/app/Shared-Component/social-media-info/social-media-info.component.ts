@@ -40,7 +40,7 @@ constructor() {
     {
       title: 'instagram',
       iconClass: 'pi pi-instagram instagram',
-      herf: '',
+      herf: 'https://www.instagram.com/geoscapelandscape?igsh=MWZndjRjZDExZ2Fxaw%3D%3D&utm_source=qr',
     },
 
 
