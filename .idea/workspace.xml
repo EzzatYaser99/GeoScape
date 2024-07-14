@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="decrease spaces in website">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="change files document approvals">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/main/main.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/about-page/ourCommitment&#10;.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/.vscode/tasks.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +114,8 @@
       <workItem from="1718991534246" duration="10118000" />
       <workItem from="1720104873917" duration="33487000" />
       <workItem from="1720513085046" duration="1218000" />
-      <workItem from="1720624621998" duration="50509000" />
+      <workItem from="1720624621998" duration="56224000" />
+      <workItem from="1720976186337" duration="2863000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -258,7 +253,39 @@
       <option name="project" value="LOCAL" />
       <updated>1720735905926</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="change style of about page">
+      <option name="closed" value="true" />
+      <created>1720869901716</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720869901716</updated>
+    </task>
+    <task id="LOCAL-00019" summary="handel instagram link and make services card in fieldset">
+      <option name="closed" value="true" />
+      <created>1720911502502</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720911502502</updated>
+    </task>
+    <task id="LOCAL-00020" summary=" make company Approvals in fieldset">
+      <option name="closed" value="true" />
+      <created>1720995467897</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720995467897</updated>
+    </task>
+    <task id="LOCAL-00021" summary="change files document approvals">
+      <option name="closed" value="true" />
+      <created>1720996358299</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1720996358299</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +324,11 @@
     <MESSAGE value="update description to trees" />
     <MESSAGE value="update tree images" />
     <MESSAGE value="decrease spaces in website" />
-    <option name="LAST_COMMIT_MESSAGE" value="decrease spaces in website" />
+    <MESSAGE value="change style of about page" />
+    <MESSAGE value="handel instagram link and make services card in fieldset" />
+    <MESSAGE value=" make company Approvals in fieldset" />
+    <MESSAGE value="change files document approvals" />
+    <option name="LAST_COMMIT_MESSAGE" value="change files document approvals" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
