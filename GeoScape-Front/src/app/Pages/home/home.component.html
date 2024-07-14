@@ -89,27 +89,32 @@ zoomin animation-duration-1000 animation-iteration-1"
 </section>
 
 <section class="px-5 pt-0 w-full approvals-documents">
-  <div class="flex align-items-center justify-content-center w-full ">
-    <div class="line w-4 "></div>
-    <h2 class="px-3 py-1"> Company Approvals </h2>
-    <div class="line w-4 "></div>
-  </div>
-
-  <div class="grid mt-5 px-5">
-    @for (document of documents.slice(9, 14); track document) {
-      <div class="col-6 sm:col-4  md:col-2 lg:col-2 m-auto">
-        <div class="approvals text-center">
-
-          <a target="_blank" [routerLink]="'/main/uploadPdf/'+document.id"><img
-            class="block m-auto" [src]="'assets/document/'+ document.imgSrc" width="100%" alt="{{ document.name }}">
-          </a>
-
-          <a class="block mt-4" target="_blank" [routerLink]="'/main/uploadPdf/'+document.id"> {{ document.name }}
-
-          </a>
-        </div>
+  <p-fieldset>
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center gap-1 px-2">
+        <p-avatar
+          [image]="'assets/images/logo.png'"
+          shape="circle"/>
+        <span class="font-bold greenColor ml-2">Company Approvals</span>
       </div>
-    }
+    </ng-template>
+      <div class="grid mt-5 px-5 w-full">
+        @for (document of documents.slice(9, 14); track document) {
+          <div class="col-6 sm:col-4  md:col-2 lg:col-2 m-auto">
+            <div class="approvals text-center">
 
-  </div>
+              <a target="_blank" [routerLink]="'/main/uploadPdf/'+document.id"><img
+                class="block m-auto" [src]="'assets/document/'+ document.imgSrc" width="100%" alt="{{ document.name }}">
+              </a>
+
+              <a class="block mt-4" target="_blank" [routerLink]="'/main/uploadPdf/'+document.id"> {{ document.name }}
+
+              </a>
+            </div>
+          </div>
+        }
+
+      </div>
+  </p-fieldset>
+
 </section>
