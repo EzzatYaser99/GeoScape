@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="change files document approvals">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +116,8 @@
       <workItem from="1720104873917" duration="33487000" />
       <workItem from="1720513085046" duration="1218000" />
       <workItem from="1720624621998" duration="56224000" />
-      <workItem from="1720976186337" duration="2863000" />
+      <workItem from="1720976186337" duration="3486000" />
+      <workItem from="1721026651641" duration="6051000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -285,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720996358299</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="change files document approvals">
+      <option name="closed" value="true" />
+      <created>1720996748517</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1720996748517</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
