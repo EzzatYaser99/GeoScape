@@ -1,4 +1,4 @@
-<div class="bg-image-contact flex justify-content-center align-items-center
+<div class="bg-image flex justify-content-center align-items-center
 zoomin animation-duration-1000 animation-iteration-1"
      style='background-image: url("assets/images/contact-page/ContactHero.jpg")'>
   <div><h1 class="text-white">Contact Us</h1></div>
@@ -28,15 +28,18 @@ zoomin animation-duration-1000 animation-iteration-1"
 
   <div class="col-12 sm:col-6 mt-2 get-in-Touch">
     <div class="mt-5 "><h2>Get In Touch</h2></div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="text" (change)="onChangeName($event)"  pInputText [(ngModel)]="name" placeholder="Name *"/>
+    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input class="w-full" type="text" (change)="onChangeName($event)"  pInputText
+                                                 [(ngModel)]="name" placeholder="Name *"/>
     <span *ngIf="invalidName" class="block"> please add your name * </span> </div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="email" (change)="onChangeEmail($event)"  pInputText [(ngModel)]="email" placeholder="example@gmail.com *"/>
+    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input class="w-full" type="email" (change)="onChangeEmail($event)"  pInputText
+                                                 [(ngModel)]="email" placeholder="example@gmail.com *"/>
       <span *ngIf="invalidEmail" class="block"> please add valid email * </span>
     </div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1"><input class="w-full" type="text" (change)="onChangePhoneNumber($event)"  pInputText [(ngModel)]="phone" placeholder="Phone no *"/>
+    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input class="w-full" type="text" (change)="onChangePhoneNumber($event)"  pInputText
+                                                 [(ngModel)]="phone" placeholder="Phone no *"/>
     <span *ngIf="invalidPhoneNumber" class="block"> please add valid phone number *</span>
     </div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1">
+    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto">
       <p-multiSelect
         [options]="Services"
         [(ngModel)]="selectedServices"
@@ -63,7 +66,7 @@ zoomin animation-duration-1000 animation-iteration-1"
         </ng-template>
       </p-multiSelect>
     </div>
-    <div><textarea class="w-11 md:w-8 lg:w-7 mt-1"
+    <div><textarea class="w-11 md:w-8 lg:w-7 mt-1 m-auto"
         rows="5"
         cols="30"
         pInputTextarea

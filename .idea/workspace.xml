@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="change files document approvals">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="convert Angular app to universal and use  withHashLocation()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +128,7 @@
       <workItem from="1720513085046" duration="1218000" />
       <workItem from="1720624621998" duration="56224000" />
       <workItem from="1720976186337" duration="3486000" />
-      <workItem from="1721026651641" duration="6051000" />
+      <workItem from="1721026651641" duration="19778000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -295,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720996748517</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="convert Angular app to universal and use  withHashLocation()">
+      <option name="closed" value="true" />
+      <created>1721071247045</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721071247045</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +357,8 @@
     <MESSAGE value="handel instagram link and make services card in fieldset" />
     <MESSAGE value=" make company Approvals in fieldset" />
     <MESSAGE value="change files document approvals" />
-    <option name="LAST_COMMIT_MESSAGE" value="change files document approvals" />
+    <MESSAGE value="convert Angular app to universal and use  withHashLocation()" />
+    <option name="LAST_COMMIT_MESSAGE" value="convert Angular app to universal and use  withHashLocation()" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

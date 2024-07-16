@@ -1,4 +1,4 @@
-.bg-image-contact{
+.bg-image{
   background-size:cover;
   background-repeat:no-repeat;
   background-position:50% 50%;
@@ -55,7 +55,10 @@
   border-radius: 5px;
 }
 
-.get-in-Touch span{
-  color:red;
-  margin-left: 10px;
+.get-in-Touch {
+  text-align: center;
+  span {
+    color: red;
+    margin-left: 10px;
+  }
 }
