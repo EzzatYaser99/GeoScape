@@ -16,7 +16,7 @@
     <p class="m-0">
       At GeoScape Co, we offer a diverse selection of plants suitable for various landscaping
       and urban beautification projects. Our nursery includes</p>
-    <div class="grid mt-5">
+    <div class="grid w-full mx-auto mt-5">
       @for (plant of plants; track plant) {
         <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
           <div class="card flex justify-content-center">
@@ -50,7 +50,7 @@
 
     <p class="m-0">At GeoScape Co, we offer a diverse selection of trees suitable for various landscaping
       and urban beautification projects. Our nursery includes</p>
-    <div class="grid mt-5">
+    <div class="grid w-full mx-auto mt-5">
       @for (tree of geoscapeTrees; track tree) {
         <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
           <div class="card flex justify-content-center">
@@ -88,7 +88,7 @@
     <p class="m-0">We are excited to introduce our esteemed partner, BENITO Urban. BENITO Urban is a renowned
       leader in urban furniture, playgrounds and outdoor fitness solutions. Their commitment to
       innovation, quality, and sustainability aligns perfectly with our values and mission.</p>
-    <div class="grid">
+    <div class="grid w-full mx-auto">
       <div class="col-12 md:col-4 appear-in-mobile ">
         <div class="lg:w-10 w-12 m-auto ">
           <h3>Benito Products</h3>
@@ -125,7 +125,7 @@
                      width="80%" height="300">
               </ng-template>
               <ng-template pTemplate="thumbnail" let-item>
-                <div class="grid grid-nogutter justify-content-center">
+                <div class="grid w-full mx-auto  grid-nogutter justify-content-center">
                   <img [src]="'assets/images/products-page/benito-products/'+ item?.imageSrc" style="width:100px; height:60px;"/>
                 </div>
               </ng-template>

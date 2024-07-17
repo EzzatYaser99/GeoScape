@@ -46,10 +46,13 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   z-index: 10;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 700px) {
 
   .bg-image {
     height: 200px !important;
 
   }
+}
+.p-fieldset .p-fieldset-content{
+  padding:3px !important;
 }

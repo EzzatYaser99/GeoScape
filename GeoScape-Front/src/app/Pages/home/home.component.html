@@ -1,11 +1,15 @@
-<div class="bg-image flex justify-content-start align-items-center
+<div class="bg-image flex justify-content-start align-items-center text-center
 zoomin animation-duration-1000 animation-iteration-1"
      style='background-image: url("assets/images/service-details/soft-landscape/soft-landscape-4.jpg")'>
-    <div class="home-text ml-5 zoomin animation-duration-2000 animation-iteration-1">
-    <h4 class="">Our goal is to design stunning and functional environments
+    <div class="home-text zoomin animation-duration-2000 animation-iteration-1">
+    <p class="px-5">Our goal is to design stunning and functional environments
       for our clients with the
-      utmost professionalism.</h4></div>
-  <div class="overlay w-full"></div>
+      utmost professionalism.</p>
+    </div>
+
+  <!--  <div class="w-11">-->
+<!--  <div class="overlay w-full"></div>-->
+<!--  </div>-->
 </div>
 <div class="my-5">
   <p-fieldset>
@@ -30,7 +34,7 @@ zoomin animation-duration-1000 animation-iteration-1"
 
 <div class="mb-5 px-5">
   <div class="text-center mb-7"><h1 class="mb-6" style="font-family: 'FreeSerif'">Why Choose Us ?</h1></div>
-  <div class="grid">
+  <div class="grid w-full mx-auto">
     <div class="md:col-6 lg:col-3">
       <div class="card">
         <h3>Expertise</h3>
@@ -69,7 +73,7 @@ zoomin animation-duration-1000 animation-iteration-1"
     <div class="line w-4 "></div>
   </div>
 
-  <div class="grid mt-5 px-5">
+  <div class="grid w-full mx-auto mt-5 px-5">
     @for (document of documents.slice(1, 9); track document) {
       <div class="col-6 sm:col-3  md:col-4 lg:col-3 m-auto">
         <div class="document text-center">
@@ -88,7 +92,7 @@ zoomin animation-duration-1000 animation-iteration-1"
   </div>
 </section>
 
-<section class="px-5 pt-0 w-full approvals-documents">
+<section class="pt-0 w-full approvals-documents">
   <p-fieldset>
     <ng-template pTemplate="header">
       <div class="flex align-items-center gap-1 px-2">
@@ -98,7 +102,7 @@ zoomin animation-duration-1000 animation-iteration-1"
         <span class="font-bold greenColor ml-2">Company Approvals</span>
       </div>
     </ng-template>
-      <div class="grid mt-5 px-5 w-full">
+      <div class="grid w-full mx-auto mt-5">
         @for (document of documents.slice(1, 6); track document) {
           <div class="col-6 sm:col-4  md:col-2 lg:col-2 m-auto">
             <div class="approvals text-center">

@@ -7,7 +7,7 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
 .header-style{
   border-top: 10px solid $GreenColor;
   border-radius:6px 6px 0px 0px;
-  //border-bottom: 5px solid $GreenColor;
+  border-bottom: 5px solid $GreenColor;
 
 }
 
@@ -31,7 +31,6 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
     color: black;
     font-weight: 400;
     line-height: 24px;
-    font-size: 17px;
   }
 
 
@@ -79,38 +78,25 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
   .p-menubar .p-menubar-button {
     margin-left: 25px;
     position:absolute;
-    right:20px
+    right:40px
   }
 
   @media screen and (max-width: 960px) {
     .p-menubar-root-list {
       position: fixed;
-      margin-left: 4% !important;
+      margin-left: 8% !important;
       top: 135px;
-      width: 92%;
+      width: 85%;
     }
   }
 
 }
 
 
-
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
   :host ::ng-deep {
     .p-menuitem-link {
-      font-size: 14px;
-    }
-    .header-style .socialMedia i {
-      padding: 0px !important;
-      font-size:20px;
-    }
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  :host ::ng-deep {
-    .header-style .socialMedia i {
-      padding: 5px !important;
+padding:8px  ;
     }
 
   }
