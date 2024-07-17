@@ -1,4 +1,4 @@
-<section class="carsoul-bg px-3 zoomin animation-duration-1000 animation-iteration-1"
+<section class="carsoul-bg px-3 zoomin animation-duration-2000 animation-iteration-1"
 
          style='background-image: url("assets/images/services/ourServices.jpg")'>
   <p-carousel [className]="'zoomin animation-duration-1000 animation-iteration-1'"
@@ -26,7 +26,7 @@
   </p-carousel>
 </section>
 
-<div class="my-6 zoomin animation-duration-1000 animation-iteration-1">
+<div class="my-5 zoomin animation-duration-2000 animation-iteration-1">
   <p-fieldset>
     <ng-template pTemplate="header">
       <div class="flex align-items-center gap-1 px-2">
@@ -44,7 +44,7 @@
       maintenance plans to suit your needs, guaranteeing all our services. </p>
     <div class="grid w-full mx-auto mt-5">
       @for (service of services; track service) {
-        <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
+        <div class="col-12 sm:col-9 md:col-6 lg:col-4 xl:col-3 m-auto mb-3 ">
           <div class="card flex justify-content-center">
             <p-card header="{{ service.name }}">
               <ng-template pTemplate="header">

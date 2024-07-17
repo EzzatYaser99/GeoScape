@@ -9,7 +9,7 @@
     border-radius: 3px;
     margin: .3rem;
     text-align: center !important;
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
   }
 
   .product-image {
@@ -20,8 +20,10 @@
     font-size: 28px;
   }
 
+  p {
+    margin: 0px;
+  }
 }
-
 
 
 .carsoul-bg .p-button {
@@ -96,28 +98,41 @@
 
   }
 
+  .p-card .p-card-footer{
+    padding: 0rem;
 
-}
-
-.card{
-  transition: all .3s;
-  &:hover{
-    transform:scale(1.07);
   }
 }
-@media screen and (max-width: 770px) {
-    .product-item {
-      h2 {
-        color: white;
-        font-size: 20px;
-      }
-      p{
-        font-size: 13px;
 
-      }
-    }
-
+.card {
+  transition: all .3s;
+img{
+  border-radius:10px 10px 0px 0px
 }
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+.p-card .p-card-body {
+  padding: 1rem;
+}
+
 /* End fieldset Style*/
 
+@media screen and (max-width: 770px) {
+  .product-item {
+    h2 {
+      color: white;
+      font-size: 20px;
+    }
 
+    p {
+      font-size: 13px;
+
+    }
+  }
+  p {
+    font-size: 14px;
+
+  }
+}

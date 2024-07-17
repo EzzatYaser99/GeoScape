@@ -373,7 +373,7 @@ export class ServiceDetailsComponent implements OnInit {
       },
       {
         breakpoint: '560px',
-        numVisible: 1
+        numVisible: 2
       }
     ];
     this.getServices();

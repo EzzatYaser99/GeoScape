@@ -18,7 +18,7 @@
       and urban beautification projects. Our nursery includes</p>
     <div class="grid w-full mx-auto mt-5">
       @for (plant of plants; track plant) {
-        <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
+        <div class="sm:col-6 md:col-4 lg:col-4 xl:col-3 m-auto mb-3">
           <div class="card flex justify-content-center">
             <p-card header="{{ plant.name }}">
               <ng-template pTemplate="header">
@@ -37,7 +37,7 @@
   </p-fieldset>
 </div>
 
-<div class="my-6">
+<div class="my-5">
   <p-fieldset>
     <ng-template pTemplate="header">
       <div class="flex align-items-center gap-1 px-2">
@@ -50,9 +50,9 @@
 
     <p class="m-0">At GeoScape Co, we offer a diverse selection of trees suitable for various landscaping
       and urban beautification projects. Our nursery includes</p>
-    <div class="grid w-full mx-auto mt-5">
+    <div class="grid w-full mx-auto mt-5 trees">
       @for (tree of geoscapeTrees; track tree) {
-        <div class="col-12 sm:col-9 md:col-4 lg:col-3 m-auto mb-3 ">
+        <div class="sm:col-6 md:col-4 lg:col-4 xl:col-3 m-auto mb-3">
           <div class="card flex justify-content-center">
             <p-card header="{{ tree.name }}">
               <ng-template pTemplate="header">
@@ -109,9 +109,8 @@
         </div>
       </div>
 
-      <div class="col-12  md:col-7 mt-7 gallery">
-        <div class="w-9 m-auto ">
-          <div class="text-center">
+      <div class="col-12  md:col-7 mt-3 md:mt-7 gallery-product">
+        <div class="w-12 m-auto ">
             <p-galleria
               [value]="selectedBenitoProduct?.subImages"
               [showItemNavigators]="true"
@@ -119,10 +118,10 @@
               [containerStyle]="{ 'max-width': '100%' }"
               [numVisible]="6">
               <ng-template pTemplate="item" let-item>
-                <img class="w-full" [style.border]="'2px solid #86BB46'"
+                <img class="w-full" [style.border-radius]="'10px 10px 0px 0px '" [style.border]="'2px solid #86BB46'"
                      [src]="'assets/images/products-page/benito-products/'+ item?.imageSrc"
                      alt="Image"
-                     width="80%" height="300">
+                     width="100%" height="400">
               </ng-template>
               <ng-template pTemplate="thumbnail" let-item>
                 <div class="grid w-full mx-auto  grid-nogutter justify-content-center">
@@ -132,10 +131,6 @@
             </p-galleria>
           </div>
           <div><p>{{ selectedBenitoProduct?.description }}</p></div>
-
-        </div>
-
-
       </div>
 
       <div class="col-12 md:col-5 disappear-in-mobile ">
@@ -147,7 +142,7 @@
             [(ngModel)]="selectedBenitoProduct"
             optionLabel="name"
             [style]="{ width: '100%' }"
-            [listStyle]="{'max-height': '350px'}">
+            [listStyle]="{'max-height': '450px'}">
             <ng-template let-service pTemplate="item">
               <div class="flex align-items-center gap-2">
                 <div>{{ service.name }}</div>

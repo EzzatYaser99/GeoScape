@@ -43,11 +43,6 @@ export class HeaderComponent  implements OnInit {
         routerLink: 'services',
       },
       {
-        label: 'Projects',
-        isActive: false,
-        routerLink: 'projects',
-      },
-      {
         label: 'About ',
         isActive: false,
         routerLink: 'about',
