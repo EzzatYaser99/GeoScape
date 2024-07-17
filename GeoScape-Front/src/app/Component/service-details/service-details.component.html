@@ -26,7 +26,7 @@
   <div class="col-12  md:col-8 mt-3 md:mt-7 gallery-product">
     <div class="w-12 m-auto ">
         <p-galleria
-          [value]="selectedServices?.subImages"
+          [value]="selectedServices?.subImages || services[0].subImages "
           [showItemNavigators]="true"
           [responsiveOptions]="responsiveOptions"
           [containerStyle]="{ 'max-width': '100%' }"
@@ -46,10 +46,10 @@
         </p-galleria>
 
 
-      <div><h3>{{ selectedServices?.name }}</h3></div>
-      <div><p>{{ selectedServices?.description }}</p></div>
+      <div><h3>{{ selectedServices?.name || services[0].name}}</h3></div>
+      <div><p>{{ selectedServices?.description  || services[0].description }}</p></div>
       <div><h3> Our Approach </h3></div>
-      <div><p>{{ selectedServices?.whatWeDo }}</p></div>
+      <div><p>{{ selectedServices?.whatWeDo || services[0].whatWeDo }}</p></div>
 
     </div>
 

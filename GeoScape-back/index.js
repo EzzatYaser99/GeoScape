@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post('/send-email', (req, res) => {
-    const ccEmails = `info123@geoscape.net`
+    const ccEmails = `info@geoscape.net`
     const name = req.body.name || '';
     const phone = req.body.phone || '';
     const email = req.body.email || '';

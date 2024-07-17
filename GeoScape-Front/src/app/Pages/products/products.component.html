@@ -112,7 +112,7 @@
       <div class="col-12  md:col-7 mt-3 md:mt-7 gallery-product">
         <div class="w-12 m-auto ">
             <p-galleria
-              [value]="selectedBenitoProduct?.subImages"
+              [value]="selectedBenitoProduct?.subImages || benitoProducts[0].subImages "
               [showItemNavigators]="true"
               [responsiveOptions]="responsiveOptions"
               [containerStyle]="{ 'max-width': '100%' }"
@@ -130,7 +130,7 @@
               </ng-template>
             </p-galleria>
           </div>
-          <div><p>{{ selectedBenitoProduct?.description }}</p></div>
+          <div><p>{{ selectedBenitoProduct?.description  || benitoProducts[0].description}}</p></div>
       </div>
 
       <div class="col-12 md:col-5 disappear-in-mobile ">

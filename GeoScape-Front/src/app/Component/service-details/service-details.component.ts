@@ -358,7 +358,6 @@ export class ServiceDetailsComponent implements OnInit {
           'to providing reliable and visually appealing drainage solutions.'
       },
     ];
-
   }
 
   ngOnInit(): void {
