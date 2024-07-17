@@ -1,7 +1,7 @@
 <section class="carsoul-bg px-3 zoomin animation-duration-1000 animation-iteration-1"
 
          style='background-image: url("assets/images/services/ourServices.jpg")'>
-  <p-carousel [className]="'zoomin animation-duration-2000 animation-iteration-1'"
+  <p-carousel [className]="'zoomin animation-duration-1000 animation-iteration-1'"
     [autoplayInterval]="5000" [circular]="true" [numScroll]="1" [numVisible]="1"
     [responsiveOptions]="responsiveOptions"
     [value]="services" class="" styleClass="custom-carousel">
@@ -9,13 +9,12 @@
     <ng-template let-service pTemplate="item">
       <div class="product-item
        flex
-       justify-content-xl-start
-       justify-content-lg-start
+
        justify-content-md-center
        justify-content-sm-center">
-        <div class="product-item-content  md:w-4 sm:w-7 ">
-          <div class="zoom-img relative overflow-hidden">
-            <img class="product-image" [src]="'assets/images/services/'+ service.image">
+        <div class="product-item-content sm:w-5  m-auto">
+          <div class=" relative overflow-hidden">
+            <img height="" style="border:7px solid white" class="product-image" [src]="'assets/images/services/'+ service.image">
           </div>
           <div class="mt-4">
             <h2>{{ service.name }}</h2>
