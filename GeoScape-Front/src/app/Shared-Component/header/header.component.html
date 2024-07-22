@@ -1,9 +1,9 @@
 <div class="w-12 m-auto px-5">
-  <div class="w-full h-2rem"></div>
-  <div class="header-style">
+  <div class="w-full h-2rem bg-white"></div>
+  <div class="header-style bg-white">
 <p-menubar [model]="headerItems">
   <ng-template pTemplate="start">
-    <img src="assets/images/logo.png" height="71" width="71" >
+    <img class="mr-5" src="assets/images/logo.png" height="71" width="71" >
   </ng-template>
   <ng-template pTemplate="item" let-item let-headerItems="headerItems">
       <a (click)="handleItemClick(item)" pRipple class="flex align-items-center p-menuitem-link"

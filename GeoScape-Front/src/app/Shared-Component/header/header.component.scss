@@ -8,12 +8,13 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
   border-top: 10px solid $GreenColor;
   border-radius:6px 6px 0px 0px;
   border-bottom: 5px solid $GreenColor;
-
+background:white;
 }
 
 :host ::ng-deep {
 
   .p-menubar {
+    padding:0px 20px;
     border: 0;
     background-color: white;
     //box-shadow: $box-shadow;
@@ -23,7 +24,7 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
   /* start refactor menu list */
    .p-menubar-root-list {
     margin-bottom: 0px;
-    margin-left: 35px;
+    //margin-left: 35px;
   }
 
    .p-menuitem-link {
@@ -84,9 +85,10 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
   @media screen and (max-width: 960px) {
     .p-menubar-root-list {
       position: fixed;
-      margin-left: 8% !important;
-      top: 135px;
-      width: 85%;
+      left:0px;
+      top: 112px;
+      width: 100%;
+      padding:0px 32px;
     }
   }
 
