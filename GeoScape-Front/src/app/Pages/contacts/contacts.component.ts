@@ -50,8 +50,6 @@ export class ContactsComponent implements OnInit {
   isLoading: boolean = false
 
   constructor(private _http: HttpClient ,private messageService: MessageService) {
-  }
-  ngOnInit(): void {
     this.Services = [
       {id: 1 , name: 'Landscape Design' ,image:'Landscape-Design.jpg'},
       {id: 2 , name: 'SoftScape' ,image:'Soft-Landscape.jpg'},
@@ -67,6 +65,9 @@ export class ContactsComponent implements OnInit {
       {id: 12 , name: 'Covers and Grates' ,image:'covers-and-grates.jpg'},
 
     ];
+
+  }
+  ngOnInit(): void {
   }
   onChangeName(event: any) {
     this.name = event.target.value;

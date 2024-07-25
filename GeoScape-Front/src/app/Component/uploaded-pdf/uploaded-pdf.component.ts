@@ -15,9 +15,6 @@ export class UploadedPdfComponent implements OnInit {
   url: any;
 
   constructor(private route: ActivatedRoute ,private _sanitizer :DomSanitizer ) {
-  }
-
-  ngOnInit(): void {
     this.documents = [
       {
         id: 1, name: 'GEOSCAPE Profile', pdfSrc: 'GEOSCAPE-Profile.pdf',imgSrc: 'GEOSCAPE-Profile.png',
@@ -41,8 +38,11 @@ export class UploadedPdfComponent implements OnInit {
       },
 
     ];
-    this.getDocument();
 
+  }
+
+  ngOnInit(): void {
+    this.getDocument();
   }
 
   private getDocument() {

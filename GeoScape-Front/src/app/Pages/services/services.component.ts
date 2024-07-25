@@ -30,11 +30,6 @@ export class ServicesComponent implements OnInit{
   services: any;
 
   constructor(private  _router:Router) {
-
-}
-
-  ngOnInit(): void {
-
     this.services = [
       {id: 1 , name: 'Landscape Design' , image:'Landscape-Design.jpg',
         description:'Expertly crafted 2D and 3D designs tailored to your vision, combining aesthetics and functionality for stunning outdoor spaces.'},
@@ -61,6 +56,11 @@ export class ServicesComponent implements OnInit{
       {id: 12 , name: 'Covers and Grates' ,image:'covers-and-grates.jpg',
         description:'Sturdy solutions ensuring safety and proper drainage, blending seamlessly with your landscape design.'},
     ];
+
+}
+
+  ngOnInit(): void {
+
 
     this.responsiveOptions = [
       {

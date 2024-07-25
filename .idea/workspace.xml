@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="increase Budget size">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="complete fix issues">
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/covers-and-grates/covers-and-grates-1.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/main/main.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/footer/footer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/uploaded-pdf/uploaded-pdf.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/uploaded-pdf/uploaded-pdf.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/services/services.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/covers-and-grates/covers-and-grates-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/service-details/covers-and-grates/covers-and-grates-1.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +129,9 @@
       <workItem from="1720976186337" duration="3486000" />
       <workItem from="1721026651641" duration="28473000" />
       <workItem from="1721547166662" duration="2477000" />
-      <workItem from="1721649191065" duration="9158000" />
+      <workItem from="1721649191065" duration="11264000" />
+      <workItem from="1721906898856" duration="1937000" />
+      <workItem from="1721908859506" duration="1173000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -360,7 +357,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721233179904</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="complete fix issues">
+      <option name="closed" value="true" />
+      <created>1721689339559</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1721689339559</updated>
+    </task>
+    <task id="LOCAL-00030" summary="complete fix issues">
+      <option name="closed" value="true" />
+      <created>1721690239357</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1721690239357</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +392,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="add twitter" />
     <MESSAGE value="decrease space" />
     <MESSAGE value="about patch" />
     <MESSAGE value="edit layout" />
@@ -404,7 +416,8 @@
     <MESSAGE value="edit services carsoul" />
     <MESSAGE value="fix issues responsive and fix carsoul image" />
     <MESSAGE value="increase Budget size" />
-    <option name="LAST_COMMIT_MESSAGE" value="increase Budget size" />
+    <MESSAGE value="complete fix issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete fix issues" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

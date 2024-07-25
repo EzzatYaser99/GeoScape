@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Button, ButtonDirective} from "primeng/button";
 import {Ripple} from "primeng/ripple";
 import {RouterLink} from "@angular/router";
@@ -32,7 +32,7 @@ class Client {
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit{
   clients: Client[] =[{
       id: '',
       name: ' ',
@@ -41,58 +41,58 @@ export class AboutComponent {
 
   responsiveOptions: any[] | undefined;
 
-  constructor() {}
-
-  ngOnInit() {
-      this.clients = [
-        {
+  constructor() {
+    this.clients = [
+      {
         id: '1',
         name: 'Sports Boulevard',
         image: 'sports-boulevard.jpeg',
       },
-        {
-          id: '2',
-          name: 'NEOM',
-          image: 'neom.jpg',
-        },
-        {
-          id: '3',
-          name: 'Nesma & Partners',
-          image: 'nesma.jpeg',
-        },
-        {
-          id: '4',
-          name: 'Power China',
-          image: 'power-china.png',
-        },
-        {
-          id: '5',
-          name: 'Freyssinet',
-          image: 'freyssinet.jpg',
-        },
-        {
-          id: '6',
-          name: 'Royal commission ',
-          image: 'royal-commission.png',
-        },
-        {
-          id: '7',
-          name: 'Sapac ',
-          image: 'sapac.jpeg',
-        },
-        {
-          id: '8',
-          name: 'Alyamama ',
-          image: 'alyamama.png',
-        },
-        {
-          id: '9',
-          name: 'Zaid Alhussain ',
-          image: 'zaid-alhussain.jpeg',
-        },
-      ];
+      {
+        id: '2',
+        name: 'NEOM',
+        image: 'neom.jpg',
+      },
+      {
+        id: '3',
+        name: 'Nesma & Partners',
+        image: 'nesma.jpeg',
+      },
+      {
+        id: '4',
+        name: 'Power China',
+        image: 'power-china.png',
+      },
+      {
+        id: '5',
+        name: 'Freyssinet',
+        image: 'freyssinet.jpg',
+      },
+      {
+        id: '6',
+        name: 'Royal commission ',
+        image: 'royal-commission.png',
+      },
+      {
+        id: '7',
+        name: 'Sapac ',
+        image: 'sapac.jpeg',
+      },
+      {
+        id: '8',
+        name: 'Alyamama ',
+        image: 'alyamama.png',
+      },
+      {
+        id: '9',
+        name: 'Zaid Alhussain ',
+        image: 'zaid-alhussain.jpeg',
+      },
+    ];
 
+  }
 
+  ngOnInit() {
     this.responsiveOptions = [
       {
         breakpoint: '1199px',
@@ -111,18 +111,6 @@ export class AboutComponent {
       }
     ];
   }
-
-  // getSeverity(status: string) {
-  //   switch (status) {
-  //     case 'INSTOCK':
-  //       return 'success';
-  //     case 'LOWSTOCK':
-  //       return 'warning';
-  //     case 'OUTOFSTOCK':
-  //       return 'danger';
-  //   }
-  // }
-
 
 }
 

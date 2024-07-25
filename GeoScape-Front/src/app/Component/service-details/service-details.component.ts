@@ -35,10 +35,10 @@ export class ServiceDetailsComponent implements OnInit {
         description: 'Expertly crafted 2D and 3D designs tailored to your vision, ' +
           'combining aesthetics and functionality for stunning outdoor spaces.',
         subImages: [
-          {id: 1, image: 'design-landscape/design-landscape-1.jpg'},
+          {id: 1, image: 'design-landscape/design-landscape-4.jpg'},
           {id: 2, image: 'design-landscape/design-landscape-2.jpg'},
           {id: 3, image: 'design-landscape/design-landscape-3.jpg'},
-          {id: 4, image: 'design-landscape/design-landscape-4.jpg'},
+          {id: 4, image: 'design-landscape/design-landscape-1.jpg'},
           {id: 5, image: 'design-landscape/design-landscape-5.jpg'},
           {id: 6, image: 'design-landscape/design-landscape-6.jpg'},
 
@@ -336,7 +336,7 @@ export class ServiceDetailsComponent implements OnInit {
         id: 12, name: 'Covers and Grates', image: 'covers-and-grates.jpg',
         description: 'Sturdy solutions ensuring safety and proper drainage, blending seamlessly with your landscape design.'
         , subImages: [
-          {id: 1, image: 'covers-and-grates/covers-and-grates-1.jpg'},
+          {id: 1, image: 'covers-and-grates/covers-and-grates-1.jpeg'},
           {id: 2, image: 'covers-and-grates/covers-and-grates-2.jpg'},
           {id: 3, image: 'covers-and-grates/covers-and-grates-3.jpg'},
           {id: 4, image: 'covers-and-grates/covers-and-grates-4.jpg'},
