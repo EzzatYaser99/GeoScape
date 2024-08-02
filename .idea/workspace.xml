@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="complete fix issues">
-      <change afterPath="$PROJECT_DIR$/GeoScape-back/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-back/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="deploy back end" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -369,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721690239357</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="deploy back end">
+      <option name="closed" value="true" />
+      <created>1722635894990</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1722635894990</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +392,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="decrease space" />
     <MESSAGE value="about patch" />
     <MESSAGE value="edit layout" />
     <MESSAGE value="Add section our clients to About page" />
@@ -413,7 +416,8 @@
     <MESSAGE value="fix issues responsive and fix carsoul image" />
     <MESSAGE value="increase Budget size" />
     <MESSAGE value="complete fix issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete fix issues" />
+    <MESSAGE value="deploy back end" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy back end" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
