@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="deploy back end">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="deploy back end and updated packages">
+      <change afterPath="$PROJECT_DIR$/GeoScape-back/dist.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,30 +35,34 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2i4GLX3tWZ4qqkgLS6XcHIXwh84" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/docs/browser&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.back.executor&quot;: &quot;Run&quot;,
-    &quot;npm.front.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/node_modules/typescript/lib&quot;,
-    &quot;vcs.patch.path&quot;: &quot;/home/eyasser/Desktop&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/docs/browser",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.back.executor": "Run",
+    "npm.front.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/node_modules/typescript/lib",
+    "vcs.patch.path": "/home/eyasser/Desktop",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/GeoScape-Front/docs/browser" />
@@ -126,6 +131,8 @@
       <workItem from="1721649191065" duration="11264000" />
       <workItem from="1721906898856" duration="1937000" />
       <workItem from="1721908859506" duration="1173000" />
+      <workItem from="1722916141733" duration="763000" />
+      <workItem from="1722916918841" duration="1224000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -383,7 +390,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722636359201</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="deploy back end and updated packages">
+      <option name="closed" value="true" />
+      <created>1722916817739</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1722916817739</updated>
+    </task>
+    <task id="LOCAL-00034" summary="deploy back end and updated packages">
+      <option name="closed" value="true" />
+      <created>1722916875851</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1722916875851</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +425,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="about patch" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="edit layout" />
     <MESSAGE value="Add section our clients to About page" />
     <MESSAGE value="update on Add section our clients to About page" />
@@ -427,7 +450,8 @@
     <MESSAGE value="increase Budget size" />
     <MESSAGE value="complete fix issues" />
     <MESSAGE value="deploy back end" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy back end" />
+    <MESSAGE value="deploy back end and updated packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy back end and updated packages" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
