@@ -2,11 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import {HttpClientModule} from "@angular/common/http";
 import {filter} from "rxjs";
+import {FooterComponent} from "./Shared-Component/footer/footer.component";
+import {HeaderComponent} from "./Shared-Component/header/header.component";
+import {ScrollComponent} from "./Shared-Component/scrollTop/scroll.component";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HttpClientModule],
+  imports: [RouterOutlet, HttpClientModule, FooterComponent, HeaderComponent, ScrollComponent, NgIf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

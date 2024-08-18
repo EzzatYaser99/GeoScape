@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="fix issues in iphone">
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/projects-details/projects-details.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/projects-details/projects-details.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/projects-details/projects-details.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Component/projects-details/projects-details.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-page/ourProjects.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-page/ourProjects2.png" afterDir="false" />
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="implement project page and create projects details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Shared-Component/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/about/about.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/main/main.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/main/main.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/main/main.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/main/main.component.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/app.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,29 +58,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/docs/browser",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.back.executor": "Run",
-    "npm.front.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "D:\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib",
-    "vcs.patch.path": "/home/eyasser/Desktop",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/docs/browser&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.back.executor&quot;: &quot;Run&quot;,
+    &quot;npm.front.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib&quot;,
+    &quot;vcs.patch.path&quot;: &quot;/home/eyasser/Desktop&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/GeoScape-Front/docs/browser" />
@@ -157,7 +155,8 @@
       <workItem from="1723598108218" duration="498000" />
       <workItem from="1723598735749" duration="1303000" />
       <workItem from="1723600346074" duration="2603000" />
-      <workItem from="1723958321694" duration="14021000" />
+      <workItem from="1723958321694" duration="15969000" />
+      <workItem from="1723978396328" duration="422000" />
     </task>
     <task id="LOCAL-00001" summary="remove login module">
       <option name="closed" value="true" />
@@ -439,7 +438,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723958953876</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="implement project page and create projects details">
+      <option name="closed" value="true" />
+      <created>1723976285430</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1723976285430</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +466,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add section our clients to About page" />
     <MESSAGE value="update on Add section our clients to About page" />
     <MESSAGE value="create products component" />
     <MESSAGE value="implement partners content" />
@@ -484,7 +490,8 @@
     <MESSAGE value="deploy back end" />
     <MESSAGE value="deploy back end and updated packages" />
     <MESSAGE value="fix issues in iphone" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix issues in iphone" />
+    <MESSAGE value="implement project page and create projects details" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement project page and create projects details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -492,7 +499,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.ts</url>
           <line>24</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
