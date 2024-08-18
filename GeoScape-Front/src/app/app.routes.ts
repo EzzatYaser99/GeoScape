@@ -8,6 +8,7 @@ import {ContactsComponent} from "./Pages/contacts/contacts.component";
 import {ServiceDetailsComponent} from "./Component/service-details/service-details.component";
 import {UploadedPdfComponent} from "./Component/uploaded-pdf/uploaded-pdf.component";
 import {ProductsComponent} from "./Pages/products/products.component";
+import {ProjectsDetailsComponent} from "./Component/projects-details/projects-details.component";
 
 export const routes: Routes = [
   {
@@ -20,6 +21,7 @@ export const routes: Routes = [
       { path: 'projects', component: ProjectsComponent },
       { path: 'services', component: ServicesComponent },
       { path: 'services/:id', component: ServiceDetailsComponent },
+      { path: 'projects/:id', component: ProjectsDetailsComponent },
       { path: 'partners', component: PartnersComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contacts', component: ContactsComponent },
@@ -30,3 +32,7 @@ export const routes: Routes = [
   { path: '**', redirectTo: 'main/home' },
 
 ];
+
+
+
+
