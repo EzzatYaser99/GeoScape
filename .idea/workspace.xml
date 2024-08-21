@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="update back end">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="upload nrc photo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-back/dist/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-back/dist/bundle.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +15,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -50,31 +52,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/eyasser/Desktop/courses/projects/GeoScape/GeoScape-Front/docs/browser&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.back.executor&quot;: &quot;Run&quot;,
-    &quot;npm.front.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib&quot;,
-    &quot;vcs.patch.path&quot;: &quot;/home/eyasser/Desktop&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/projects/GeoScape/GeoScape-Front/src/assets/images/projects-details/neom-projects/NRC1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.back.executor": "Debug",
+    "npm.front.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "D:\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib",
+    "vcs.patch.path": "/home/eyasser/Desktop",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\GeoScape\GeoScape-Front\src\assets\images\projects-details\neom-projects\NRC1" />
       <recent name="$PROJECT_DIR$/GeoScape-Front/docs/browser" />
     </key>
   </component>
@@ -152,95 +155,9 @@
       <workItem from="1724009611503" duration="171000" />
       <workItem from="1724009792006" duration="2837000" />
       <workItem from="1724100200519" duration="2448000" />
-      <workItem from="1724184038440" duration="2038000" />
-    </task>
-    <task id="LOCAL-00001" summary="remove login module">
-      <option name="closed" value="true" />
-      <created>1718744028444</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1718744028444</updated>
-    </task>
-    <task id="LOCAL-00002" summary="solve problem when navigate from page to page">
-      <option name="closed" value="true" />
-      <created>1718744214350</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1718744214350</updated>
-    </task>
-    <task id="LOCAL-00003" summary="refactor images and download images for services">
-      <option name="closed" value="true" />
-      <created>1718991574215</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1718991574215</updated>
-    </task>
-    <task id="LOCAL-00004" summary="implement home page  and edit on services">
-      <option name="closed" value="true" />
-      <created>1719016342970</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1719016342970</updated>
-    </task>
-    <task id="LOCAL-00005" summary="decrease space">
-      <option name="closed" value="true" />
-      <created>1719787584848</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1719787584848</updated>
-    </task>
-    <task id="LOCAL-00006" summary="edit layout">
-      <option name="closed" value="true" />
-      <created>1720109052384</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1720109052384</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Add section our clients to About page">
-      <option name="closed" value="true" />
-      <created>1720260639171</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1720260639171</updated>
-    </task>
-    <task id="LOCAL-00008" summary="update on Add section our clients to About page">
-      <option name="closed" value="true" />
-      <created>1720262268229</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1720262268229</updated>
-    </task>
-    <task id="LOCAL-00009" summary="create products component">
-      <option name="closed" value="true" />
-      <created>1720308611847</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1720308611847</updated>
-    </task>
-    <task id="LOCAL-00010" summary="implement partners content">
-      <option name="closed" value="true" />
-      <created>1720309849720</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1720309849720</updated>
-    </task>
-    <task id="LOCAL-00011" summary="update partners page">
-      <option name="closed" value="true" />
-      <created>1720393791106</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1720393791106</updated>
+      <workItem from="1724184038440" duration="22087000" />
+      <workItem from="1724252552999" duration="437000" />
+      <workItem from="1724253023883" duration="5548000" />
     </task>
     <task id="LOCAL-00012" summary="update upload pdf">
       <option name="closed" value="true" />
@@ -466,7 +383,175 @@
       <option name="project" value="LOCAL" />
       <updated>1724189777334</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="remove dist">
+      <option name="closed" value="true" />
+      <created>1724205906028</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1724205906028</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fix iphone problem finally">
+      <option name="closed" value="true" />
+      <created>1724206206950</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1724206206950</updated>
+    </task>
+    <task id="LOCAL-00042" summary="complete projects-details">
+      <option name="closed" value="true" />
+      <created>1724250928499</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1724250928499</updated>
+    </task>
+    <task id="LOCAL-00043" summary="complete projects-details">
+      <option name="closed" value="true" />
+      <created>1724269912575</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1724269912575</updated>
+    </task>
+    <task id="LOCAL-00044" summary="complete projects-details">
+      <option name="closed" value="true" />
+      <created>1724269957513</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1724269957513</updated>
+    </task>
+    <task id="LOCAL-00045" summary="complete projects-details">
+      <option name="closed" value="true" />
+      <created>1724270273065</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1724270273065</updated>
+    </task>
+    <task id="LOCAL-00046" summary="complete projects-details">
+      <option name="closed" value="true" />
+      <created>1724270315479</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1724270315479</updated>
+    </task>
+    <task id="LOCAL-00047" summary="complete projects-details">
+      <option name="closed" value="true" />
+      <created>1724270425762</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1724270425762</updated>
+    </task>
+    <task id="LOCAL-00048" summary="complete projects-details">
+      <option name="closed" value="true" />
+      <created>1724270461785</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1724270461785</updated>
+    </task>
+    <task id="LOCAL-00049" summary="complete projects-details">
+      <option name="closed" value="true" />
+      <created>1724270778714</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1724270778714</updated>
+    </task>
+    <task id="LOCAL-00050" summary="upload nrc">
+      <option name="closed" value="true" />
+      <created>1724271097203</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1724271097204</updated>
+    </task>
+    <task id="LOCAL-00051" summary="upload nrc">
+      <option name="closed" value="true" />
+      <created>1724271173788</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1724271173789</updated>
+    </task>
+    <task id="LOCAL-00052" summary="upload nrc">
+      <option name="closed" value="true" />
+      <created>1724271229921</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1724271229921</updated>
+    </task>
+    <task id="LOCAL-00053" summary="upload photo">
+      <option name="closed" value="true" />
+      <created>1724271351157</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1724271351157</updated>
+    </task>
+    <task id="LOCAL-00054" summary="upload nrc photo">
+      <option name="closed" value="true" />
+      <created>1724271378867</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1724271378867</updated>
+    </task>
+    <task id="LOCAL-00055" summary="upload nrc photo">
+      <option name="closed" value="true" />
+      <created>1724272262114</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1724272262114</updated>
+    </task>
+    <task id="LOCAL-00056" summary="upload nrc photo">
+      <option name="closed" value="true" />
+      <created>1724272383155</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1724272383155</updated>
+    </task>
+    <task id="LOCAL-00057" summary="upload nrc photo">
+      <option name="closed" value="true" />
+      <created>1724272685859</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1724272685859</updated>
+    </task>
+    <task id="LOCAL-00058" summary="upload nrc photo">
+      <option name="closed" value="true" />
+      <created>1724274171270</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1724274171270</updated>
+    </task>
+    <task id="LOCAL-00059" summary="upload nrc photo">
+      <option name="closed" value="true" />
+      <created>1724275041881</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1724275041881</updated>
+    </task>
+    <task id="LOCAL-00060" summary="upload nrc photo">
+      <option name="closed" value="true" />
+      <created>1724275619563</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1724275619563</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,13 +571,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update partners page" />
-    <MESSAGE value="update upload pdf" />
-    <MESSAGE value="update images for plants" />
-    <MESSAGE value="update images for benito products" />
-    <MESSAGE value="update description to trees" />
-    <MESSAGE value="update tree images" />
-    <MESSAGE value="decrease spaces in website" />
     <MESSAGE value="change style of about page" />
     <MESSAGE value="handel instagram link and make services card in fieldset" />
     <MESSAGE value=" make company Approvals in fieldset" />
@@ -511,15 +589,27 @@
     <MESSAGE value="use lazy root" />
     <MESSAGE value="build backend" />
     <MESSAGE value="update back end" />
-    <option name="LAST_COMMIT_MESSAGE" value="update back end" />
+    <MESSAGE value="remove dist" />
+    <MESSAGE value="fix iphone problem finally" />
+    <MESSAGE value="new changes to front" />
+    <MESSAGE value="complete projects-details" />
+    <MESSAGE value="upload nrc" />
+    <MESSAGE value="upload photo" />
+    <MESSAGE value="upload nrc photo" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload nrc photo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.ts</url>
-          <line>24</line>
+          <line>27</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.html</url>
+          <line>43</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
