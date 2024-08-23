@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="upload nrc photo">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="chnage name of projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/partners/partners.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/products/products.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +65,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "npm.back.executor": "Debug",
+    "npm.back.executor": "Run",
     "npm.front.executor": "Run",
     "settings.editor.selected.configurable": "preferences.keymap",
     "ts.external.directory.path": "D:\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib",
@@ -157,15 +155,7 @@
       <workItem from="1724100200519" duration="2448000" />
       <workItem from="1724184038440" duration="22087000" />
       <workItem from="1724252552999" duration="437000" />
-      <workItem from="1724253023883" duration="5548000" />
-    </task>
-    <task id="LOCAL-00012" summary="update upload pdf">
-      <option name="closed" value="true" />
-      <created>1720625557457</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1720625557457</updated>
+      <workItem from="1724253023883" duration="8052000" />
     </task>
     <task id="LOCAL-00013" summary="update images for plants">
       <option name="closed" value="true" />
@@ -551,7 +541,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724275619563</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="chnage name of projects">
+      <option name="closed" value="true" />
+      <created>1724275975061</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1724275975061</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +569,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="change style of about page" />
     <MESSAGE value="handel instagram link and make services card in fieldset" />
     <MESSAGE value=" make company Approvals in fieldset" />
     <MESSAGE value="change files document approvals" />
@@ -596,7 +593,8 @@
     <MESSAGE value="upload nrc" />
     <MESSAGE value="upload photo" />
     <MESSAGE value="upload nrc photo" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload nrc photo" />
+    <MESSAGE value="chnage name of projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="chnage name of projects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
