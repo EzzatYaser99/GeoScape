@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="chnage name of projects">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="fix images" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +57,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/projects/GeoScape/GeoScape-Front/src/assets/images/projects-details/neom-projects/NRC1",
+    "last_opened_file_path": "C:/home/eyasser/Desktop/complete_rayadih_projects.patch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -156,22 +154,7 @@
       <workItem from="1724184038440" duration="22087000" />
       <workItem from="1724252552999" duration="437000" />
       <workItem from="1724253023883" duration="8052000" />
-    </task>
-    <task id="LOCAL-00013" summary="update images for plants">
-      <option name="closed" value="true" />
-      <created>1720705631632</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1720705631632</updated>
-    </task>
-    <task id="LOCAL-00014" summary="update images for benito products">
-      <option name="closed" value="true" />
-      <created>1720717996066</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1720717996066</updated>
+      <workItem from="1724373907480" duration="1025000" />
     </task>
     <task id="LOCAL-00015" summary="update description to trees">
       <option name="closed" value="true" />
@@ -549,7 +532,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724275975061</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="update project">
+      <option name="closed" value="true" />
+      <created>1724374016779</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1724374016780</updated>
+    </task>
+    <task id="LOCAL-00063" summary="fix images">
+      <option name="closed" value="true" />
+      <created>1724374405974</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1724374405974</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,8 +568,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="handel instagram link and make services card in fieldset" />
-    <MESSAGE value=" make company Approvals in fieldset" />
     <MESSAGE value="change files document approvals" />
     <MESSAGE value="convert Angular app to universal and use  withHashLocation()" />
     <MESSAGE value="fix issues" />
@@ -594,7 +591,9 @@
     <MESSAGE value="upload photo" />
     <MESSAGE value="upload nrc photo" />
     <MESSAGE value="chnage name of projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="chnage name of projects" />
+    <MESSAGE value="update project" />
+    <MESSAGE value="fix images" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
