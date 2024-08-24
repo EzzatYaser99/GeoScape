@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="edit products taps">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="impelment sindalah projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/home/eyasser/Desktop/edit_products_taps_2.patch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/home/eyasser/Desktop/implement_sindalh_project.patch&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -159,22 +159,7 @@
       <workItem from="1724373907480" duration="1762000" />
       <workItem from="1724416989352" duration="1175000" />
       <workItem from="1724419819407" duration="2337000" />
-    </task>
-    <task id="LOCAL-00019" summary="handel instagram link and make services card in fieldset">
-      <option name="closed" value="true" />
-      <created>1720911502502</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1720911502502</updated>
-    </task>
-    <task id="LOCAL-00020" summary=" make company Approvals in fieldset">
-      <option name="closed" value="true" />
-      <created>1720995467897</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1720995467897</updated>
+      <workItem from="1724425432548" duration="656000" />
     </task>
     <task id="LOCAL-00021" summary="change files document approvals">
       <option name="closed" value="true" />
@@ -552,7 +537,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724422127468</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="upload images">
+      <option name="closed" value="true" />
+      <created>1724425471085</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1724425471087</updated>
+    </task>
+    <task id="LOCAL-00069" summary="impelment sindalah projects">
+      <option name="closed" value="true" />
+      <created>1724425715824</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1724425715824</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,8 +573,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix issues and responsive screen" />
-    <MESSAGE value="edit services carsoul" />
     <MESSAGE value="fix issues responsive and fix carsoul image" />
     <MESSAGE value="increase Budget size" />
     <MESSAGE value="complete fix issues" />
@@ -597,7 +596,9 @@
     <MESSAGE value="edit products content" />
     <MESSAGE value="edit products content benito" />
     <MESSAGE value="edit products taps" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit products taps" />
+    <MESSAGE value="upload images" />
+    <MESSAGE value="impelment sindalah projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="impelment sindalah projects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
