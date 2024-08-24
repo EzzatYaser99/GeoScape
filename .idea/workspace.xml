@@ -4,8 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="implement project nrc 2">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="upload images wo49 , wo50">
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/wo50/wo50-9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/assets/images/projects-details/neom-projects/w050/wo50-9.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,15 +190,7 @@
       <workItem from="1724416989352" duration="1175000" />
       <workItem from="1724419819407" duration="2337000" />
       <workItem from="1724425432548" duration="656000" />
-      <workItem from="1724493913010" duration="1577000" />
-    </task>
-    <task id="LOCAL-00023" summary="convert Angular app to universal and use  withHashLocation()">
-      <option name="closed" value="true" />
-      <created>1721071247045</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1721071247045</updated>
+      <workItem from="1724493913010" duration="2628000" />
     </task>
     <task id="LOCAL-00024" summary="fix issues">
       <option name="closed" value="true" />
@@ -554,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724494201505</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="upload images wo49 , wo50">
+      <option name="closed" value="true" />
+      <created>1724497438553</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1724497438553</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +604,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="complete fix issues" />
     <MESSAGE value="deploy back end" />
     <MESSAGE value="deploy back end and updated packages" />
     <MESSAGE value="fix issues in iphone" />
@@ -599,7 +628,8 @@
     <MESSAGE value="impelment sindalah projects" />
     <MESSAGE value="upload nrc2 image" />
     <MESSAGE value="implement project nrc 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement project nrc 2" />
+    <MESSAGE value="upload images wo49 , wo50" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload images wo49 , wo50" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
