@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="implement images infrastructure-package">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="pushed last 3 projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/GeoScape-Front/src/app/Pages/contacts/contacts.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,29 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/home/eyasser/Desktop/implement_images_infrastructure-package.patch&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.back.executor&quot;: &quot;Run&quot;,
-    &quot;npm.front.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib&quot;,
-    &quot;vcs.patch.path&quot;: &quot;/home/eyasser/Desktop&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/home/eyasser/Desktop/last_3_projects.patch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.back.executor": "Run",
+    "npm.front.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "D:\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib",
+    "vcs.patch.path": "/home/eyasser/Desktop",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\GeoScape\GeoScape-Front\src\assets\images\projects-details\neom-projects\NRC1" />
@@ -162,15 +161,7 @@
       <workItem from="1724419819407" duration="2337000" />
       <workItem from="1724425432548" duration="656000" />
       <workItem from="1724493913010" duration="3767000" />
-      <workItem from="1724577375409" duration="1912000" />
-    </task>
-    <task id="LOCAL-00026" summary="edit services carsoul">
-      <option name="closed" value="true" />
-      <created>1721181662949</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1721181662949</updated>
+      <workItem from="1724577375409" duration="3822000" />
     </task>
     <task id="LOCAL-00027" summary="fix issues responsive and fix carsoul image">
       <option name="closed" value="true" />
@@ -556,7 +547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724499403404</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="pushed last 3 projects">
+      <option name="closed" value="true" />
+      <created>1724585167161</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1724585167163</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +575,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix issues in iphone" />
     <MESSAGE value="implement project page and create projects details" />
     <MESSAGE value="use lazy root" />
     <MESSAGE value="build backend" />
@@ -601,7 +599,8 @@
     <MESSAGE value="upload images wo49 , wo50" />
     <MESSAGE value="impelment images wo49 , wo50" />
     <MESSAGE value="implement images infrastructure-package" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement images infrastructure-package" />
+    <MESSAGE value="pushed last 3 projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="pushed last 3 projects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
