@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="create loader for website">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="create loader for pdf perview">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/home/eyasser/Desktop/create_loader_for_website.patch",
+    "last_opened_file_path": "C:/home/eyasser/Desktop/create_loader_for_pdf_perview.patch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -163,15 +163,7 @@
       <workItem from="1724493913010" duration="3767000" />
       <workItem from="1724577375409" duration="4811000" />
       <workItem from="1724861847248" duration="1861000" />
-      <workItem from="1724869517162" duration="2433000" />
-    </task>
-    <task id="LOCAL-00030" summary="complete fix issues">
-      <option name="closed" value="true" />
-      <created>1721690239357</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1721690239357</updated>
+      <workItem from="1724869517162" duration="3043000" />
     </task>
     <task id="LOCAL-00031" summary="deploy back end">
       <option name="closed" value="true" />
@@ -557,7 +549,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724935455682</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="create loader for pdf perview">
+      <option name="closed" value="true" />
+      <created>1724937853302</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1724937853302</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +577,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update back end" />
     <MESSAGE value="remove dist" />
     <MESSAGE value="fix iphone problem finally" />
     <MESSAGE value="new changes to front" />
@@ -602,7 +601,8 @@
     <MESSAGE value="upload new approuverls" />
     <MESSAGE value="use emailUrl backend" />
     <MESSAGE value="create loader for website" />
-    <option name="LAST_COMMIT_MESSAGE" value="create loader for website" />
+    <MESSAGE value="create loader for pdf perview" />
+    <option name="LAST_COMMIT_MESSAGE" value="create loader for pdf perview" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
