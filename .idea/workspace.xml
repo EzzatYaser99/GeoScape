@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="create services message when deselect">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="fix services message">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/home/eyasser/Desktop/create_services_message_when_deselect.patch",
+    "last_opened_file_path": "C:/home/eyasser/Desktop/fix_message.patch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -163,15 +163,7 @@
       <workItem from="1724493913010" duration="3767000" />
       <workItem from="1724577375409" duration="4811000" />
       <workItem from="1724861847248" duration="1861000" />
-      <workItem from="1724869517162" duration="3654000" />
-    </task>
-    <task id="LOCAL-00032" summary="deploy back end">
-      <option name="closed" value="true" />
-      <created>1722636359201</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1722636359201</updated>
+      <workItem from="1724869517162" duration="5369000" />
     </task>
     <task id="LOCAL-00033" summary="deploy back end and updated packages">
       <option name="closed" value="true" />
@@ -557,7 +549,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724940576784</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="fix services message">
+      <option name="closed" value="true" />
+      <created>1724941203609</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1724941203609</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +577,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix iphone problem finally" />
     <MESSAGE value="new changes to front" />
     <MESSAGE value="complete projects-details" />
     <MESSAGE value="upload nrc" />
@@ -602,7 +601,8 @@
     <MESSAGE value="create loader for website" />
     <MESSAGE value="create loader for pdf perview" />
     <MESSAGE value="create services message when deselect" />
-    <option name="LAST_COMMIT_MESSAGE" value="create services message when deselect" />
+    <MESSAGE value="fix services message" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix services message" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
