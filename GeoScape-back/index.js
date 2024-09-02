@@ -14,7 +14,8 @@ app.post('/send-email', (req, res) => {
     const name = req.body.name || '';
     const phone = req.body.phone || '';
     const email = req.body.email || '';
-    const message = req.body.message || '';
+    const message = (req.body.message && req.body.message !== '') ? `" ${req.body.message} "` : '';
+    const appreciate = (req.body.message && req.body.message !== '') ? `We appreciate your message:` : ``;
     const service = req.body.service || '';
 
     const transporter = nodemailer.createTransport({
@@ -32,9 +33,9 @@ app.post('/send-email', (req, res) => {
         text: `
 Dear ${name},
 
-Thank you for your interest in our [${service}] Services. We appreciate your message:
+Thank you for your interest in our [${service}] Services. ${appreciate}
 
-"${message}"
+${message}
 
 Our team will review your message and get back to you shortly via the provided phone number: ${phone}. Please expect a response from us soon.
 
