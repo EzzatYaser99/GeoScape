@@ -3,7 +3,7 @@ export interface FooterInfo {
   openDays?: string;
   Title?: string;
   Icon?: string;
-  herf?: string;
+  href?: string;
   title?: string;
   id?:number
 }

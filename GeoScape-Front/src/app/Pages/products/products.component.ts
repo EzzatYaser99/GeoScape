@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {AvatarModule} from "primeng/avatar";
 import {FieldsetModule} from "primeng/fieldset";
 import {PrimeTemplate} from "primeng/api";
-import {ButtonDirective} from "primeng/button";
 import {CardModule} from "primeng/card";
 import {ListboxChangeEvent, ListboxModule} from "primeng/listbox";
 import {GalleriaModule} from "primeng/galleria";
@@ -19,7 +18,6 @@ import {NgOptimizedImage} from "@angular/common";
     AvatarModule,
     FieldsetModule,
     PrimeTemplate,
-    ButtonDirective,
     CardModule,
     ListboxModule,
     GalleriaModule,
@@ -89,7 +87,7 @@ constructor() {
       description: 'A dramatic, spiky plant that adds architectural interest to any garden.'
     },
 
-  ],
+  ]
 
     this.geoscapeTrees = [
       {

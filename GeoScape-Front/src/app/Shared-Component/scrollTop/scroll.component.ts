@@ -14,7 +14,7 @@ export class ScrollComponent {
   showScrollButton: boolean = false;
   lastScrollTop: number = 0;
 
-  scrollTotop($event: MouseEvent) {
+  scrollToTop($event: MouseEvent) {
     $event.preventDefault();
     document.documentElement.scrollIntoView({ behavior: "smooth", block: "start" });
     setTimeout(() => {
@@ -25,11 +25,7 @@ export class ScrollComponent {
   @HostListener('window:scroll')
   onWindowScroll() {
     const st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st > this.lastScrollTop && st > window.innerHeight) {
-      this.showScrollButton = true;
-    } else {
-      this.showScrollButton = false;
-    }
+    this.showScrollButton = st > this.lastScrollTop && st > window.innerHeight;
     this.lastScrollTop = st <= 0 ? 0 : st;
   }
 

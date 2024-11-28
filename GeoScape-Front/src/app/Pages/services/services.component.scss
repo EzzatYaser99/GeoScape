@@ -28,7 +28,7 @@
   }
 
   p {
-    margin: 0px;
+    margin: 0;
   }
 }
 
@@ -43,16 +43,14 @@
 :host ::ng-deep {
   .p-carousel {
     .p-carousel-indicators {
-      padding: 20px 0px;
+      padding: 20px 0;
 
       .p-carousel-indicator button {
         background-color: white;
         width: 14px !important;
         height: 14px !important;
         -webkit-transition: background-color 0.2s, color 0.2s, -webkit-box-shadow 0.2s;
-        transition: background-color 0.2s, color 0.2s, -webkit-box-shadow 0.2s;
         -o-transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
         transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
         border-radius: 50% !important;
       }
@@ -110,12 +108,12 @@
   }
 
   .p-card .p-card-content {
-    padding: 0px;
+    padding: 0;
 
   }
 
   .p-card .p-card-footer{
-    padding: 0rem;
+    padding: 0;
 
   }
 }
@@ -125,7 +123,7 @@
   -o-transition: all .3s;
   transition: all .3s;
   img{
-    border-radius:10px 10px 0px 0px
+    border-radius:10px 10px 0 0
   }
   &:hover {
     -webkit-transform: scale(1.07);

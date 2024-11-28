@@ -1,11 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {CarouselModule} from "primeng/carousel";
-import {Button, ButtonDirective} from "primeng/button";
+import { ButtonDirective} from "primeng/button";
 import {ImageModule} from "primeng/image";
 import {CardModule} from "primeng/card";
 import {FieldsetModule} from "primeng/fieldset";
 import {AvatarModule} from "primeng/avatar";
-import {Ripple} from "primeng/ripple";
 import {Router} from "@angular/router";
 
 @Component({
@@ -15,11 +14,9 @@ import {Router} from "@angular/router";
     CarouselModule,
     ButtonDirective,
     ImageModule,
-    Button,
     CardModule,
     FieldsetModule,
     AvatarModule,
-    Ripple
   ],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'

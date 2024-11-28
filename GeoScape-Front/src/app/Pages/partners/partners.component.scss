@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   height: 350px;
-  border-radius: 0px 0px 6px 6px;
+  border-radius: 0 0 6px 6px;
 }
 /* Start fieldset Style*/
 :host ::ng-deep {
@@ -28,7 +28,7 @@
   }
 
   .p-card .p-card-content {
-    padding: 0px;
+    padding: 0;
 
   }
 

@@ -10,7 +10,7 @@ $box-shadow: 0px 9px 31.3px 0px rgba(82, 146, 39, 0.29);
 
 .header-style{
   border-top: 10px solid $GreenColor;
-  border-radius:6px 6px 0px 0px;
+  border-radius:6px 6px 0 0;
   border-bottom: 5px solid $GreenColor;
 background:white;
 }
@@ -18,16 +18,16 @@ background:white;
 :host ::ng-deep {
 
   .p-menubar {
-    padding:0px 20px;
+    padding:0 20px;
     border: 0;
     background-color: white;
     //box-shadow: $box-shadow;
-    border-radius:0px
+    border-radius:0
   }
 
   /* start refactor menu list */
    .p-menubar-root-list {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     //margin-left: 35px;
   }
 
@@ -41,14 +41,11 @@ background:white;
 
    .p-menubar-root-list .p-focus .p-menuitem-link {
     border-bottom: 1.5px solid #86BB46;
-    box-shadow: 0px 4px 10.4px 0px #673a8e26;
+    box-shadow: 0 4px 10.4px 0 #673a8e26;
   }
 
 
-  .p-menubar-root-list
-  .p-focus
-  .p-menuitem-content:hover
-  .p-menuitem-link {
+  .p-menubar-root-list .p-focus .p-menuitem-content:hover .p-menuitem-link {
     background-color: rgb(105 139 60 / 3%);;
     border-bottom: 1.5px solid #86BB46;
     box-shadow: $box-shadow;
@@ -73,11 +70,8 @@ background:white;
   }
 
 
-  .p-menubar
-  .p-menubar-root-list
-  > .p-menuitem
-  > .p-menuitem-content {
-    border-radius: 0px;
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content {
+    border-radius: 0;
   }
 
   .p-menubar .p-menubar-button {

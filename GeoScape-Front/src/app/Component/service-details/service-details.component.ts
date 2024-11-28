@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {ButtonDirective} from "primeng/button";
 import {CardModule} from "primeng/card";
 import {PrimeTemplate} from "primeng/api";
 import {ActivatedRoute} from "@angular/router";
@@ -14,7 +13,6 @@ import {NgOptimizedImage} from "@angular/common";
   selector: 'app-services-details',
   standalone: true,
   imports: [
-    ButtonDirective,
     CardModule,
     PrimeTemplate,
     ListboxModule,

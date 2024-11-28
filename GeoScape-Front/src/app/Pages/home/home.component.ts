@@ -1,24 +1,19 @@
 import {Component, OnInit} from '@angular/core';
-import {HeaderComponent} from "../../Shared-Component/header/header.component";
 import {AvatarModule} from "primeng/avatar";
 import {FieldsetModule} from "primeng/fieldset";
 import {PrimeTemplate} from "primeng/api";
-import {RouterLink, RouterLinkActive} from "@angular/router";
+import {RouterLink} from "@angular/router";
 import {ImageModule} from "primeng/image";
-import {NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    HeaderComponent,
     AvatarModule,
     FieldsetModule,
     PrimeTemplate,
     RouterLink,
-    RouterLinkActive,
     ImageModule,
-    NgForOf
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

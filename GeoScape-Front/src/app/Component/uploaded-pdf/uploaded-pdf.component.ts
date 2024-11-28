@@ -1,4 +1,4 @@
-import {Component, OnInit, Sanitizer} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {DomSanitizer} from "@angular/platform-browser";
 import {ProgressSpinnerModule} from "primeng/progressspinner";

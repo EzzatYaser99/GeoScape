@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   height: 400px;
-  border-radius: 0px 0px 6px 6px;
+  border-radius: 0 0 6px 6px;
 }
 
 p {
@@ -54,7 +54,7 @@ h2, h4 {
   }
 
   .p-card .p-card-content {
-    padding: 0px;
+    padding: 0;
 
   }
 
@@ -77,7 +77,7 @@ h2, h4 {
 @media screen and (max-width: 770px) {
   :host ::ng-deep {
     .p-carousel .p-carousel-indicators {
-      padding: 10px 0px;
+      padding: 10px 0;
 
       .p-carousel-indicator button {
         width: 1rem;

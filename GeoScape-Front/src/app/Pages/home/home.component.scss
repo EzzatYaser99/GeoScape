@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   height: 450px;
-  border-radius: 0px 0px 6px 6px;
+  border-radius: 0 0 6px 6px;
 }
 
 
@@ -46,7 +46,7 @@
   }
 
   .p-card .p-card-content {
-    padding: 0px;
+    padding: 0;
 
   }
 
@@ -81,7 +81,7 @@
   }
 
 }
-.government-documents , .approvals-documents {
+.approvals-documents {
   h2 {
     border-radius: 5px;
     background: #86BB46;
@@ -95,24 +95,6 @@
     background: #86BB46;
     border: none;
     width: 300px;
-  }
-}
-.government-documents{
-  display:none;
-}
-
-.document {
-  img {
-    max-height: 180px;
-    min-height: 180px;
-    border: 2px solid #86BB46;
-    cursor: pointer;
-  }
-  min-height: 300px;
-  a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
   }
 }
 

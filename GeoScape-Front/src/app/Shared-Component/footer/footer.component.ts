@@ -25,8 +25,8 @@ export class FooterComponent implements OnInit{
   ];
 
   this.contactDetailsInfo = [
-    {id:1 ,Icon: 'pi pi-map-marker', Title: 'location ', herf: 'https://maps.app.goo.gl/tAMe31CRJtVjrR717'},
-    {id:2 ,Icon: 'pi pi-phone', Title: '+966 54 664 4283', herf: 'https://wa.me/966546644283'},
+    {id:1 ,Icon: 'pi pi-map-marker', Title: 'location ', href: 'https://maps.app.goo.gl/tAMe31CRJtVjrR717'},
+    {id:2 ,Icon: 'pi pi-phone', Title: '+966 54 664 4283', href: 'https://wa.me/966546644283'},
   ];
 
 

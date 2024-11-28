@@ -1,12 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {Button, ButtonDirective} from "primeng/button";
-import {Ripple} from "primeng/ripple";
 import {RouterLink} from "@angular/router";
-import {Carousel, CarouselModule} from "primeng/carousel";
+import {CarouselModule} from "primeng/carousel";
 import {TagModule} from "primeng/tag";
 import {AvatarModule} from "primeng/avatar";
 import {FieldsetModule} from "primeng/fieldset";
-import {HeaderComponent} from "../../Shared-Component/header/header.component";
 import {NgOptimizedImage} from "@angular/common";
 
 class Client {
@@ -20,15 +17,11 @@ class Client {
   selector: 'app-about',
   standalone: true,
   imports: [
-    ButtonDirective,
-    Ripple,
-    Button,
     RouterLink,
     CarouselModule,
     TagModule,
     AvatarModule,
     FieldsetModule,
-    HeaderComponent,
     NgOptimizedImage
   ],
   templateUrl: './about.component.html',

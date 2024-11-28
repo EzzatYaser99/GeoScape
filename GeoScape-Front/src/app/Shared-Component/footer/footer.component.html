@@ -6,7 +6,7 @@
             <ul class="p-0">
               @for (item of contactDetailsInfo; track item) {
                 <li>
-                  <a  [href]="item.herf" target="{{(item.id ==3)? '_self': '_blank' }}">
+                  <a [href]="item.href" target="{{(item.id ==3)? '_self': '_blank' }}">
                     <i class="{{item.Icon}} mr-2 greenColor"></i>
                     {{ item.Title }}</a>
                 </li>
@@ -38,7 +38,7 @@
         </div>
         <div class="col-12 md:col-12 lg:col-12">
           <div class="contentTwo m-auto">
-            <p>© copyright 2024 ,All Rright reserved By GeoScape </p>
+            <p>© copyright 2024 ,All Right reserved By GeoScape </p>
             <p>© Distributed By <span class="greenColor" >GeoScape</span></p>
           </div>
         </div>

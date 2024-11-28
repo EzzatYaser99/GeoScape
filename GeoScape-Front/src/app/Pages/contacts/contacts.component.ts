@@ -67,29 +67,16 @@ export class ContactsComponent implements OnInit {
   }
   onChangeName(event: any) {
     this.name = event.target.value;
-    if(this.name != '' && this.name) {
-      this.invalidName = false;
-    }else{
-      this.invalidName = true;
-    }
+    this.invalidName = !(this.name != '' && this.name);
   }
 
   onChangeEmail(event: any) {
     this.email = event.target.value;
-    if(this.email?.match('^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$') != null) {
-      this.invalidEmail = false;
-    }else{
-      this.invalidEmail = true;
-
-    }
+    this.invalidEmail = this.email?.match('^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$') == null;
   }
   onChangePhoneNumber(event:any) {
     this.phone = event.target.value;
-    if(this.phone?.match(/^((\+?)\d{1,3}[- ]?)?\d{10,11}$/) && !(this.phone?.match(/0{5,}/))) {
-      this.invalidPhoneNumber = false;
-    }else{
-      this.invalidPhoneNumber = true;
-    }
+    this.invalidPhoneNumber = !(this.phone?.match(/^((\+?)\d{1,3}[- ]?)?\d{10,11}$/) && !(this.phone?.match(/0{5,}/)));
   }
 
 

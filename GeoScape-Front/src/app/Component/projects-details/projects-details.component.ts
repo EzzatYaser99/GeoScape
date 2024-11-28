@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {GalleriaModule} from "primeng/galleria";
 import {ListboxModule} from "primeng/listbox";
-import {PrimeTemplate} from "primeng/api";
 import {ActivatedRoute, RouterLink} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {ImageModule} from "primeng/image";
@@ -16,7 +15,6 @@ import {Ripple} from "primeng/ripple";
   imports: [
     GalleriaModule,
     ListboxModule,
-    PrimeTemplate,
     FormsModule,
     ImageModule,
     ButtonDirective,
