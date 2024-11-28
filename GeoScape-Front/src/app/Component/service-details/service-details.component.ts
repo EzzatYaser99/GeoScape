@@ -8,6 +8,7 @@ import {FormsModule} from "@angular/forms";
 import {GalleriaModule} from "primeng/galleria";
 import {ImageModule} from "primeng/image";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-services-details',
@@ -20,7 +21,8 @@ import {ProgressSpinnerModule} from "primeng/progressspinner";
     FormsModule,
     GalleriaModule,
     ImageModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+    NgOptimizedImage
   ],
   templateUrl: './service-details.component.html',
   styleUrl: './service-details.component.scss'

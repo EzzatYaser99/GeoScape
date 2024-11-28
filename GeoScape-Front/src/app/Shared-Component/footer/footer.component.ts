@@ -2,13 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import {FooterInfo} from "./FooterInfo";
 import {SocialMediaInfoComponent} from "../social-media-info/social-media-info.component";
 import {FormsModule} from "@angular/forms";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-footer',
   standalone: true,
   imports: [
     SocialMediaInfoComponent,
-    FormsModule
+    FormsModule,
+    NgOptimizedImage
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'

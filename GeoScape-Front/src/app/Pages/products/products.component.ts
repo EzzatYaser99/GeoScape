@@ -10,6 +10,7 @@ import {ImageModule} from "primeng/image";
 import {FormsModule} from "@angular/forms";
 import {TabViewModule} from "primeng/tabview";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-products',
@@ -25,7 +26,8 @@ import {ProgressSpinnerModule} from "primeng/progressspinner";
     ImageModule,
     FormsModule,
     TabViewModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+    NgOptimizedImage
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'

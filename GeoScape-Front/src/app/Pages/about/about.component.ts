@@ -7,6 +7,7 @@ import {TagModule} from "primeng/tag";
 import {AvatarModule} from "primeng/avatar";
 import {FieldsetModule} from "primeng/fieldset";
 import {HeaderComponent} from "../../Shared-Component/header/header.component";
+import {NgOptimizedImage} from "@angular/common";
 
 class Client {
   id?: string
@@ -27,7 +28,8 @@ class Client {
     TagModule,
     AvatarModule,
     FieldsetModule,
-    HeaderComponent
+    HeaderComponent,
+    NgOptimizedImage
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
