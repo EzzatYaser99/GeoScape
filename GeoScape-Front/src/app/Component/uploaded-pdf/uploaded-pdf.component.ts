@@ -16,7 +16,6 @@ import {DocumentService} from "../../core/service/document.service";
   styleUrl: './uploaded-pdf.component.scss'
 })
 export class UploadedPdfComponent implements OnInit {
-  documents: any;
   selectedDocument: any;
   url: any;
   isLoading: boolean = true;
