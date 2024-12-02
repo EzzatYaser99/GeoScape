@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Router, RouterLink} from "@angular/router";
 import {MenubarModule} from "primeng/menubar";
 import {RippleModule} from "primeng/ripple";
-import {NgClass} from "@angular/common";
+import {NgClass, NgOptimizedImage} from "@angular/common";
 import {FooterInfo} from "../footer/FooterInfo";
 
 @Component({
@@ -13,6 +13,7 @@ import {FooterInfo} from "../footer/FooterInfo";
     MenubarModule,
     RippleModule,
     NgClass,
+    NgOptimizedImage,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

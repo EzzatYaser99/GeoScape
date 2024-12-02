@@ -4,6 +4,7 @@ import {CarouselModule} from "primeng/carousel";
 import {TagModule} from "primeng/tag";
 import {AvatarModule} from "primeng/avatar";
 import {FieldsetModule} from "primeng/fieldset";
+import {NgOptimizedImage} from "@angular/common";
 
 class Client {
   id?: string
@@ -21,6 +22,7 @@ class Client {
     TagModule,
     AvatarModule,
     FieldsetModule,
+    NgOptimizedImage,
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
