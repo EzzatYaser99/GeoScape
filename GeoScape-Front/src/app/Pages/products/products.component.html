@@ -21,10 +21,10 @@
               <span class="font-bold white-space-nowrap m-0">
                    Plants
                 </span>
-              <img alt="GeoScape Plants" loading="lazy" width="40" height="40" ngSrc="assets/images/products-page/plant.webp">
+              <img alt="GeoScape Plants" height="40" loading="lazy" ngSrc="assets/images/products-page/plant.webp" width="40">
             </div>
           </ng-template>
-          <p class="m-0 my-4" >
+          <p class="m-0 my-4">
             At GeoScape Co, we offer a diverse selection of plants suitable for various landscaping
             and urban beautification projects. Our nursery includes .</p>
           <div class="grid w-full mx-auto ">
@@ -52,7 +52,7 @@
               <span class="font-bold white-space-nowrap m-0">
                  Trees
                 </span>
-              <img alt="GeoScape Trees" loading="lazy" width="40" height="40" ngSrc="assets/images/products-page/tree.webp">
+              <img alt="GeoScape Trees" height="40" loading="lazy" ngSrc="assets/images/products-page/tree.webp" width="40">
             </div>
           </ng-template>
           <p class="m-0 my-4">
@@ -64,7 +64,7 @@
                 <div class="card flex justify-content-center">
                   <p-card header="{{ tree.name }}">
                     <ng-template pTemplate="header">
-                      <img [alt]="tree.name" loading="lazy" height="250"  [src]="'assets/images/products-page/'+
+                      <img [alt]="tree.name" loading="lazy" height="250" [src]="'assets/images/products-page/'+
                       tree.imageSrc"/>
                     </ng-template>
 
@@ -89,8 +89,8 @@
               <span class="font-bold white-space-nowrap m-0">
                  BENITO Urban
                 </span>
-              <img alt="BENITO bench and lamp" loading="lazy" width="40" height="40"
-                   ngSrc="assets/images/products-page/park_bench_and_lamp.webp">
+              <img alt="BENITO bench and lamp" height="40" loading="lazy" ngSrc="assets/images/products-page/park_bench_and_lamp.webp"
+                   width="40">
             </div>
           </ng-template>
           <p class="m-0 mt-4">We are excited to introduce our esteemed partner, BENITO Urban. BENITO Urban is a renowned
@@ -101,12 +101,12 @@
               <div class="lg:w-10 w-12 m-auto ">
                 <h3>Benito Products</h3>
                 <p-listbox
-                  [filter]="true"
-                  [options]="benitoProducts"
                   (onChange)="onChangeProduct($event)"
-                  optionLabel="name"
-                  [style]="{ width: '100%' }"
+                  [filter]="true"
                   [listStyle]="{'max-height': '400px'}"
+                  [options]="benitoProducts"
+                  [style]="{ width: '100%' }"
+                  optionLabel="name"
                 >
                   <ng-template let-product pTemplate="item">
                     <div class="flex align-items-center gap-2">
@@ -118,63 +118,64 @@
             </div>
 
 
-
             <div class="col-12  md:col-7 mt-3 md:mt-7   flex justify-content-center">
               <div *ngIf="isLoading" class="card  flex justify-content-center align-items-center">
                 <p-progressSpinner
-                  styleClass="w-4rem h-4rem"
-                  strokeWidth="5"
+                  animationDuration=".5s"
                   fill="var(--surface-ground)"
-                  animationDuration=".5s"/>
+                  strokeWidth="5"
+                  styleClass="w-4rem h-4rem"/>
               </div>
 
 
               <div *ngIf="showSelectedProduct" class=" card flex justify-content-center align-items-center  loading-spinner">
                 <div class="card flex-column justify-content-center align-items-center">
                   <div class="flex justify-content-center align-items-center mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
-                    <img alt="GeoSCAPE Logo" loading="lazy" class="block" height="60" width="60" ngSrc="assets/images/logo.webp">
+                    <img alt="GeoSCAPE Logo" class="block" height="60" loading="lazy" ngSrc="assets/images/logo.webp" width="60">
                     <h4 class="mx-2">Please Select <span class="text-blue-500"> a Product </span>
                     </h4>
                   </div>
                 </div>
               </div>
 
-              <div class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 gallery-product" *ngIf="!isLoading && !showSelectedProduct">
+              <div *ngIf="!isLoading && !showSelectedProduct"
+                   class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 gallery-product">
                 <p-galleria
-                  [value]="selectedBenitoProduct?.subImages"
-                  [showItemNavigators]="true"
-                  [responsiveOptions]="responsiveOptions"
                   [containerStyle]="{ 'max-width': '100%' }"
-                  [numVisible]="3">
-                  <ng-template pTemplate="item" let-item>
-                    <img  loading="lazy" class="w-full" [style.border-radius]="'10px 10px 0px 0px '" [style.border]="'2px solid #86BB46'"
-                         [src]="'assets/images/products-page/benito-products/'+ item.imageSrc"
-                         [alt]="item.imageSrc"
-                         width="100%" height="400">
+                  [numVisible]="3"
+                  [responsiveOptions]="responsiveOptions"
+                  [showItemNavigators]="true"
+                  [value]="selectedBenitoProduct?.subImages">
+                  <ng-template let-item pTemplate="item">
+                    <img [alt]="item.imageSrc" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc"
+                         [style.border-radius]="'10px 10px 0px 0px '" [style.border]="'2px solid #86BB46'"
+                         class="w-full"
+                         height="400"
+                         loading="lazy" width="100%">
                   </ng-template>
-                  <ng-template pTemplate="thumbnail" let-item>
+                  <ng-template let-item pTemplate="thumbnail">
                     <div class="grid w-full mx-auto  grid-nogutter justify-content-center">
-                      <img [alt]="item.imageSrc" loading="lazy" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc" style="width:100px;
+                      <img [alt]="item.imageSrc" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc" loading="lazy"
+                           style="width:100px;
                       height:60px;"/>
                     </div>
                   </ng-template>
                 </p-galleria>
-                <div><p>{{ selectedBenitoProduct?.description  }}</p></div>
+                <div><p>{{ selectedBenitoProduct?.description }}</p></div>
               </div>
             </div>
-
 
 
             <div class="col-12 md:col-5 disappear-in-mobile ">
               <div class="lg:w-10 w-12 m-auto ">
                 <h3>Benito Products</h3>
                 <p-listbox
-                  [filter]="true"
-                  [options]="benitoProducts"
                   (onChange)="onChangeProduct($event)"
-                  optionLabel="name"
+                  [filter]="true"
+                  [listStyle]="{'max-height': '450px'}"
+                  [options]="benitoProducts"
                   [style]="{ width: '100%' }"
-                  [listStyle]="{'max-height': '450px'}">
+                  optionLabel="name">
                   <ng-template let-service pTemplate="item">
                     <div class="flex align-items-center gap-2">
                       <div>{{ service.name }}</div>
@@ -196,20 +197,16 @@
               <span class="font-bold white-space-nowrap mx-1">
                  Prasada
                 </span>
-              <img alt="Prasada Logo" loading="lazy" width="120" height="40"
-                   ngSrc="assets/images/products-page/prasada.webp">
+              <img alt="Prasada Logo" height="40" loading="lazy" ngSrc="assets/images/products-page/prasada.webp"
+                   width="120">
             </div>
           </ng-template>
           <p class="m-0 mt-4">Prasada Greenhouse Products
             Explore a comprehensive range of cutting-edge greenhouse solutions
             designed to enhance your growing operations.</p>
-
-
+          <app-prasada-products></app-prasada-products>
 
         </p-tabPanel>
-
-
-
 
 
       </p-tabView>
