@@ -14,7 +14,33 @@
       </div>
     </ng-template>
     <div class="mt-2">
-      <p-tabView>
+      <div class="flex mb-2 gap-2 justify-content-end">
+        <p-button
+          (onClick)="activeIndex = 0"
+          rounded="true"
+          styleClass="w-2rem h-2rem p-0"
+          [outlined]="activeIndex !== 0"
+          label="1"/>
+        <p-button
+          (onClick)="activeIndex = 1"
+          rounded="true"
+          styleClass="w-2rem h-2rem p-0"
+          [outlined]="activeIndex !== 1"
+          label="2"/>
+        <p-button
+          (onClick)="activeIndex = 2"
+          rounded="true"
+          styleClass="w-2rem h-2rem p-0"
+          [outlined]="activeIndex !== 2"
+          label="3"/>
+        <p-button
+          (onClick)="activeIndex = 3"
+          rounded="true"
+          styleClass="w-2rem h-2rem p-0"
+          [outlined]="activeIndex !== 3"
+          label="4"/>
+      </div>
+      <p-tabView [(activeIndex)]="activeIndex">
         <p-tabPanel>
           <ng-template pTemplate="header">
             <div class="flex align-items-center gap-0">
@@ -24,27 +50,28 @@
               <img alt="GeoScape Plants" height="40" loading="lazy" ngSrc="assets/images/products-page/plant.webp" width="40">
             </div>
           </ng-template>
-          <p class="m-0 my-4">
-            At GeoScape Co, we offer a diverse selection of plants suitable for various landscaping
-            and urban beautification projects. Our nursery includes .</p>
-          <div class="grid w-full mx-auto ">
-            @for (plant of plants; track plant) {
-              <div class="sm:col-6 md:col-4 lg:col-4 xl:col-3 m-auto mb-3">
-                <div class="card flex justify-content-center">
-                  <p-card header="{{ plant.name }}">
-                    <ng-template pTemplate="header">
-                      <img [alt]="plant.name" loading="lazy" class="" height="250" width="80%"
-                           [src]="'assets/images/products-page/plants/'+ plant.imageSrc"/>
-                    </ng-template>
-                    <p class="m-0" style="min-height: 80px;">
-                      {{ plant.description }}
-                    </p>
-                  </p-card>
+          <ng-template pTemplate="content">
+            <p class="m-0 my-4">
+              At GeoScape Co, we offer a diverse selection of plants suitable for various landscaping
+              and urban beautification projects. Our nursery includes .</p>
+            <div class="grid w-full mx-auto ">
+              @for (plant of plants; track plant) {
+                <div class="sm:col-6 md:col-4 lg:col-4 xl:col-3 m-auto mb-3">
+                  <div class="card flex justify-content-center">
+                    <p-card header="{{ plant.name }}">
+                      <ng-template pTemplate="header">
+                        <img [alt]="plant.name" loading="lazy" class="" height="250" width="80%"
+                             [src]="'assets/images/products-page/plants/'+ plant.imageSrc"/>
+                      </ng-template>
+                      <p class="m-0" style="min-height: 80px;">
+                        {{ plant.description }}
+                      </p>
+                    </p-card>
+                  </div>
                 </div>
-              </div>
-            }
-          </div>
-
+              }
+            </div>
+          </ng-template>
         </p-tabPanel>
         <p-tabPanel>
           <ng-template pTemplate="header">
@@ -55,31 +82,32 @@
               <img alt="GeoScape Trees" height="40" loading="lazy" ngSrc="assets/images/products-page/tree.webp" width="40">
             </div>
           </ng-template>
-          <p class="m-0 my-4">
-            At GeoScape Co, we offer a diverse selection of trees suitable for various landscaping
-            and urban beautification projects. Our nursery includes.</p>
-          <div class="grid w-full mx-auto  trees">
-            @for (tree of geoscapeTrees; track tree) {
-              <div class="sm:col-6 md:col-4 lg:col-4 xl:col-3 m-auto mb-3">
-                <div class="card flex justify-content-center">
-                  <p-card header="{{ tree.name }}">
-                    <ng-template pTemplate="header">
-                      <img [alt]="tree.name" loading="lazy" height="250" [src]="'assets/images/products-page/'+
+          <ng-template pTemplate="content">
+            <p class="m-0 my-4">
+              At GeoScape Co, we offer a diverse selection of trees suitable for various landscaping
+              and urban beautification projects. Our nursery includes.</p>
+            <div class="grid w-full mx-auto  trees">
+              @for (tree of geoscapeTrees; track tree) {
+                <div class="sm:col-6 md:col-4 lg:col-4 xl:col-3 m-auto mb-3">
+                  <div class="card flex justify-content-center">
+                    <p-card header="{{ tree.name }}">
+                      <ng-template pTemplate="header">
+                        <img [alt]="tree.name" loading="lazy" height="250" [src]="'assets/images/products-page/'+
                       tree.imageSrc"/>
-                    </ng-template>
+                      </ng-template>
 
-                    <p class="m-0">
-                      <span class="font-bold"> Category : </span> {{ tree.category }}  <i class="fa-solid fa-tree greenColor"></i>
-                    </p>
-                    <p class="m-0" style="min-height: 100px; font-size:14px;">
-                      {{ tree.description }}
-                    </p>
-                  </p-card>
+                      <p class="m-0">
+                        <span class="font-bold"> Category : </span> {{ tree.category }}  <i class="fa-solid fa-tree greenColor"></i>
+                      </p>
+                      <p class="m-0" style="min-height: 100px; font-size:14px;">
+                        {{ tree.description }}
+                      </p>
+                    </p-card>
+                  </div>
                 </div>
-              </div>
-            }
-          </div>
-
+              }
+            </div>
+          </ng-template>
         </p-tabPanel>
 
 
@@ -93,101 +121,102 @@
                    width="40">
             </div>
           </ng-template>
-          <p class="m-0 mt-4">We are excited to introduce our esteemed partner, BENITO Urban. BENITO Urban is a renowned
-            leader in urban furniture, playgrounds and outdoor fitness solutions. Their commitment to
-            innovation, quality, and sustainability aligns perfectly with our values and mission.</p>
-          <div class="grid w-full mx-auto">
-            <div class="col-12 md:col-4 appear-in-mobile ">
-              <div class="lg:w-10 w-12 m-auto ">
-                <h3>Benito Products</h3>
-                <p-listbox
-                  (onChange)="onChangeProduct($event)"
-                  [filter]="true"
-                  [listStyle]="{'max-height': '400px'}"
-                  [options]="benitoProducts"
-                  [style]="{ width: '100%' }"
-                  optionLabel="name"
-                >
-                  <ng-template let-product pTemplate="item">
-                    <div class="flex align-items-center gap-2">
-                      <div>{{ product.name }}</div>
-                    </div>
-                  </ng-template>
-                </p-listbox>
-              </div>
-            </div>
-
-
-            <div class="col-12  md:col-7 mt-3 md:mt-7   flex justify-content-center">
-              <div *ngIf="isLoading" class="card  flex justify-content-center align-items-center">
-                <p-progressSpinner
-                  animationDuration=".5s"
-                  fill="var(--surface-ground)"
-                  strokeWidth="5"
-                  styleClass="w-4rem h-4rem"/>
-              </div>
-
-
-              <div *ngIf="showSelectedProduct" class=" card flex justify-content-center align-items-center  loading-spinner">
-                <div class="card flex-column justify-content-center align-items-center">
-                  <div class="flex justify-content-center align-items-center mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
-                    <img alt="GeoSCAPE Logo" class="block" height="60" loading="lazy" ngSrc="assets/images/logo.webp" width="60">
-                    <h4 class="mx-2">Please Select <span class="text-blue-500"> a Product </span>
-                    </h4>
-                  </div>
+          <ng-template pTemplate="content">
+            <p class="m-0 mt-4">We are excited to introduce our esteemed partner, BENITO Urban. BENITO Urban is a renowned
+              leader in urban furniture, playgrounds and outdoor fitness solutions. Their commitment to
+              innovation, quality, and sustainability aligns perfectly with our values and mission.</p>
+            <div class="grid w-full mx-auto">
+              <div class="col-12 md:col-4 appear-in-mobile ">
+                <div class="lg:w-10 w-12 m-auto ">
+                  <h3>Benito Products</h3>
+                  <p-listbox
+                    (onChange)="onChangeProduct($event)"
+                    [filter]="true"
+                    [listStyle]="{'max-height': '400px'}"
+                    [options]="benitoProducts"
+                    [style]="{ width: '100%' }"
+                    optionLabel="name"
+                  >
+                    <ng-template let-product pTemplate="item">
+                      <div class="flex align-items-center gap-2">
+                        <div>{{ product.name }}</div>
+                      </div>
+                    </ng-template>
+                  </p-listbox>
                 </div>
               </div>
 
-              <div *ngIf="!isLoading && !showSelectedProduct"
-                   class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 gallery-product">
-                <p-galleria
-                  [containerStyle]="{ 'max-width': '100%' }"
-                  [numVisible]="3"
-                  [responsiveOptions]="responsiveOptions"
-                  [showItemNavigators]="true"
-                  [value]="selectedBenitoProduct?.subImages">
-                  <ng-template let-item pTemplate="item">
-                    <img [alt]="item.imageSrc" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc"
-                         [style.border-radius]="'10px 10px 0px 0px '" [style.border]="'2px solid #86BB46'"
-                         class="w-full"
-                         height="400"
-                         loading="lazy" width="100%">
-                  </ng-template>
-                  <ng-template let-item pTemplate="thumbnail">
-                    <div class="grid w-full mx-auto  grid-nogutter justify-content-center">
-                      <img [alt]="item.imageSrc" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc" loading="lazy"
-                           style="width:100px;
+
+              <div class="col-12  md:col-7 mt-3 md:mt-7   flex justify-content-center">
+                <div *ngIf="isLoading" class="card  flex justify-content-center align-items-center">
+                  <p-progressSpinner
+                    animationDuration=".5s"
+                    fill="var(--surface-ground)"
+                    strokeWidth="5"
+                    styleClass="w-4rem h-4rem"/>
+                </div>
+
+
+                <div *ngIf="showSelectedProduct" class=" card flex justify-content-center align-items-center  loading-spinner">
+                  <div class="card flex-column justify-content-center align-items-center">
+                    <div class="flex justify-content-center align-items-center mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
+                      <img alt="GeoSCAPE Logo" class="block" height="60" loading="lazy" ngSrc="assets/images/logo.webp" width="60">
+                      <h4 class="mx-2">Please Select <span class="text-blue-500"> a Product </span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div *ngIf="!isLoading && !showSelectedProduct"
+                     class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 gallery-product">
+                  <p-galleria
+                    [containerStyle]="{ 'max-width': '100%' }"
+                    [numVisible]="3"
+                    [responsiveOptions]="responsiveOptions"
+                    [showItemNavigators]="true"
+                    [value]="selectedBenitoProduct?.subImages">
+                    <ng-template let-item pTemplate="item">
+                      <img [alt]="item.imageSrc" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc"
+                           [style.border-radius]="'10px 10px 0px 0px '" [style.border]="'2px solid #86BB46'"
+                           class="w-full"
+                           height="400"
+                           loading="lazy" width="100%">
+                    </ng-template>
+                    <ng-template let-item pTemplate="thumbnail">
+                      <div class="grid w-full mx-auto  grid-nogutter justify-content-center">
+                        <img [alt]="item.imageSrc" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc" loading="lazy"
+                             style="width:100px;
                       height:60px;"/>
-                    </div>
-                  </ng-template>
-                </p-galleria>
-                <div><p>{{ selectedBenitoProduct?.description }}</p></div>
+                      </div>
+                    </ng-template>
+                  </p-galleria>
+                  <div><p>{{ selectedBenitoProduct?.description }}</p></div>
+                </div>
               </div>
-            </div>
 
 
-            <div class="col-12 md:col-5 disappear-in-mobile ">
-              <div class="lg:w-10 w-12 m-auto ">
-                <h3>Benito Products</h3>
-                <p-listbox
-                  (onChange)="onChangeProduct($event)"
-                  [filter]="true"
-                  [listStyle]="{'max-height': '450px'}"
-                  [options]="benitoProducts"
-                  [style]="{ width: '100%' }"
-                  optionLabel="name">
-                  <ng-template let-service pTemplate="item">
-                    <div class="flex align-items-center gap-2">
-                      <div>{{ service.name }}</div>
-                    </div>
-                  </ng-template>
-                </p-listbox>
+              <div class="col-12 md:col-5 disappear-in-mobile ">
+                <div class="lg:w-10 w-12 m-auto ">
+                  <h3>Benito Products</h3>
+                  <p-listbox
+                    (onChange)="onChangeProduct($event)"
+                    [filter]="true"
+                    [listStyle]="{'max-height': '450px'}"
+                    [options]="benitoProducts"
+                    [style]="{ width: '100%' }"
+                    optionLabel="name">
+                    <ng-template let-service pTemplate="item">
+                      <div class="flex align-items-center gap-2">
+                        <div>{{ service.name }}</div>
+                      </div>
+                    </ng-template>
+                  </p-listbox>
+                </div>
               </div>
+
+
             </div>
-
-
-          </div>
-
+          </ng-template>
         </p-tabPanel>
 
 
@@ -201,11 +230,12 @@
                    width="120">
             </div>
           </ng-template>
-          <p class="m-0 mt-4">Prasada Greenhouse Products
-            Explore a comprehensive range of cutting-edge greenhouse solutions
-            designed to enhance your growing operations.</p>
-          <app-prasada-products></app-prasada-products>
-
+          <ng-template pTemplate="content">
+            <p class="m-0 mt-4">Prasada Greenhouse Products
+              Explore a comprehensive range of cutting-edge greenhouse solutions
+              designed to enhance your growing operations.</p>
+            <app-prasada-products></app-prasada-products>
+          </ng-template>
         </p-tabPanel>
 
 

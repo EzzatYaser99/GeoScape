@@ -6,15 +6,19 @@ import {GreenhouseService} from "../../core/service/greenhouse.service";
 import {SeedlingProductsService} from "../../core/service/seedling-products.service";
 import {CardModule} from "primeng/card";
 import {CultivationProductsService} from "../../core/service/cultivation-products.service";
+import {NgOptimizedImage} from "@angular/common";
+import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
 
 @Component({
   selector: 'app-prasada-products',
   standalone: true,
   imports: [
     TabViewModule,
-    Button,
     GalleriaModule,
-    CardModule
+    CardModule,
+    NgOptimizedImage,
+    CarouselModule,
+    Button
   ],
   templateUrl: './prasada-products.component.html',
   styleUrl: './prasada-products.component.scss'
@@ -23,9 +27,11 @@ export class PrasadaProductsComponent implements OnInit {
 
   greenhouseProducts: any[] | undefined;
   responsiveOptions: GalleriaResponsiveOptions[] | undefined;
+  carouselResponsiveOptions: CarouselResponsiveOptions[] | undefined;
   images: any[] | undefined;
   seedlingProducts: any[] | undefined;
-  cultivationProducts:any[] | undefined;
+  cultivationProducts: any[] | undefined;
+  activeIndex: number = 0;
 
   constructor(private _greenhouseService: GreenhouseService,
               private _seedlingService: SeedlingProductsService,
@@ -47,12 +53,12 @@ export class PrasadaProductsComponent implements OnInit {
       }
     ];
 
-  }
-
-  ngOnInit(): void {
     this.greenhouseProducts = this._greenhouseService.getGreenhouseProducts();
     this.seedlingProducts = this._seedlingService.getSeedlingProducts();
     this.cultivationProducts = this._cultivationService.getCultivationProductProducts();
+  }
+
+  ngOnInit(): void {
 
   }
 }

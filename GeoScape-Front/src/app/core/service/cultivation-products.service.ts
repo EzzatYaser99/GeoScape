@@ -16,7 +16,7 @@ export class CultivationProductsService {
         {id: 3, imageSrc: 'Cultivation-NFT-hydroponic-for-leafy-vegetable/NFT-hydroponic-system-8.webp'},
         {id: 4, imageSrc: 'Cultivation-NFT-hydroponic-for-leafy-vegetable/NFT-hydroponic-system-9.webp'},
         {id: 5, imageSrc: 'Cultivation-NFT-hydroponic-for-leafy-vegetable/NFT-hydroponic-system-10.webp'},
-        {id: 5, imageSrc: 'Cultivation-NFT-hydroponic-for-leafy-vegetable/NFT-hydroponic-system-11.webp'},
+        {id: 6, imageSrc: 'Cultivation-NFT-hydroponic-for-leafy-vegetable/NFT-hydroponic-system-11.webp'},
 
       ]
     },
@@ -29,8 +29,8 @@ export class CultivationProductsService {
         {id: 3, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-9.webp'},
         {id: 4, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-10.webp'},
         {id: 5, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-11.webp'},
-        {id: 5, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-12.webp'},
-        {id: 5, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-13.webp'},
+        {id: 6, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-12.webp'},
+        {id: 7, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-13.webp'},
       ]
     },
     {

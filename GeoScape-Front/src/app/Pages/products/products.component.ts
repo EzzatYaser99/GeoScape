@@ -11,6 +11,7 @@ import {TabViewModule} from "primeng/tabview";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
 import {NgOptimizedImage} from "@angular/common";
 import {PrasadaProductsComponent} from "../../Component/prasada-products/prasada-products.component";
+import {Button} from "primeng/button";
 
 @Component({
   selector: 'app-products',
@@ -27,7 +28,8 @@ import {PrasadaProductsComponent} from "../../Component/prasada-products/prasada
     TabViewModule,
     ProgressSpinnerModule,
     NgOptimizedImage,
-    PrasadaProductsComponent
+    PrasadaProductsComponent,
+    Button
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
@@ -40,7 +42,9 @@ export class ProductsComponent implements OnInit {
   responsiveOptions: any[] | undefined;
   isLoading: boolean = true;
   showSelectedProduct: boolean =false;
-constructor() {
+  activeIndex: number = 0;
+
+  constructor() {
   this.responsiveOptions = [
     {
       breakpoint: '1024px',
