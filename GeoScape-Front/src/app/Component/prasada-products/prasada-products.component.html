@@ -38,13 +38,14 @@
                 [responsiveOptions]="carouselResponsiveOptions">
                 <ng-template let-item pTemplate="item">
                   <div class="relative mx-auto">
-                    <img loading="lazy" height="220" style="width: 100%; display:block; height:220px;"
+                    <img height="220" width="100%" style="width: 100%;
+                    display:block; height:220px;"
                          [ngSrc]="'assets/images/products-page/prasada-products/Greenhouse/'+item?.imageSrc"
                          [alt]="item?.imageSrc"/>
                   </div>
                 </ng-template>
               </p-carousel>
-              <div><p class="text-center font-bold text-base m-0">{{ greenhouse.name }}</p></div>
+              <div><p class="text-center font-bold text-base m-0 px-2">{{ greenhouse.name }}</p></div>
               <div class="py-1 px-2"><p class="text-center mt-2">{{ greenhouse.description }}</p></div>
             </div>
           </div>
@@ -69,13 +70,13 @@
                 [responsiveOptions]="carouselResponsiveOptions">
                 <ng-template let-item pTemplate="item">
                   <div class="relative mx-auto">
-                    <img  loading="lazy" height="220" style="width: 100%; display:block; height:220px;"
+                    <img height="220" width="100%" style="width: 100%; display:block; height:220px;"
                          [ngSrc]="'assets/images/products-page/prasada-products/Cultivation/'+item?.imageSrc"
                          [alt]="item?.imageSrc"/>
                   </div>
                 </ng-template>
               </p-carousel>
-              <div><p class="text-center font-bold text-base m-0">{{ cultivationProduct.name }}</p></div>
+              <div><p class="text-center font-bold text-base m-0  px-2">{{ cultivationProduct.name }}</p></div>
               <div class="py-1 px-2"><p class="text-center mt-2">{{ cultivationProduct.description }}</p></div>
             </div>
           </div>
@@ -100,13 +101,13 @@
                 [responsiveOptions]="carouselResponsiveOptions">
                 <ng-template let-item pTemplate="item">
                   <div class="relative mx-auto">
-                    <img loading="lazy" height="220" style="width: 100%; display:block; height:220px;"
+                    <img height="220" width="100%" style="width: 100%; display:block; height:220px;"
                          [ngSrc]="'assets/images/products-page/prasada-products/Seedling/'+item?.imageSrc"
                          [alt]="item?.imageSrc"/>
                   </div>
                 </ng-template>
               </p-carousel>
-              <div><p class="text-center font-bold text-base m-0">{{ seedlingProduct.name }}</p></div>
+              <div><p class="text-center font-bold text-base m-0  px-2">{{ seedlingProduct.name }}</p></div>
               <div class="py-1 px-2"><p class="text-center mt-2">{{ seedlingProduct.description }}</p></div>
             </div>
           </div>
