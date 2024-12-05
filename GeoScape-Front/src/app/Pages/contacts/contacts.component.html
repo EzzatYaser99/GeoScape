@@ -12,14 +12,16 @@ zoomin animation-duration-1000 animation-iteration-1"
       <span class="block "><i class="pi pi-map-marker greenColor mr-2"></i><a
         href="https://maps.app.goo.gl/tAMe31CRJtVjrR717" target="_blank">King Fahd Rd, Al Olaya, Riyadh 8530</a></span>
       <span class="block my-2"><i class="pi pi-inbox greenColor mr-2"></i><a href="mailto:info@geoscape.net" target="_blank">info&#64;geoscape.net</a></span>
-      <span class="block"><i class="pi pi-phone greenColor mr-2"> </i><a href="https://wa.me/966546644283" target="_blank">+966 54 664 4283</a></span>
+      <span class="block"><i class="pi pi-phone greenColor mr-2"> </i><a href="https://wa.me/966546644283"
+                                                                         target="_blank">+966 54 664 4283</a></span>
     </div>
 
     <div class="mt-5">
       <span class="fa-xl font-bold">Egypt Office</span>
       <div class="line my-3 w-9"></div>
       <span class="block"><i class="pi pi-map-marker greenColor mr-2"></i><a
-        href="https://maps.app.goo.gl/msYv7W3w49qJtfwk7?g_st=iwb" target="_blank">Islam Ra’fat St, New Cairo, First Settlement, Cairo</a></span>
+        href="https://maps.app.goo.gl/msYv7W3w49qJtfwk7?g_st=iwb"
+        target="_blank">Islam Ra’fat St, New Cairo, First Settlement, Cairo</a></span>
       <span class="block my-2"><i class="pi pi-inbox greenColor mr-2"></i><a href="mailto:info@geoscape.net" target="_blank">info&#64;geoscape.net</a></span>
       <span class="block"><i class="pi pi-phone greenColor mr-2"></i><a
         href="https://wa.me/201200000662" target="_blank">+20 01200000662 </a></span>
@@ -28,63 +30,66 @@ zoomin animation-duration-1000 animation-iteration-1"
 
   <div class="col-12 sm:col-6 mt-2 get-in-Touch">
     <div class="mt-5 "><h2>Get In Touch</h2></div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input class="w-full" type="text" (change)="onChangeName($event)"  pInputText
-                                                 [(ngModel)]="name" placeholder="Name *"/>
-    <span *ngIf="invalidName" class="block"> please add your name * </span> </div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input class="w-full" type="email" (change)="onChangeEmail($event)"  pInputText
-                                                 [(ngModel)]="email" placeholder="example@gmail.com *"/>
+    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input (change)="onChangeName($event)" [(ngModel)]="name" class="w-full" pInputText
+                                                       placeholder="Name *" type="text"/>
+      <span *ngIf="invalidName" class="block"> please add your name * </span></div>
+    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input (change)="onChangeEmail($event)" [(ngModel)]="email" class="w-full" pInputText
+                                                       placeholder="example@gmail.com *" type="email"/>
       <span *ngIf="invalidEmail" class="block"> please add valid email * </span>
     </div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input class="w-full" type="text" (change)="onChangePhoneNumber($event)"  pInputText
-                                                 [(ngModel)]="phone" placeholder="Phone no *"/>
-    <span *ngIf="invalidPhoneNumber" class="block"> please add valid phone number *</span>
+    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input (change)="onChangePhoneNumber($event)" [(ngModel)]="phone" class="w-full" pInputText
+                                                       placeholder="Phone no *" type="text"/>
+      <span *ngIf="invalidPhoneNumber" class="block"> please add valid phone number *</span>
     </div>
     <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto">
       <p-multiSelect
-        [options]="Services"
         [(ngModel)]="selectedServices"
-        placeholder="Select Services"
-        optionLabel="name">
+        [options]="geoscapeServices"
+        optionLabel="name"
+        placeholder="Select Services">
         <ng-template let-value pTemplate="selectedItems">
-          <div class="inline-flex align-items-center gap-2 px-1" *ngFor="let service of value">
-            <img  loading="lazy"
-                  [alt]="service.name"
-              [src]="'assets/images/services/'+ service.image"
-              [class]="'flag flag-' + service.name.toLowerCase()"
-              style="width: 36px"/>
+          <div *ngFor="let service of value" class="inline-flex align-items-center gap-2 px-1">
+            <img [alt]="service.alt"
+                 [class]="'flag flag-' + service.name.toLowerCase()"
+                 [src]="'assets/images/services/'+ service.image"
+                 loading="lazy"
+                 style="width: 36px"/>
             <div>{{ service.name }},</div>
           </div>
           <div *ngIf="!value || value.length === 0">Select Services</div>
         </ng-template>
         <ng-template let-service pTemplate="item">
           <div class="flex align-items-center gap-2">
-            <img loading="lazy"
-                 [alt]="service.name"
+            <img [alt]="service.alt"
+                 [class]="'image-radius flag flag-' + service.name.toLowerCase() "
                  [src]="'assets/images/services/'+ service.image"
-              [class]="'image-radius flag flag-' + service.name.toLowerCase() "
-              style="width: 50px"/>
+                 loading="lazy"
+                 style="width: 50px"/>
             <div>{{ service.name }}</div>
           </div>
         </ng-template>
       </p-multiSelect>
     </div>
-    <div><textarea class="w-11 md:w-8 lg:w-7 mt-1 m-auto"
-        rows="5"
-        cols="30"
-        pInputTextarea
-        [(ngModel)]="message"
-        placeholder="Message">
+    <div><textarea [(ngModel)]="message"
+                   class="w-11 md:w-8 lg:w-7 mt-1 m-auto"
+                   cols="30"
+                   pInputTextarea
+                   placeholder="Message"
+                   rows="5">
     </textarea></div>
-    <div> <button [disabled]="validateDisable()"  pButton pRipple label="Submit" (click)="submitForm()"
-                  class="p-button-success w-11 md:w-8 lg:w-7 mt-1 green-Bg-Color"></button></div>
+    <div>
+      <button (click)="submitForm()" [disabled]="validateDisable()" class="p-button-success w-11 md:w-8 lg:w-7 mt-1 green-Bg-Color"
+              label="Submit" pButton
+              pRipple></button>
+    </div>
 
-    @if (showMessage){
-    <div  class="w-12 successMessage m-auto">
-    <p-messages [(value)]="successMessage" [enableService]="false" />
-    </div>
-      <div  class="w-12 errorMessage m-auto">
-    <p-messages [(value)]="errorMessage" [enableService]="false" />
-    </div>
+    @if (showMessage) {
+      <div class="w-12 successMessage m-auto">
+        <p-messages [(value)]="successMessage" [enableService]="false"/>
+      </div>
+      <div class="w-12 errorMessage m-auto">
+        <p-messages [(value)]="errorMessage" [enableService]="false"/>
+      </div>
     }
 
   </div>

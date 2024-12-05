@@ -44,7 +44,7 @@ export class GreenhouseService {
     {
       id: 4, name: 'Polycarbonate Greenhouse', description: 'Engineered for durability and insulation, this greenhouse' +
         ' features polycarbonate panels that ensure excellent light ' +
-      'diffusion and UV protection. Ideal for creating optimal growing ' +
+        'diffusion and UV protection. Ideal for creating optimal growing ' +
         'conditions for a wide range of crops.', subImages: [
         {id: 1, imageSrc: 'Polycarbonate-Greenhouse/Polycarbonate-Greenhouse-6.webp'},
         {id: 2, imageSrc: 'Polycarbonate-Greenhouse/Polycarbonate-Greenhouse-7.webp'},

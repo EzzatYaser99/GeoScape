@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {TabViewModule} from "primeng/tabview";
 import {Button} from "primeng/button";
 import {GalleriaModule, GalleriaResponsiveOptions} from "primeng/galleria";
@@ -6,7 +6,6 @@ import {GreenhouseService} from "../../core/service/greenhouse.service";
 import {SeedlingProductsService} from "../../core/service/seedling-products.service";
 import {CardModule} from "primeng/card";
 import {CultivationProductsService} from "../../core/service/cultivation-products.service";
-import {NgOptimizedImage} from "@angular/common";
 import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
 
 @Component({
@@ -16,14 +15,13 @@ import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
     TabViewModule,
     GalleriaModule,
     CardModule,
-    NgOptimizedImage,
     CarouselModule,
     Button
   ],
   templateUrl: './prasada-products.component.html',
   styleUrl: './prasada-products.component.scss'
 })
-export class PrasadaProductsComponent implements OnInit {
+export class PrasadaProductsComponent {
 
   greenhouseProducts: any[] | undefined;
   responsiveOptions: GalleriaResponsiveOptions[] | undefined;
@@ -58,7 +56,5 @@ export class PrasadaProductsComponent implements OnInit {
     this.cultivationProducts = this._cultivationService.getCultivationProductProducts();
   }
 
-  ngOnInit(): void {
 
-  }
 }

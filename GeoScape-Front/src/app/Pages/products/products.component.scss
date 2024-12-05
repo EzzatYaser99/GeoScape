@@ -70,7 +70,7 @@
     width: 1rem;
     height: 1rem;
     color: black;
-    padding:10px;
+    padding: 10px;
 
   }
 
@@ -101,18 +101,21 @@
 
   }
 }
+
 :host ::ng-deep {
   .p-tabview .p-tabview-panels {
     padding: 0;
   }
-  .p-tabview .p-tabview-nav li .p-tabview-nav-link{
-    padding:5px 5px;
+
+  .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    padding: 5px 5px;
   }
 }
+
 @media screen and (max-width: 770px) {
   :host ::ng-deep {
     .p-tabview .p-tabview-nav {
-      display:block;
+      display: block;
     }
   }
 }

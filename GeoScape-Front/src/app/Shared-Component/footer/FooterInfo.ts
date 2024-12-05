@@ -5,5 +5,5 @@ export interface FooterInfo {
   Icon?: string;
   href?: string;
   title?: string;
-  id?:number
+  id?: number
 }

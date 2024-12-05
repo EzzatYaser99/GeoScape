@@ -1,11 +1,11 @@
 <div class="bg-image flex justify-content-start align-items-center text-center
 zoomin animation-duration-1000 animation-iteration-1"
      style='background-image: url("assets/images/home-page/home-page.webp")'>
-    <div class="home-text zoomin animation-duration-2000 animation-iteration-1">
-      <p class="mx-1">Our goal is to design stunning and functional environments
+  <div class="home-text zoomin animation-duration-2000 animation-iteration-1">
+    <p class="mx-1">Our goal is to design stunning and functional environments
       for our clients with the
       utmost professionalism.</p>
-    </div>
+  </div>
 </div>
 <div class="my-5 zoomin animation-duration-1000 animation-iteration-1">
   <p-fieldset>
@@ -29,7 +29,7 @@ zoomin animation-duration-1000 animation-iteration-1"
 
 
 <div class="mb-5">
-  <div class="text-center mb-3"><h1 class="" style="font-family: 'FreeSerif'">Why Choose Us ?</h1></div>
+  <div class="text-center mb-3"><h1>Why Choose Us ?</h1></div>
   <div class="grid w-full mx-auto">
     <div class="md:col-6 lg:col-3">
       <div class="card">
@@ -72,29 +72,29 @@ zoomin animation-duration-1000 animation-iteration-1"
         <span class="font-bold greenColor ml-2">Company Approvals</span>
       </div>
     </ng-template>
-      <div class="grid w-full mx-auto mt-5">
-        @for (document of documents.slice(1, 10); track document) {
-          <div class="flex flex-wrap m-auto justify-content-center">
-            <div class="approvals text-center m-3 zoomin  animation-duration-1000 animation-iteration-1 ">
+    <div class="grid w-full mx-auto mt-5">
+      @for (document of documents.slice(1, 10); track document) {
+        <div class="flex flex-wrap m-auto justify-content-center">
+          <div class="approvals text-center m-3 zoomin  animation-duration-1000 animation-iteration-1 ">
 
-              <a target="_self" [routerLink]="'/main/uploadPdf/'+document.id"><img loading="lazy"
-                                                                                   [alt]="document.name"
+            <a target="_self" [routerLink]="'/main/uploadPdf/'+document.id">
 
-                                                                                   width="235"
-                height="300"
-                class="block m-auto" [src]="'assets/document-approvals/'+ document.imgSrc">
-              </a>
+              <img loading="lazy"
+                   [alt]="document.alt"
+                   width="235"
+                   height="300"
+                   class="block m-auto"
+                   [src]="'assets/document-approvals/'+ document.imgSrc">
+            </a>
 
-              <a class="block mt-4" target="_self" [routerLink]="'/main/uploadPdf/'+document.id"> {{ document.name }}
-
-              </a>
-            </div>
+            <a class="block mt-4" target="_self" [routerLink]="'/main/uploadPdf/'+document.id"> {{ document.name }}</a>
           </div>
+        </div>
 
 
-        }
+      }
 
-      </div>
+    </div>
   </p-fieldset>
 
 </section>

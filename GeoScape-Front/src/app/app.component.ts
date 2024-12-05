@@ -16,9 +16,11 @@ import {ProgressSpinnerModule} from "primeng/progressspinner";
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router) {}
   title = 'GeoScape';
   isLoading: boolean = true;
+
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
     this.router.events.pipe(
@@ -29,7 +31,7 @@ export class AppComponent implements OnInit {
 
     setTimeout(() => {
       this.isLoading = false;
-    }, 2500);
+    }, 2000);
 
   }
 

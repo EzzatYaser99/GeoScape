@@ -6,7 +6,6 @@
 */
 
 
-
 .socialMedia i {
   font-size: 25px;
   padding: 8px;
@@ -15,18 +14,20 @@
   -o-transition: all .2s;
   transition: all .2s;
   margin-top: 10px;
-  background:white;
+  background: white;
   border-radius: 50%;
-  margin-left:10px
+  margin-left: 10px
 }
 
 .socialMedia {
   .facebook {
-    color: #0b40ec !important ;
+    color: #0b40ec !important;
   }
-  .whatsapp{
-    color:#86BB46 !important;
+
+  .whatsapp {
+    color: #86BB46 !important;
   }
+
   .linkedin {
     color: #266aea !important;
   }
@@ -34,14 +35,16 @@
   .instagram {
     color: #da6502 !important;
   }
+
   .twitter {
     color: black !important;
   }
 
-  i:hover{
-    color:#86BB46 !important;
+  i:hover {
+    color: #86BB46 !important;
   }
 }
+
 @media screen and (max-width: 440px) {
   .socialMedia i {
     font-size: 20px;
@@ -51,7 +54,8 @@
     -o-transition: all .2s;
     transition: all .2s;
     margin-top: 10px;
-    background:white;
+    background: white;
     border-radius: 50%;
-    margin-left:10px  }
+    margin-left: 10px
+  }
 }

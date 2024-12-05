@@ -67,6 +67,7 @@ h2, h4 {
     height: 270px
   }
 }
+
 .zoom-img {
   &:hover img {
     -webkit-transform: scale(1);
@@ -74,6 +75,7 @@ h2, h4 {
     transform: scale(1);
   }
 }
+
 @media screen and (max-width: 770px) {
   :host ::ng-deep {
     .p-carousel .p-carousel-indicators {
@@ -91,6 +93,7 @@ h2, h4 {
     }
   }
 }
+
 @media screen and (max-width: 770px) {
 
   .fieldset {

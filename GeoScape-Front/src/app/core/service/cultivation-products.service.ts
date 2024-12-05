@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +23,7 @@ export class CultivationProductsService {
     {
       id: 2, name: 'Cultivation – Vine Crop Gutter Planting System', description: 'A specialized planting system designed for' +
         ' vine crops like tomatoes and cucumbers. It uses gutters for precise irrigation and drainage, ensuring healthy root ' +
-        'systems and higher yields.' , subImages: [
+        'systems and higher yields.', subImages: [
         {id: 1, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-7.webp'},
         {id: 2, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-8.webp'},
         {id: 3, imageSrc: 'Cultivation-Substrate-growing-system/vine-crop-gutter-planting-9.webp'},

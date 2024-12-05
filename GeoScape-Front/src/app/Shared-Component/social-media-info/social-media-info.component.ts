@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {FooterInfo} from "../footer/FooterInfo";
 
 @Component({
@@ -10,40 +10,41 @@ import {FooterInfo} from "../footer/FooterInfo";
 })
 export class SocialMediaInfoComponent {
   socialMediaInfo: Array<FooterInfo> = [];
-constructor() {
 
-  this.socialMediaInfo= [
-    {
-      title: 'facebook',
-      iconClass: ' pi pi-facebook facebook',
-      href: 'https://www.facebook.com/profile.php?id=61560500246911',
+  constructor() {
 
-    },
-    {
-      title: 'whatsapp',
-      iconClass: 'pi pi-whatsapp whatsapp',
-      href: 'https://wa.me/966546644283',
+    this.socialMediaInfo = [
+      {
+        title: 'facebook',
+        iconClass: ' pi pi-facebook facebook',
+        href: 'https://www.facebook.com/profile.php?id=61560500246911',
 
-    },
+      },
+      {
+        title: 'whatsapp',
+        iconClass: 'pi pi-whatsapp whatsapp',
+        href: 'https://wa.me/966546644283',
 
-    {
-      title: 'linkedin',
-      iconClass: 'pi pi-linkedin linkedin',
-      href: 'https://www.linkedin.com/company/geoscape-landscape/about/',
+      },
 
-    },
-    {
-      title: 'twitter',
-      iconClass: 'pi pi-twitter twitter',
-      href: 'https://x.com/infogeoscape0',
-    },
-    {
-      title: 'instagram',
-      iconClass: 'pi pi-instagram instagram',
-      href: 'https://www.instagram.com/geoscapelandscape?igsh=MWZndjRjZDExZ2Fxaw%3D%3D&utm_source=qr',
-    },
+      {
+        title: 'linkedin',
+        iconClass: 'pi pi-linkedin linkedin',
+        href: 'https://www.linkedin.com/company/geoscape-landscape/about/',
+
+      },
+      {
+        title: 'twitter',
+        iconClass: 'pi pi-twitter twitter',
+        href: 'https://x.com/infogeoscape0',
+      },
+      {
+        title: 'instagram',
+        iconClass: 'pi pi-instagram instagram',
+        href: 'https://www.instagram.com/geoscapelandscape?igsh=MWZndjRjZDExZ2Fxaw%3D%3D&utm_source=qr',
+      },
 
 
-  ];
-}
+    ];
+  }
 }

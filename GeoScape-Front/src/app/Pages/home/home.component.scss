@@ -22,6 +22,7 @@
   max-width: 600px;
   background-color: #ffffff87;
   border-radius: 20px;
+
   p {
     font-size: 25px;
     color: #646161;
@@ -70,6 +71,7 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
   }
+
   p {
     color: #70787f
   }
@@ -81,6 +83,7 @@
   }
 
 }
+
 .approvals-documents {
   h2 {
     border-radius: 5px;
@@ -117,10 +120,11 @@
     }
   }
 }
+
 @media screen and (max-width: 992px) {
   .home-text {
     p {
-      font-size:14px
+      font-size: 14px
     }
   }
 }

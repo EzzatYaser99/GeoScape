@@ -6,9 +6,10 @@
 */
 
 
-.appear-in-mobile{
-  display:none;
+.appear-in-mobile {
+  display: none;
 }
+
 @media screen and (max-width: 770px) {
   :host ::ng-deep {
     .p-listbox-list {
@@ -20,11 +21,11 @@
       height: 250px
     }
   }
-  .disappear-in-mobile{
-    display:none;
+  .disappear-in-mobile {
+    display: none;
   }
-  .appear-in-mobile{
-    display:unset;
+  .appear-in-mobile {
+    display: unset;
   }
 }
 
@@ -33,6 +34,6 @@
     width: 1rem;
     height: 1rem;
     color: white;
-    padding:10px;
+    padding: 10px;
   }
 }

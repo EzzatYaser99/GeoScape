@@ -18,12 +18,14 @@ import {FooterInfo} from "../footer/FooterInfo";
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent  implements OnInit {
+export class HeaderComponent implements OnInit {
   headerItems: any[] | undefined;
   socialMediaInfo: Array<FooterInfo> = [];
-  constructor(private _router:Router) {}
 
-    ngOnInit() {
+  constructor(private _router: Router) {
+  }
+
+  ngOnInit() {
     this.headerItems = [
       {
         label: 'Home',
@@ -44,7 +46,7 @@ export class HeaderComponent  implements OnInit {
         label: 'About ',
         isActive: false,
         routerLink: 'about',
-      },{
+      }, {
         label: 'Projects ',
         isActive: false,
         routerLink: 'projects',
@@ -60,9 +62,9 @@ export class HeaderComponent  implements OnInit {
         routerLink: 'contacts',
       },
     ];
-      this.getActivePage()
+    this.getActivePage()
 
-    this.socialMediaInfo= [
+    this.socialMediaInfo = [
       {
         iconClass: ' pi pi-facebook',
         href: 'https://www.facebook.com/ntgclaritynetworks',
@@ -106,7 +108,7 @@ export class HeaderComponent  implements OnInit {
     const urlParts = url.split('/');
     const word = urlParts[urlParts.length - 1];
     this.headerItems?.forEach((obj: any) => {
-      if(obj.routerLink == word){
+      if (obj.routerLink == word) {
         obj.isActive = true;
       }
     });

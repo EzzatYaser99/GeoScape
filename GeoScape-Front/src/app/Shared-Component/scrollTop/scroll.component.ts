@@ -16,7 +16,7 @@ export class ScrollComponent {
 
   scrollToTop($event: MouseEvent) {
     $event.preventDefault();
-    document.documentElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    document.documentElement.scrollIntoView({behavior: "smooth", block: "start"});
     setTimeout(() => {
       document.documentElement.scrollTop = 0;
     }, 500);

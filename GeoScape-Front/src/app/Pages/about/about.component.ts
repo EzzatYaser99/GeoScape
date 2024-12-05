@@ -5,13 +5,9 @@ import {TagModule} from "primeng/tag";
 import {AvatarModule} from "primeng/avatar";
 import {FieldsetModule} from "primeng/fieldset";
 import {NgOptimizedImage} from "@angular/common";
+import {GeoscapeClientsService} from "../../core/service/geoscape-clients.service";
+import {Client} from "../../core/types/client.type";
 
-class Client {
-  id?: string
-  name?: string
-  image?: string
-
-}
 
 @Component({
   selector: 'app-about',
@@ -27,64 +23,13 @@ class Client {
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
-export class AboutComponent implements OnInit{
-  clients: Client[] =[{
-    id: '',
-    name: ' ',
-    image: '.',
-  }];
+export class AboutComponent implements OnInit {
+  clients: Client[] = [];
 
   responsiveOptions: any[] | undefined;
 
-  constructor() {
-    this.clients = [
-      {
-        id: '1',
-        name: 'Sports Boulevard',
-        image: 'sports-boulevard.webp',
-      },
-      {
-        id: '2',
-        name: 'NEOM',
-        image: 'neom.webp',
-      },
-      {
-        id: '3',
-        name: 'Nesma & Partners',
-        image: 'nesma.webp',
-      },
-      {
-        id: '4',
-        name: 'Power China',
-        image: 'power-china.webp',
-      },
-      {
-        id: '5',
-        name: 'Freyssinet',
-        image: 'freyssinet.webp',
-      },
-      {
-        id: '6',
-        name: 'Royal commission ',
-        image: 'royal-commission.webp',
-      },
-      {
-        id: '7',
-        name: 'Sapac ',
-        image: 'sapac.webp',
-      },
-      {
-        id: '8',
-        name: 'Alyamama ',
-        image: 'alyamama.webp',
-      },
-      {
-        id: '9',
-        name: 'Zaid Alhussain ',
-        image: 'zaid-alhussain.webp',
-      },
-    ];
-
+  constructor(private _geoscapeClients: GeoscapeClientsService) {
+    this.clients = this._geoscapeClients.getGeoscapeClients();
   }
 
   ngOnInit() {

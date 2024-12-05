@@ -20,8 +20,8 @@ export class UploadedPdfComponent implements OnInit {
   url: any;
   isLoading: boolean = true;
 
-  constructor(private route: ActivatedRoute ,private _sanitizer :DomSanitizer ,
-              private documentService: DocumentService // Inject the service
+  constructor(private route: ActivatedRoute, private _sanitizer: DomSanitizer,
+              private _documentService: DocumentService // Inject the service
   ) {
 
   }
@@ -30,7 +30,7 @@ export class UploadedPdfComponent implements OnInit {
     this.getDocument();
     setTimeout(() => {
       this.isLoading = false;
-    }, 5000);
+    }, 3000);
   }
 
   private getDocument() {
@@ -40,9 +40,9 @@ export class UploadedPdfComponent implements OnInit {
       .snapshot
       .paramMap
       .get('id');
-    this.selectedDocument = this.documentService.getDocumentById(Number(id));
-    this.url = 'assets/document-approvals/'+ this.selectedDocument.pdfSrc;
-   this.url = this._sanitizer.bypassSecurityTrustResourceUrl(this.url);
+    this.selectedDocument = this._documentService.getDocumentById(Number(id));
+    this.url = 'assets/document-approvals/' + this.selectedDocument.pdfSrc;
+    this.url = this._sanitizer.bypassSecurityTrustResourceUrl(this.url);
 
   }
 

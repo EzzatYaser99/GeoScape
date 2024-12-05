@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {InputTextareaModule} from "primeng/inputtextarea";
 import {ChipsModule} from "primeng/chips";
@@ -9,7 +9,8 @@ import {HttpClient} from "@angular/common/http";
 import {MultiSelectModule} from "primeng/multiselect";
 import {DropdownModule} from "primeng/dropdown";
 import {MessagesModule} from "primeng/messages";
-import { MessageService} from "primeng/api";
+import {MessageService} from "primeng/api";
+import {GeoscapeServicesService} from "../../core/service/geoscape-services.service";
 
 @Component({
   selector: 'app-contacts',
@@ -27,44 +28,31 @@ import { MessageService} from "primeng/api";
   ],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.scss',
-  providers:[MessageService]
+  providers: [MessageService]
 })
-export class ContactsComponent implements OnInit {
+export class ContactsComponent {
 
   name: string | undefined;
   email: string | undefined;
   message: string | undefined;
   phone: string | undefined;
   selectedServices: any | undefined;
-  Services: any;
+  geoscapeServices: any;
   invalidName: boolean = false;
   invalidEmail: boolean = false;
   invalidPhoneNumber: boolean = false;
   successMessage: any;
   errorMessage: any;
-  showMessage: boolean= false;
+  showMessage: boolean = false;
   isLoading: boolean = false
 
-  constructor(private _http: HttpClient ,private messageService: MessageService) {
-    this.Services = [
-      {id: 1 , name: 'Landscape Design' ,image:'Landscape-Design.webp'},
-      {id: 2 , name: 'SoftScape' ,image:'Soft-Landscape.webp'},
-      {id: 3 , name: 'Nursery' ,image:'Nursery.webp'},
-      {id: 4 , name: 'Irrigation' ,image:'Irrigation.webp'},
-      {id: 5 , name: 'Water Features' ,image:'Water-Features.webp'},
-      {id: 6 , name: 'Water & Drainage Systems' ,image:'Water-Systems.webp'},
-      {id: 7 , name: 'HardScape' ,image:'Hard-Landscape.webp'},
-      {id: 8 , name: 'Maintenance' ,image:'Landscape-Maintenance.webp'},
-      {id: 9 , name: 'Street Lighting' ,image:'Street-Lighting.webp'},
-      {id: 10 , name: 'Street Furniture' ,image:'Street-Furniture.webp'},
-      {id: 11 , name: 'Playground Equipment' ,image:'Playground-Equipment.webp'},
-      {id: 12 , name: 'Covers and Grates' ,image:'covers-and-grates.webp'},
+  constructor(private _http: HttpClient, private _geoscapeServices: GeoscapeServicesService) {
+    this.geoscapeServices = this._geoscapeServices.getGeoscapeServices()
 
-    ];
 
   }
-  ngOnInit(): void {
-  }
+
+
   onChangeName(event: any) {
     this.name = event.target.value;
     this.invalidName = !(this.name != '' && this.name);
@@ -74,7 +62,8 @@ export class ContactsComponent implements OnInit {
     this.email = event.target.value;
     this.invalidEmail = this.email?.match('^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$') == null;
   }
-  onChangePhoneNumber(event:any) {
+
+  onChangePhoneNumber(event: any) {
     this.phone = event.target.value;
     this.invalidPhoneNumber = !(this.phone?.match(/^((\+?)\d{1,3}[- ]?)?\d{10,11}$/) && !(this.phone?.match(/0{5,}/)));
   }
@@ -83,18 +72,18 @@ export class ContactsComponent implements OnInit {
   submitForm() {
     this.isLoading = true
     this.invalidName = !(this.name != '' && this.name);
-    const selectedServiceNames = this.selectedServices.map((item:any) => item.name);
+    const selectedServiceNames = this.selectedServices.map((item: any) => item.name);
     const data = {
       name: this.name || '',
       phone: this.phone || '',
       email: this.email || '',
-      service:selectedServiceNames || '',
-      message:this.message || '',
+      service: selectedServiceNames || '',
+      message: this.message || '',
 
     };
 
     this.sendEmail(data).subscribe(
-      response => {
+      () => {
         this.showMessage = true;
         this.successMessage = [
           {severity: 'success', summary: 'Email sent successfully!'},
@@ -107,7 +96,7 @@ export class ContactsComponent implements OnInit {
           this.isLoading = false;
         }, 4000);
       },
-      error => {
+      () => {
         this.showMessage = true;
         this.errorMessage = [
           {severity: 'error', detail: 'Error sending email'},
@@ -124,20 +113,18 @@ export class ContactsComponent implements OnInit {
   }
 
 
-  sendEmail(data:any) {
-  // let emailUrl = 'http://localhost:3000/send-email';
+  sendEmail(data: any) {
+    // let emailUrl = 'http://localhost:3000/send-email';
     let emailUrl = 'https://backend.bassamabassy.me/bundle.js';
 
     return this._http.post(emailUrl, data);
   }
 
 
-
   validateDisable() {
     return !(this.name && this.phone && this.email && !this.isLoading);
 
   }
-
 
 
 }

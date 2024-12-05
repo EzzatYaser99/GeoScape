@@ -15,11 +15,12 @@
   height: 350px;
   border-radius: 0 0 6px 6px;
 }
+
 /* Start fieldset Style*/
 :host ::ng-deep {
   .p-fieldset .p-fieldset-legend {
     padding: 6px;
-    background-color:unset;
+    background-color: unset;
   }
 
   .p-card .p-card-title {
@@ -34,21 +35,24 @@
 
 
 }
+
 .Website {
-  a{
+  a {
     text-decoration: none;
     color: #08965e;
-    font-size:20px
+    font-size: 20px
   }
 }
+
 :host ::ng-deep {
   .prasada-product {
     .p-avatar {
       width: 4rem !important;
 
     }
+
     .Website {
-      a{
+      a {
         color: #dcc108;
       }
     }

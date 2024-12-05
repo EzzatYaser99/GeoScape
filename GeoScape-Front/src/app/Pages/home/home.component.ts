@@ -19,16 +19,17 @@ import {DocumentService} from "../../core/service/document.service";
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
   documents: any;
-constructor(private documentService: DocumentService) {
 
-}
+  constructor(private documentService: DocumentService) {
+
+  }
+
   ngOnInit(): void {
     this.documents = this.documentService.getDocuments();
 
   }
-
 
 
 }
