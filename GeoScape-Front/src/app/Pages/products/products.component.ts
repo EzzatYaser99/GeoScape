@@ -15,6 +15,7 @@ import {Button} from "primeng/button";
 import {PlantsProductsService} from "../../core/service/plants-products.service";
 import {TreesProductsService} from "../../core/service/trees-products.service";
 import {BenitoProductsService} from "../../core/service/benito-products.service";
+import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
 
 @Component({
   selector: 'app-products',
@@ -32,7 +33,8 @@ import {BenitoProductsService} from "../../core/service/benito-products.service"
     ProgressSpinnerModule,
     NgOptimizedImage,
     PrasadaProductsComponent,
-    Button
+    Button,
+    CarouselModule
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
@@ -46,6 +48,7 @@ export class ProductsComponent implements OnInit {
   isLoading: boolean = true;
   showSelectedProduct: boolean = false;
   activeIndex: number = 0;
+  carouselResponsiveOptions: CarouselResponsiveOptions[] | undefined;
 
   constructor(private _plantsServices: PlantsProductsService,
               private _treesServices: TreesProductsService,
@@ -83,9 +86,9 @@ export class ProductsComponent implements OnInit {
     if (event.value) {
       this.showSelectedProduct = false
       this.isLoading = true;
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 1000);
+      // setTimeout(() => {
+      //   this.isLoading = false;
+      // }, 1000);
       this.selectedBenitoProduct = event.value;
 
     } else {

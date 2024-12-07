@@ -147,18 +147,9 @@
               </div>
 
 
-              <div class="col-12  md:col-7 mt-3 md:mt-7   flex justify-content-center">
-                <div *ngIf="isLoading" class="card  flex justify-content-center align-items-center">
-                  <p-progressSpinner
-                    animationDuration=".5s"
-                    fill="var(--surface-ground)"
-                    strokeWidth="5"
-                    styleClass="w-4rem h-4rem"/>
-                </div>
-
-
-                <div *ngIf="showSelectedProduct" class=" card flex justify-content-center align-items-center  loading-spinner">
-                  <div class="card flex-column justify-content-center align-items-center">
+              <div class="col-12  md:col-7    flex justify-content-center">
+                <div *ngIf="showSelectedProduct" class="w-12 flex justify-content-center align-items-center  loading-spinner">
+                  <div class="flex-column justify-content-center align-items-center">
                     <div class="flex justify-content-center align-items-center mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
                       <img alt="GeoSCAPE Logo" class="block" height="60" loading="lazy" ngSrc="assets/images/logo.webp" width="60">
                       <h4 class="mx-2">Please Select <span class="text-blue-500"> a Product </span>
@@ -167,30 +158,27 @@
                   </div>
                 </div>
 
-                <div *ngIf="!isLoading && !showSelectedProduct"
-                     class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 gallery-product">
-                  <p-galleria
-                    [containerStyle]="{ 'max-width': '100%' }"
-                    [numVisible]="3"
-                    [responsiveOptions]="responsiveOptions"
-                    [showItemNavigators]="true"
-                    [value]="selectedBenitoProduct?.subImages">
-                    <ng-template let-item pTemplate="item">
-                      <img [alt]="item.alt" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc"
-                           [style.border-radius]="'10px 10px 0px 0px '" [style.border]="'2px solid #86BB46'"
-                           class="w-full"
-                           height="400"
-                           loading="lazy" width="100%">
-                    </ng-template>
-                    <ng-template let-item pTemplate="thumbnail">
-                      <div class="grid w-full mx-auto  grid-nogutter justify-content-center">
-                        <img [alt]="item.alt" [src]="'assets/images/products-page/benito-products/'+ item.imageSrc" loading="lazy"
-                             style="width:100px;
-                      height:60px;"/>
-                      </div>
-                    </ng-template>
-                  </p-galleria>
+                <div *ngIf="!showSelectedProduct" class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 gallery-product">
+                  <div class="card mb-4">
+                    <p-carousel
+                      [circular]="true"
+                      [numScroll]="1"
+                      [numVisible]="1"
+                      [responsiveOptions]="carouselResponsiveOptions"
+                      [showIndicators]="true"
+                      [showNavigators]="false"
+                      [value]="selectedBenitoProduct.subImages">
+                      <ng-template let-item pTemplate="item">
+                        <div class="relative mx-auto">
+                          <img class="m-auto" [alt]="item.alt" [src]="'assets/images/products-page/benito-products/'+item?.imageSrc"
+                               style="width: 50%; display:block;"/>
+                        </div>
+                      </ng-template>
+                    </p-carousel>
+
+                  </div>
                   <div><p>{{ selectedBenitoProduct?.description }}</p></div>
+
                 </div>
               </div>
 
