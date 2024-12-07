@@ -7,6 +7,7 @@ import {SeedlingProductsService} from "../../core/service/seedling-products.serv
 import {CardModule} from "primeng/card";
 import {CultivationProductsService} from "../../core/service/cultivation-products.service";
 import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-prasada-products',
@@ -16,7 +17,8 @@ import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
     GalleriaModule,
     CardModule,
     CarouselModule,
-    Button
+    Button,
+    NgOptimizedImage
   ],
   templateUrl: './prasada-products.component.html',
   styleUrl: './prasada-products.component.scss'

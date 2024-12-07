@@ -9,6 +9,7 @@ export class GeoscapeProjectsService {
       id: 1,
       name: 'NEOM Residential Community 1 (NRC 1)',
       image: 'neom-projects/NRC1/nrc-1.webp',
+      alt: 'NEOM Residential Community 1 (NRC 1) image',
       scopeOfWork: ' Softscape, Hardscape, and Irrigation system',
       mainContractor: 'Nesma & Partners',
       consultant: 'Bechtel',
@@ -19,21 +20,21 @@ export class GeoscapeProjectsService {
         ' and shrubs, as well as hardscaping features such as pathways, patios, and other structures.' +
         ' The irrigation system ensures sustainable water management.',
       subImages: [
-        {id: 1, image: 'neom-projects/NRC1/nrc-1.webp'},
-        {id: 2, image: 'neom-projects/NRC1/nrc-2.webp'},
-        {id: 3, image: 'neom-projects/NRC1/nrc-3.webp'},
-        {id: 4, image: 'neom-projects/NRC1/nrc-4.webp'},
-        {id: 5, image: 'neom-projects/NRC1/nrc-5.webp'},
-        {id: 6, image: 'neom-projects/NRC1/nrc-6.webp'},
-        {id: 7, image: 'neom-projects/NRC1/nrc-7.webp'},
-        {id: 8, image: 'neom-projects/NRC1/nrc-8.webp'},
-
+        { id: 1, image: 'neom-projects/NRC1/nrc-1.webp', alt: 'NEOM Residential Community 1 (NRC 1) image' },
+        { id: 2, image: 'neom-projects/NRC1/nrc-2.webp', alt: 'NEOM Residential Community 1 (NRC 1) image' },
+        { id: 3, image: 'neom-projects/NRC1/nrc-3.webp', alt: 'NEOM Residential Community 1 (NRC 1) image' },
+        { id: 4, image: 'neom-projects/NRC1/nrc-4.webp', alt: 'NEOM Residential Community 1 (NRC 1) image' },
+        { id: 5, image: 'neom-projects/NRC1/nrc-5.webp', alt: 'NEOM Residential Community 1 (NRC 1) image' },
+        { id: 6, image: 'neom-projects/NRC1/nrc-6.webp', alt: 'NEOM Residential Community 1 (NRC 1) image' },
+        { id: 7, image: 'neom-projects/NRC1/nrc-7.webp', alt: 'NEOM Residential Community 1 (NRC 1) image' },
+        { id: 8, image: 'neom-projects/NRC1/nrc-8.webp', alt: 'NEOM Residential Community 1 (NRC 1) image' },
       ]
     },
     {
       id: 2,
       name: 'NEOM Residential Community 2 (NRC 2)',
       image: 'neom-projects/NRC2/nrc-5.webp',
+      alt: 'NEOM Residential Community 2 (NRC 2) image',
       scopeOfWork: ' Softscape, Hardscape, and Irrigation system',
       mainContractor: 'Nesma & Partners',
       consultant: 'Bechtel',
@@ -43,22 +44,22 @@ export class GeoscapeProjectsService {
         ' infrastructure of another residential community. Our team is creating aesthetically' +
         ' pleasing and functional outdoor spaces that contribute to the overall well-being of the residents.',
       subImages: [
-        {id: 1, image: 'neom-projects/NRC2/nrc-1.webp'},
-        {id: 2, image: 'neom-projects/NRC2/nrc-2.webp'},
-        {id: 3, image: 'neom-projects/NRC2/nrc-3.webp'},
-        {id: 4, image: 'neom-projects/NRC2/nrc-4.webp'},
-        {id: 5, image: 'neom-projects/NRC2/nrc-5.webp'},
-        {id: 6, image: 'neom-projects/NRC2/nrc-6.webp'},
-        {id: 7, image: 'neom-projects/NRC2/nrc-7.webp'},
-        {id: 8, image: 'neom-projects/NRC2/nrc-8.webp'},
-        {id: 9, image: 'neom-projects/NRC2/nrc-9.webp'},
-
+        { id: 1, image: 'neom-projects/NRC2/nrc-1.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
+        { id: 2, image: 'neom-projects/NRC2/nrc-2.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
+        { id: 3, image: 'neom-projects/NRC2/nrc-3.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
+        { id: 4, image: 'neom-projects/NRC2/nrc-4.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
+        { id: 5, image: 'neom-projects/NRC2/nrc-5.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
+        { id: 6, image: 'neom-projects/NRC2/nrc-6.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
+        { id: 7, image: 'neom-projects/NRC2/nrc-7.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
+        { id: 8, image: 'neom-projects/NRC2/nrc-8.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
+        { id: 9, image: 'neom-projects/NRC2/nrc-9.webp', alt: 'NEOM Residential Community 2 (NRC 2) image' },
       ]
     },
     {
       id: 3,
       name: 'Infrastructure Package for Staff Accommodation (4200000151/001)',
-      image:'neom-projects/infrastructure-package/work-in-progress.webp',
+      image: 'neom-projects/infrastructure-package/work-in-progress.webp',
+      alt: 'Infrastructure Package for Staff Accommodation (4200000151/001) image',
       scopeOfWork: ' Softscape, Hardscape, and Irrigation system',
       mainContractor: 'PCC',
       consultant: 'AECOM',
@@ -68,13 +69,14 @@ export class GeoscapeProjectsService {
         'landscaping and irrigation solutions. It includes the creation of green spaces, ' +
         'recreational areas, and efficient irrigation systems to support a comfortable living environment',
       subImages: [
-        {id: 1, image: 'neom-projects/infrastructure-package/work-in-progress.webp'},
+        { id: 1, image: 'neom-projects/infrastructure-package/work-in-progress.webp', alt: 'Infrastructure Package for Staff Accommodation (4200000151/001) image' },
       ]
     },
     {
       id: 4,
       name: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49)',
       image: 'neom-projects/wo49/wo49-7.webp',
+      alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image',
       scopeOfWork: 'Native Tree Transplanting',
       mainContractor: 'SAPAC',
       consultant: 'Bechtel',
@@ -84,23 +86,23 @@ export class GeoscapeProjectsService {
         'road construction. The aim was to preserve the local flora while facilitating the development' +
         ' of new infrastructure.',
       subImages: [
-        {id: 1, image: 'neom-projects/wo49/wo49-1.webp'},
-        {id: 2, image: 'neom-projects/wo49/wo49-2.webp'},
-        {id: 3, image: 'neom-projects/wo49/wo49-3.webp'},
-        {id: 4, image: 'neom-projects/wo49/wo49-4.webp'},
-        {id: 5, image: 'neom-projects/wo49/wo49-5.webp'},
-        {id: 6, image: 'neom-projects/wo49/wo49-6.webp'},
-        {id: 7, image: 'neom-projects/wo49/wo49-7.webp'},
-        {id: 8, image: 'neom-projects/wo49/wo49-8.webp'},
-        {id: 9, image: 'neom-projects/wo49/wo49-9.webp'},
-        {id: 10, image: 'neom-projects/wo49/wo49-10.webp'},
-
+        { id: 1, image: 'neom-projects/wo49/wo49-1.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 1' },
+        { id: 2, image: 'neom-projects/wo49/wo49-2.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 2' },
+        { id: 3, image: 'neom-projects/wo49/wo49-3.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 3' },
+        { id: 4, image: 'neom-projects/wo49/wo49-4.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 4' },
+        { id: 5, image: 'neom-projects/wo49/wo49-5.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 5' },
+        { id: 6, image: 'neom-projects/wo49/wo49-6.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 6' },
+        { id: 7, image: 'neom-projects/wo49/wo49-7.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 7' },
+        { id: 8, image: 'neom-projects/wo49/wo49-8.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 8' },
+        { id: 9, image: 'neom-projects/wo49/wo49-9.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 9' },
+        { id: 10, image: 'neom-projects/wo49/wo49-10.webp', alt: 'Oxagon to Red Desert Early Works Roads Package 1 (WO#49) image 10' }
       ]
     },
     {
       id: 5,
       name: 'Oxagon to Red Desert Early Works Construction of Access Roads Package 2 (WO#50)',
       image: 'neom-projects/wo50/wo50-8.webp',
+      alt: '(WO#50) image',
       scopeOfWork: 'Native Tree Transplanting',
       mainContractor: 'SAPAC',
       consultant: 'Bechtel',
@@ -110,28 +112,28 @@ export class GeoscapeProjectsService {
         ' native trees during the construction of access roads. The focus was on minimizing environmental ' +
         'impact while enabling essential infrastructure development.',
       subImages: [
-        {id: 1, image: 'neom-projects/wo50/wo50-1.webp'},
-        {id: 2, image: 'neom-projects/wo50/wo50-2.webp'},
-        {id: 3, image: 'neom-projects/wo50/wo50-3.webp'},
-        {id: 4, image: 'neom-projects/wo50/wo50-4.webp'},
-        {id: 5, image: 'neom-projects/wo50/wo50-5.webp'},
-        {id: 6, image: 'neom-projects/wo50/wo50-6.webp'},
-        {id: 7, image: 'neom-projects/wo50/wo50-7.webp'},
-        {id: 8, image: 'neom-projects/wo50/wo50-8.webp'},
-        {id: 9, image: 'neom-projects/wo50/wo50-9.webp'},
-        {id: 10, image: 'neom-projects/wo50/wo50-10.webp'},
-        {id: 11, image: 'neom-projects/wo50/wo50-10.webp'},
-        {id: 12, image: 'neom-projects/wo50/wo50-10.webp'},
-        {id: 13, image: 'neom-projects/wo50/wo50-10.webp'},
-        {id: 14, image: 'neom-projects/wo50/wo50-10.webp'},
-        {id: 15, image: 'neom-projects/wo50/wo50-10.webp'},
-
+        { id: 1, image: 'neom-projects/wo50/wo50-1.webp', alt: '(WO#50) image 1' },
+        { id: 2, image: 'neom-projects/wo50/wo50-2.webp', alt: '(WO#50) image 2' },
+        { id: 3, image: 'neom-projects/wo50/wo50-3.webp', alt: '(WO#50) image 3' },
+        { id: 4, image: 'neom-projects/wo50/wo50-4.webp', alt: '(WO#50) image 4' },
+        { id: 5, image: 'neom-projects/wo50/wo50-5.webp', alt: '(WO#50) image 5' },
+        { id: 6, image: 'neom-projects/wo50/wo50-6.webp', alt: '(WO#50) image 6' },
+        { id: 7, image: 'neom-projects/wo50/wo50-7.webp', alt: '(WO#50) image 7' },
+        { id: 8, image: 'neom-projects/wo50/wo50-8.webp', alt: '(WO#50) image 8' },
+        { id: 9, image: 'neom-projects/wo50/wo50-9.webp', alt: '(WO#50) image 9' },
+        { id: 10, image: 'neom-projects/wo50/wo50-10.webp', alt: '(WO#50) image 10' },
+        { id: 11, image: 'neom-projects/wo50/wo50-10.webp', alt: '(WO#50) image 11' },
+        { id: 12, image: 'neom-projects/wo50/wo50-10.webp', alt: '(WO#50) image 12' },
+        { id: 13, image: 'neom-projects/wo50/wo50-10.webp', alt: '(WO#50) image 13' },
+        { id: 14, image: 'neom-projects/wo50/wo50-10.webp', alt: '(WO#50) image 14' },
+        { id: 15, image: 'neom-projects/wo50/wo50-10.webp', alt: '(WO#50) image 15' }
       ]
     },
     {
       id: 6,
       name: 'Advanced Enabling Works (Phase 1) (WO#53)',
-      image:'neom-projects/wo53/wo53-1.webp',
+      image: 'neom-projects/wo53/wo53-1.webp',
+      alt: 'Advanced Enabling Works (Phase 1) (WO#53) image',
       scopeOfWork: 'Native Tree Transplanting',
       mainContractor: 'AECOM',
       consultant: 'Bechtel',
@@ -141,46 +143,46 @@ export class GeoscapeProjectsService {
         'transplantation of native trees. Our team ensured that the trees were moved and replanted ' +
         'in a manner that preserved their health and supported the overall environmental goals of the project.',
       subImages: [
-        {id: 1, image: 'neom-projects/wo53/wo53-1.webp'},
-        {id: 2, image: 'neom-projects/wo53/wo53-2.webp'},
-        {id: 3, image: 'neom-projects/wo53/wo53-3.webp'},
-        {id: 4, image: 'neom-projects/wo53/wo53-4.webp'},
-        {id: 5, image: 'neom-projects/wo53/wo53-5.webp'},
-        {id: 6, image: 'neom-projects/wo53/wo53-6.webp'},
-
-
+        { id: 1, image: 'neom-projects/wo53/wo53-1.webp', alt: 'Advanced Enabling Works (Phase 1) (WO#53) image' },
+        { id: 2, image: 'neom-projects/wo53/wo53-2.webp', alt: 'Advanced Enabling Works (Phase 1) (WO#53) image' },
+        { id: 3, image: 'neom-projects/wo53/wo53-3.webp', alt: 'Advanced Enabling Works (Phase 1) (WO#53) image' },
+        { id: 4, image: 'neom-projects/wo53/wo53-4.webp', alt: 'Advanced Enabling Works (Phase 1) (WO#53) image' },
+        { id: 5, image: 'neom-projects/wo53/wo53-5.webp', alt: 'Advanced Enabling Works (Phase 1) (WO#53) image' },
+        { id: 6, image: 'neom-projects/wo53/wo53-6.webp', alt: 'Advanced Enabling Works (Phase 1) (WO#53) image' },
       ]
     },
+
     {
       id: 7,
       name: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147)',
       image: 'neom-projects/sindalah-island/sindalah-island-1.webp',
+      alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image',
       scopeOfWork: 'Softscape and Irrigation system',
       mainContractor: 'Nesma & Partners',
       consultant: 'AECOM',
       progress: '30.0%',
       status: 'Ongoing',
-      description: ' This project is focused on developing the marina promenade. It includes ' +
-        'extensive softscaping and the installation of' +
-        ' an advanced irrigation system to ensure the maintenance of lush, green landscapes.',
+      description: 'This project is focused on developing the marina promenade. It includes ' +
+        'extensive softscaping and the installation of an advanced irrigation system to ensure the maintenance of lush, green landscapes.',
       subImages: [
-        {id: 1, image: 'neom-projects/sindalah-island/sindalah-island-1.webp'},
-        {id: 2, image: 'neom-projects/sindalah-island/sindalah-island-2.webp'},
-        {id: 3, image: 'neom-projects/sindalah-island/sindalah-island-3.webp'},
-        {id: 4, image: 'neom-projects/sindalah-island/sindalah-island-4.webp'},
-        {id: 5, image: 'neom-projects/sindalah-island/sindalah-island-5.webp'},
-        {id: 6, image: 'neom-projects/sindalah-island/sindalah-island-6.webp'},
-        {id: 7, image: 'neom-projects/sindalah-island/sindalah-island-7.webp'},
-        {id: 8, image: 'neom-projects/sindalah-island/sindalah-island-8.webp'},
-
+        { id: 1, image: 'neom-projects/sindalah-island/sindalah-island-1.webp', alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image' },
+        { id: 2, image: 'neom-projects/sindalah-island/sindalah-island-2.webp', alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image' },
+        { id: 3, image: 'neom-projects/sindalah-island/sindalah-island-3.webp', alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image' },
+        { id: 4, image: 'neom-projects/sindalah-island/sindalah-island-4.webp', alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image' },
+        { id: 5, image: 'neom-projects/sindalah-island/sindalah-island-5.webp', alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image' },
+        { id: 6, image: 'neom-projects/sindalah-island/sindalah-island-6.webp', alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image' },
+        { id: 7, image: 'neom-projects/sindalah-island/sindalah-island-7.webp', alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image' },
+        { id: 8, image: 'neom-projects/sindalah-island/sindalah-island-8.webp', alt: 'Sindalah Island – Marina Promenade & Utility Backbone (000001020/147) image' },
       ]
     },
+
     {
       id: 8,
       name: 'Sindalah Island – Cluster 1',
-      image:'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-1.webp',
+      image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-1.webp',
+      alt: 'Sindalah Island – Cluster 1 image',
       scopeOfWork: 'Supply of Plants',
-      mainContractor: ' Nesma & Partners',
+      mainContractor: 'Nesma & Partners',
       consultant: 'AECOM',
       progress: '30.0%',
       status: 'Ongoing',
@@ -188,44 +190,45 @@ export class GeoscapeProjectsService {
         ' Island. This project aims to enhance the island\'s natural beauty and support biodiversity through' +
         ' the introduction of various plant species',
       subImages: [
-        {id: 1, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-1.webp'},
-        {id: 2, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-2.webp'},
-        {id: 3, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-3.webp'},
-        {id: 4, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-4.webp'},
-        {id: 5, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-5.webp'},
-        {id: 6, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-6.webp'},
-        {id: 7, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-7.webp'},
-        {id: 8, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-8.webp'},
-        {id: 9, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-9.webp'},
-        {id: 10, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-10.webp'},
-        {id: 11, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-11.webp'},
-        {id: 12, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-12.webp'},
-
+        { id: 1, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-1.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 2, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-2.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 3, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-3.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 4, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-4.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 5, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-5.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 6, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-6.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 7, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-7.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 8, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-8.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 9, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-9.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 10, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-10.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 11, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-11.webp', alt: 'Sindalah Island – Cluster 1 image' },
+        { id: 12, image: 'neom-projects/sindalah-Island-cluster/sindalah-Island-cluster-12.webp', alt: 'Sindalah Island – Cluster 1 image' },
       ]
     },
+
     {
       id: 9,
       name: 'NEOM Company – The LINE (WO 4200000127-02)',
-      image:'neom-projects/wo42/wo42-8.webp',
-      scopeOfWork: ' Native Tree Transplanting',
+      image: 'neom-projects/wo42/wo42-8.webp',
+      alt: 'NEOM Company – The LINE (WO 4200000127-02) image',
+      scopeOfWork: 'Native Tree Transplanting',
       mainContractor: 'FMSCO',
       consultant: 'Bechtel',
-      progress: ' 100.0%',
+      progress: '100.0%',
       status: 'Completed',
       description: 'As part of the ambitious NEOM project, The LINE required the transplantation' +
         ' of native trees to preserve the natural landscape. Geoscape successfully' +
         ' completed this task, ensuring that the environmental integrity of the area was maintained.',
       subImages: [
-        {id: 1, image: 'neom-projects/wo42/wo42-1.webp'},
-        {id: 2, image: 'neom-projects/wo42/wo42-2.webp'},
-        {id: 3, image: 'neom-projects/wo42/wo42-3.webp'},
-        {id: 4, image: 'neom-projects/wo42/wo42-4.webp'},
-        {id: 5, image: 'neom-projects/wo42/wo42-5.webp'},
-        {id: 6, image: 'neom-projects/wo42/wo42-6.webp'},
-        {id: 7, image: 'neom-projects/wo42/wo42-7.webp'},
-        {id: 8, image: 'neom-projects/wo42/wo42-8.webp'},
+        { id: 1, image: 'neom-projects/wo42/wo42-1.webp', alt: 'NEOM Company – The LINE (WO 4200000127-02) image' },
+        { id: 2, image: 'neom-projects/wo42/wo42-2.webp', alt: 'NEOM Company – The LINE (WO 4200000127-02) image' },
+        { id: 3, image: 'neom-projects/wo42/wo42-3.webp', alt: 'NEOM Company – The LINE (WO 4200000127-02) image' },
+        { id: 4, image: 'neom-projects/wo42/wo42-4.webp', alt: 'NEOM Company – The LINE (WO 4200000127-02) image' },
+        { id: 5, image: 'neom-projects/wo42/wo42-5.webp', alt: 'NEOM Company – The LINE (WO 4200000127-02) image' },
+        { id: 6, image: 'neom-projects/wo42/wo42-6.webp', alt: 'NEOM Company – The LINE (WO 4200000127-02) image' },
+        { id: 7, image: 'neom-projects/wo42/wo42-7.webp', alt: 'NEOM Company – The LINE (WO 4200000127-02) image' },
+        { id: 8, image: 'neom-projects/wo42/wo42-8.webp', alt: 'NEOM Company – The LINE (WO 4200000127-02) image' },
       ]
-    },
+    }
   ];
 
 
