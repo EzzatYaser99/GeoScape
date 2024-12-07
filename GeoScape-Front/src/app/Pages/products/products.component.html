@@ -61,7 +61,7 @@
                     <p-card header="{{ plant.name }}">
                       <ng-template pTemplate="header">
                         <img [alt]="plant.alt" loading="lazy" class="" height="250" width="80%"
-                             [ngSrc]="'assets/images/products-page/plants/'+ plant.imageSrc"/>
+                             [src]="'assets/images/products-page/plants/'+ plant.imageSrc"/>
                       </ng-template>
                       <p class="m-0" style="min-height: 80px;">
                         {{ plant.description }}
@@ -92,7 +92,7 @@
                   <div class="card flex justify-content-center">
                     <p-card header="{{ tree.name }}">
                       <ng-template pTemplate="header">
-                        <img [alt]="tree.alt" loading="lazy" width="100%" height="250" [ngSrc]="'assets/images/products-page/'+
+                        <img [alt]="tree.alt" loading="lazy" width="100%" height="250" [src]="'assets/images/products-page/'+
                       tree.imageSrc"/>
                       </ng-template>
 
@@ -218,12 +218,12 @@
                    width="120">
             </div>
           </ng-template>
-          <ng-template pTemplate="content">
+<!--          <ng-template pTemplate="content">-->
             <p class="m-0 mt-4">Prasada Greenhouse Products
               Explore a comprehensive range of cutting-edge greenhouse solutions
               designed to enhance your growing operations.</p>
             <app-prasada-products></app-prasada-products>
-          </ng-template>
+<!--          </ng-template>-->
         </p-tabPanel>
 
 

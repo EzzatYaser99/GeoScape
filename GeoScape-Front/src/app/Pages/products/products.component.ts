@@ -75,20 +75,13 @@ export class ProductsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.selectedBenitoProduct = this.benitoProducts[1];
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 1500);
+    this.showSelectedProduct = true
   }
 
 
   onChangeProduct(event: ListboxChangeEvent) {
     if (event.value) {
       this.showSelectedProduct = false
-      this.isLoading = true;
-      // setTimeout(() => {
-      //   this.isLoading = false;
-      // }, 1000);
       this.selectedBenitoProduct = event.value;
 
     } else {
