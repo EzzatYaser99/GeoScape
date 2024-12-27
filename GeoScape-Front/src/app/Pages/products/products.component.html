@@ -157,7 +157,7 @@
               <div *ngIf="!showSelectedProduct" class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 carousel-product">
                 <div class="card mb-4">
                   <p-carousel
-                    [circular]="true"
+                    [circular]="selectedBenitoProduct?.subImages?.length > 1"
                     [numScroll]="1"
                     [numVisible]="1"
                     [responsiveOptions]="carouselResponsiveOptions"
