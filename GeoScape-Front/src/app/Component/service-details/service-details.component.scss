@@ -16,24 +16,49 @@
       max-height: 300px;
     }
   }
-  .gallery-product {
-    img {
-      height: 250px
-    }
-  }
   .disappear-in-mobile {
     display: none;
   }
   .appear-in-mobile {
     display: unset;
   }
+  .carousel-product {
+    img {
+      width: 80%
+    }
+  }
+}
+
+.carousel-product {
+  img {
+    border-radius: 5px;
+    height: 250px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 :host ::ng-deep {
-  .p-galleria .p-galleria-item-nav {
-    width: 1rem;
-    height: 1rem;
-    color: white;
-    padding: 10px;
+  .p-carousel-indicator button {
+    background-color: #d1d5db;
+    width: 14px !important;
+    height: 14px !important;
+    -webkit-transition: background-color 0.2s, color 0.2s, -webkit-box-shadow 0.2s;
+    -o-transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+    border-radius: 50% !important;
+  }
+
+  .p-carousel-indicator.p-highlight button {
+    background-color: #3B82F6 !important;
   }
 }
+

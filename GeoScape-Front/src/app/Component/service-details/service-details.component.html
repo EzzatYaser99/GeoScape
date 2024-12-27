@@ -1,4 +1,4 @@
-<div class="grid w-full mx-auto zoomin animation-duration-1000 animation-iteration-1">
+<div class="grid w-full mx-auto zoomin animation-duration-1000 animation-iteration-1 mb-5">
   <div class="col-12 md:col-4 appear-in-mobile ">
     <div class="lg:w-10 w-12 m-auto ">
       <h3>Our Services</h3>
@@ -25,67 +25,59 @@
 
 
   <div class="col-12  md:col-8 mt-3 md:mt-7  flex justify-content-center">
-    <div *ngIf="isLoading" class="card  flex-design">
-      <p-progressSpinner
-        animationDuration=".5s"
-        fill="var(--surface-ground)"
-        strokeWidth="5"
-        styleClass="w-4rem h-4rem"/>
-    </div>
-
-
-    <div *ngIf="showSelectedProduct" class=" card flex-design  loading-spinner">
-      <div class="card flex-column justify-content-center align-items-center">
-        <div class="flex-design mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
-          <img alt="GeoSCAPE Logo"
-               class="block" height="60" loading="lazy" ngSrc="assets/images/logo.webp" width="60">
-          <h4 class="mx-2">Please Select <span class="text-yellow-500">Geo</span>Scape
-            Service</h4>
-
+    <div *ngIf="showSelectedProduct" class="col-12  md:col-8 mt-3 md:mt-7  flex justify-content-center">
+      <div class="flex-design  loading-spinner">
+        <div class=" flex-column justify-content-center align-items-center">
+          <div class="flex-design mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
+            <h4 class="mx-2">Please Select <span class="text-yellow-500">Geo</span>Scape
+              Service</h4>
+            <img alt="GeoSCAPE Logo"
+                 class="block" height="40" loading="lazy" ngSrc="assets/images/logo-2.png" width="60">
+          </div>
         </div>
       </div>
     </div>
 
-    <div *ngIf="!isLoading && !showSelectedProduct"
-         class="w-12 m-auto zoomin animation-duration-1000 animation-iteration-1 gallery-product">
-      <p-galleria
-        [containerStyle]="{ 'max-width': '100%' }"
-        [numVisible]="4"
-        [responsiveOptions]="responsiveOptions"
-        [showItemNavigators]="true"
-        [value]="selectedServices?.subImages">
-        <ng-template let-item pTemplate="item">
 
-          <img [alt]="item.alt" [src]="'assets/images/service-details/'+ item?.image" [style.border-radius]="'10px 10px 0px 0px '"
-               class="w-full"
-               height="400"
-               loading="lazy" width="100%">
-
-        </ng-template>
-        <ng-template let-item pTemplate="thumbnail">
-          <div class="grid w-full mx-auto grid-nogutter justify-content-center">
-            <img [alt]="item.alt" [src]="'assets/images/service-details/'+ item?.image" loading="lazy" style="width:100px; height:60px;"/>
-          </div>
-        </ng-template>
-      </p-galleria>
+    <div *ngIf="!showSelectedProduct" class="w-12 m-auto zoomin animation-duration-1000 animation-iteration-1 carousel-product">
+      <div class="card mb-4 pt-5">
+        <p-carousel
+          [circular]="true"
+          [numScroll]="1"
+          [numVisible]="1"
+          [responsiveOptions]="carouselResponsiveOptions"
+          [showIndicators]="true"
+          [showNavigators]="false"
+          [value]="selectedServices?.subImages">
+          <ng-template let-item pTemplate="item">
+            <div class="relative mx-auto">
+              <img [alt]="item.alt" [src]="'assets/images/service-details/'+ item?.image" class="m-auto"
+                   style=" display:block;"/>
+            </div>
+          </ng-template>
+        </p-carousel>
 
 
-      <div><h3>{{ selectedServices?.name }}</h3></div>
-      <div><p>{{ selectedServices?.description }}</p></div>
-      <div><h3> Our Approach </h3></div>
-      <div><p>{{ selectedServices?.whatWeDo }}</p></div>
+        <div class="p-3">
+          <div><h3>{{ selectedServices?.name }}</h3></div>
+          <div><p>{{ selectedServices?.description }}</p></div>
+          <div><h3> Our Approach </h3></div>
+          <div><p>{{ selectedServices?.whatWeDo }}</p></div>
+        </div>
+      </div>
 
     </div>
 
 
   </div>
+
   <div class="col-12 md:col-4 disappear-in-mobile">
     <div class="lg:w-10 w-12 m-auto ">
       <h3>Our Services</h3>
       <p-listbox
         (onChange)="onChangeServices($event)"
         [filter]="true"
-        [listStyle]="{'max-height': '800px'}"
+        [listStyle]="{'max-height': '750px'}"
         [options]="geoscapeServices"
         [style]="{ width: '100%' }"
         optionLabel="name"

@@ -62,6 +62,7 @@ export class PlantsProductsService {
       alt: 'Dasylirion Longifolium'
     }
   ];
+
   getPlants() {
     return this.plants;
   }

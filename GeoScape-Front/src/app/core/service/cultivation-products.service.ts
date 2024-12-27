@@ -136,6 +136,7 @@ export class CultivationProductsService {
       ],
     },
   ];
+
   getCultivationProductProducts() {
     return this.cultivationProduct;
   }

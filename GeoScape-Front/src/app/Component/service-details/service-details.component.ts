@@ -9,6 +9,7 @@ import {ImageModule} from "primeng/image";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
 import {NgOptimizedImage} from "@angular/common";
 import {GeoscapeServicesService} from "../../core/service/geoscape-services.service";
+import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
 
 @Component({
   selector: 'app-services-details',
@@ -21,7 +22,8 @@ import {GeoscapeServicesService} from "../../core/service/geoscape-services.serv
     GalleriaModule,
     ImageModule,
     ProgressSpinnerModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    CarouselModule
   ],
   templateUrl: './service-details.component.html',
   styleUrl: './service-details.component.scss'
@@ -32,6 +34,7 @@ export class ServiceDetailsComponent implements OnInit {
   responsiveOptions: any[] | undefined;
   isLoading: boolean = true;
   showSelectedProduct: boolean = false;
+  carouselResponsiveOptions: CarouselResponsiveOptions[] | undefined;
 
   constructor(private route: ActivatedRoute, private _geoscapeServices: GeoscapeServicesService) {
     this.geoscapeServices = this._geoscapeServices.getGeoscapeServices()
@@ -62,10 +65,6 @@ export class ServiceDetailsComponent implements OnInit {
 
     if (event.value) {
       this.showSelectedProduct = false
-      this.isLoading = true;
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 1000);
       this.selectedServices = event.value;
     } else {
       this.showSelectedProduct = true;

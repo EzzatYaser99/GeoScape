@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
       this.spinLogo = false;
     }, 2500);
 
-   setTimeout(() => {
+    setTimeout(() => {
       this.isLoading = false;
     }, 3000);
 

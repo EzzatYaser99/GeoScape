@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
   providedIn: 'root'
 })
 export class TreesProductsService {
-   trees = [
+  trees = [
     {
       id: 1,
       category: 'Trees',

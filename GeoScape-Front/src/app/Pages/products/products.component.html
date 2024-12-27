@@ -126,6 +126,8 @@
               leader in urban furniture, playgrounds and outdoor fitness solutions. Their commitment to
               innovation, quality, and sustainability aligns perfectly with our values and mission.</p>
             <div class="grid w-full mx-auto">
+
+
               <div class="col-12 md:col-4 appear-in-mobile ">
                 <div class="lg:w-10 w-12 m-auto ">
                   <h3>Benito Products</h3>
@@ -147,7 +149,7 @@
               </div>
 
 
-              <div class="col-12  md:col-7    flex justify-content-center">
+              <div class="md:col-7 mt-3 md:mt-7  flex justify-content-center">
                 <div *ngIf="showSelectedProduct" class="w-12 flex-design  loading-spinner">
                   <div class="flex-column justify-content-center align-items-center">
                     <div class="flex-design mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
@@ -157,7 +159,7 @@
                   </div>
                 </div>
 
-                <div *ngIf="!showSelectedProduct" class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 gallery-product">
+                <div *ngIf="!showSelectedProduct" class="w-12 m-auto zoomin animation-duration-500 animation-iteration-1 carousel-product">
                   <div class="card mb-4">
                     <p-carousel
                       [circular]="true"
@@ -169,26 +171,25 @@
                       [value]="selectedBenitoProduct.subImages">
                       <ng-template let-item pTemplate="item">
                         <div class="relative mx-auto">
-                          <img class="m-auto" [alt]="item.alt" [src]="'assets/images/products-page/benito-products/'+item?.imageSrc"
-                               style="width: 50%; display:block;"/>
+                          <img [alt]="item.alt" [src]="'assets/images/products-page/benito-products/'+item?.imageSrc" class="m-auto"
+                               style="display:block;"/>
                         </div>
                       </ng-template>
                     </p-carousel>
+                    <div class="p-5"><p>{{ selectedBenitoProduct?.description }}</p></div>
 
                   </div>
-                  <div><p>{{ selectedBenitoProduct?.description }}</p></div>
-
                 </div>
               </div>
 
 
-              <div class="col-12 md:col-5 disappear-in-mobile ">
+              <div class="md:col-5 disappear-in-mobile ">
                 <div class="lg:w-10 w-12 m-auto ">
                   <h3>Benito Products</h3>
                   <p-listbox
                     (onChange)="onChangeProduct($event)"
                     [filter]="true"
-                    [listStyle]="{'max-height': '450px'}"
+                    [listStyle]="{'max-height': '350px'}"
                     [options]="benitoProducts"
                     [style]="{ width: '100%' }"
                     optionLabel="name">
@@ -217,12 +218,12 @@
                    width="120">
             </div>
           </ng-template>
-<!--          <ng-template pTemplate="content">-->
-            <p class="m-0 mt-4">Prasada Greenhouse Products
-              Explore a comprehensive range of cutting-edge greenhouse solutions
-              designed to enhance your growing operations.</p>
-            <app-prasada-products></app-prasada-products>
-<!--          </ng-template>-->
+          <!--          <ng-template pTemplate="content">-->
+          <p class="m-0 mt-4">Prasada Greenhouse Products
+            Explore a comprehensive range of cutting-edge greenhouse solutions
+            designed to enhance your growing operations.</p>
+          <app-prasada-products></app-prasada-products>
+          <!--          </ng-template>-->
         </p-tabPanel>
 
 

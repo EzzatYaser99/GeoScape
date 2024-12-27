@@ -62,6 +62,7 @@ export class GeoscapeClientsService {
       alt: 'Zaid Alhussain image',
     },
   ];
+
   constructor() {
   }
 
