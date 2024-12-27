@@ -1,34 +1,25 @@
-<section class="carsoul-bg  zoomin animation-duration-2000 animation-iteration-1"
-         style='background-image: url("assets/images/services/ourServices.webp")' xmlns="http://www.w3.org/1999/html">
-  <div class="services-overlay">
-    <p-carousel [autoplayInterval]="5000"
-                [circular]="true" [className]="'zoomin animation-duration-1000 animation-iteration-1'" [numScroll]="1" [numVisible]="1"
-                [responsiveOptions]="responsiveOptions"
-                [value]="geoscapeServices" class="" styleClass="custom-carousel">
+<div class="mt-3 services-overlay">
+  <p-carousel [autoplayInterval]="5000"
+              [circular]="true"
+              [className]="'zoomin animation-duration-1000 animation-iteration-1'"
+              [numScroll]="2" [numVisible]="3"
+              [responsiveOptions]="responsiveOptions"
+              [value]="geoscapeServices">
 
-      <ng-template let-service pTemplate="item">
-        <div class="product-item
-       flex
-       justify-content-md-center
-       justify-content-sm-center">
-          <div class="product-item-content sm:w-5  m-auto">
-            <div class=" relative overflow-hidden">
-              <img [alt]="service.alt" [src]="'assets/images/services/'+
-            service.image" class="product-image" height="" loading="lazy"
-                   style="border:3px solid white">
-            </div>
-            <div class="mt-4">
-              <h2>{{ service.name }}</h2>
-              <p class="text-white font-bold">{{ service.description }}</p>
-            </div>
-          </div>
+    <ng-template let-service pTemplate="item">
+      <div (click)="navigateToServiceDetails(service)" class="w-10 m-auto card mt-3 cursor-pointer">
+        <div class="text-center">
+          <img [alt]="service.alt" [src]="'assets/images/services/'+service.image" class="product-image" loading="lazy">
         </div>
-      </ng-template>
-    </p-carousel>
-  </div>
-</section>
-
-<div class="my-5 zoomin animation-duration-1000 animation-iteration-1">
+        <div class=" text-center p-3">
+          <h3>{{ service.name }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
+<div class="my-5 services-grid zoomin animation-duration-1000 animation-iteration-1">
   <p-fieldset>
     <ng-template pTemplate="header">
       <div class="flex align-items-center gap-1 px-2">
