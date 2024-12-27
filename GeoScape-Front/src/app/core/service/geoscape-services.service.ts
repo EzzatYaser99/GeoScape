@@ -43,7 +43,6 @@ export class GeoscapeServicesService {
         {id: 3, image: 'soft-landscape/soft-landscape-3.webp'},
         {id: 4, image: 'soft-landscape/soft-landscape-4.webp'},
         {id: 5, image: 'soft-landscape/soft-landscape-5.webp'},
-        {id: 6, image: 'soft-landscape/soft-landscape-6.webp'},
 
       ],
       whatWeDo: 'We enhance your outdoor area with carefully selected plants, ' +
