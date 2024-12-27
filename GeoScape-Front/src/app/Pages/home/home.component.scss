@@ -6,26 +6,21 @@
 */
 
 .bg-image {
-  background-size: cover;
+  background-size: 100%  100%;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  height: 450px;
+  background-position: 100% 100%;
+  height: 500px;
   border-radius: 0 0 6px 6px;
 }
 
 
 .home-text {
-  margin: auto;
-  max-width: 600px;
-  background-color: #ffffff87;
+  max-width: 40%;
   border-radius: 20px;
 
   p {
     font-size: 25px;
-    color: #646161;
+    color: black;
     font-weight: 700;
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
     -webkit-transition: all 1200ms 400ms ease;
@@ -123,6 +118,7 @@
 
 @media screen and (max-width: 992px) {
   .home-text {
+    max-width: 65%;
     p {
       font-size: 14px
     }

@@ -1,4 +1,4 @@
-<div class="bg-image flex justify-content-center align-items-center
+<div class="bg-image flex-design
  zoomin animation-duration-1000 animation-iteration-1"
      style='background-image: url("assets/images/products-page/our-products.webp")'>
 </div>
@@ -6,11 +6,11 @@
   <p-fieldset>
     <ng-template pTemplate="header">
       <div class="flex align-items-center gap-1 px-2">
+        <span class="font-bold">GEOSCAPE Products</span>
         <p-avatar
-          [image]="'assets/images/logo.webp'"
+          [image]="'assets/images/logo-2.png'"
           shape="circle"/>
-        <span class="font-bold">GEOSCAPE Products
-   </span>
+
       </div>
     </ng-template>
     <div class="mt-2">
@@ -148,10 +148,9 @@
 
 
               <div class="col-12  md:col-7    flex justify-content-center">
-                <div *ngIf="showSelectedProduct" class="w-12 flex justify-content-center align-items-center  loading-spinner">
+                <div *ngIf="showSelectedProduct" class="w-12 flex-design  loading-spinner">
                   <div class="flex-column justify-content-center align-items-center">
-                    <div class="flex justify-content-center align-items-center mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
-                      <img alt="GeoSCAPE Logo" class="block" height="60" loading="lazy" ngSrc="assets/images/logo.webp" width="60">
+                    <div class="flex-design mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
                       <h4 class="mx-2">Please Select <span class="text-blue-500"> a Product </span>
                       </h4>
                     </div>

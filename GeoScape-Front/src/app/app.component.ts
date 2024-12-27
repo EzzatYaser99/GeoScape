@@ -5,19 +5,20 @@ import {filter} from "rxjs";
 import {FooterComponent} from "./Shared-Component/footer/footer.component";
 import {HeaderComponent} from "./Shared-Component/header/header.component";
 import {ScrollComponent} from "./Shared-Component/scrollTop/scroll.component";
-import {NgIf, NgOptimizedImage} from "@angular/common";
+import {NgIf} from "@angular/common";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, FooterComponent, HeaderComponent, ScrollComponent, NgIf, ProgressSpinnerModule, NgOptimizedImage],
+  imports: [RouterOutlet, HttpClientModule, FooterComponent, HeaderComponent, ScrollComponent, NgIf, ProgressSpinnerModule,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   title = 'GeoScape';
   isLoading: boolean = true;
+  spinLogo: boolean = true;
 
   constructor(private router: Router) {
   }
@@ -30,8 +31,12 @@ export class AppComponent implements OnInit {
     });
 
     setTimeout(() => {
+      this.spinLogo = false;
+    }, 2500);
+
+   setTimeout(() => {
       this.isLoading = false;
-    }, 2000);
+    }, 3000);
 
   }
 

@@ -1,27 +1,30 @@
 <div class="w-full p-0 m-0 " style="color: #1e1f22">
-  <app-header *ngIf="!isLoading" class="header"></app-header>
 
-  <div *ngIf="isLoading" class=" card flex justify-content-center align-items-center  loading-spinner">
-    <div class="card flex-column justify-content-center align-items-center">
-      <div class="flex justify-content-center align-items-center ">
-        <p-progressSpinner
-          animationDuration=".5s"
-          fill="var(--surface-ground)"
-          strokeWidth="5"
-          styleClass="w-4rem h-4rem"/>
-      </div>
-      <div class="flex justify-content-center align-items-center mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
-        <img alt="GeoSCAPE Logo" class="block" height="60" loading="lazy" ngSrc="assets/images/logo.webp" width="60">
-        <h3 class="mx-2">Welcome <span class="text-blue-500"> To </span> <span class="text-yellow-500">Geo</span>Scape</h3>
-      </div>
+<div  *ngIf="isLoading"  class="flex-design loading-spinner">
+  <div class="text-center">
+    <p-progressSpinner
+      animationDuration="1s"
+      fill="var(--surface-ground)"
+      strokeWidth="3"
+      styleClass=" h-4rem"/>
+
+    <div class="flex-design mt-2 ">
+      <h3 class="mx-2">Welcome <span class="text-blue-500"> To </span> <span class="text-yellow-500">Geo</span>Scape</h3>
+      <img alt="GeoSCAPE Logo" class="block {{spinLogo ? 'pi-spin':'' }}" height="40" loading="lazy"
+           src="assets/images/logo-2.png"
+           width="60">
     </div>
   </div>
+</div>
+    @if (!isLoading) {
+      <app-header></app-header>
 
-  <div *ngIf="!isLoading" class="w-12 m-auto content px-5">
-    <router-outlet></router-outlet>
-  </div>
+      <div class="w-12 m-auto content px-3 md:px-5">
+        <router-outlet></router-outlet>
+      </div>
 
 
-  <app-scroll></app-scroll>
-  <app-footer *ngIf="!isLoading"></app-footer>
+      <app-scroll></app-scroll>
+      <app-footer></app-footer>
+    }
 </div>

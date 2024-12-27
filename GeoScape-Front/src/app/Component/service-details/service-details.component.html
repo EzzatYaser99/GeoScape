@@ -25,7 +25,7 @@
 
 
   <div class="col-12  md:col-8 mt-3 md:mt-7  flex justify-content-center">
-    <div *ngIf="isLoading" class="card  flex justify-content-center align-items-center">
+    <div *ngIf="isLoading" class="card  flex-design">
       <p-progressSpinner
         animationDuration=".5s"
         fill="var(--surface-ground)"
@@ -34,9 +34,9 @@
     </div>
 
 
-    <div *ngIf="showSelectedProduct" class=" card flex justify-content-center align-items-center  loading-spinner">
+    <div *ngIf="showSelectedProduct" class=" card flex-design  loading-spinner">
       <div class="card flex-column justify-content-center align-items-center">
-        <div class="flex justify-content-center align-items-center mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
+        <div class="flex-design mt-4 zoomin animation-duration-1000 animation-iteration-1 ">
           <img alt="GeoSCAPE Logo"
                class="block" height="60" loading="lazy" ngSrc="assets/images/logo.webp" width="60">
           <h4 class="mx-2">Please Select <span class="text-yellow-500">Geo</span>Scape
