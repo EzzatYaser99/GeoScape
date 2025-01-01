@@ -22,11 +22,6 @@
 
 /* Start fieldset Style*/
 :host ::ng-deep {
-  .p-fieldset .p-fieldset-legend {
-    padding: 6px;
-    background-color: unset;
-  }
-
   .p-card .p-card-title {
     font-size: .8rem
   }
@@ -88,5 +83,13 @@
 
   .p-tabview .p-tabview-nav li .p-tabview-nav-link {
     padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  :host ::ng-deep {
+    .p-tabview .p-tabview-nav {
+      display: block;
+    }
   }
 }

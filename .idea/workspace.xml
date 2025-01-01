@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="fix services message">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="add space to upload pdf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +23,12 @@
     &quot;assignee&quot;: &quot;EzzatYaser99&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/EzzatYaser99/GeoScape.git&quot;,
-    &quot;accountId&quot;: &quot;253e5082-3390-4b0e-aaf6-6ff85fd3920d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/EzzatYaser99/GeoScape.git",
+    "accountId": "253e5082-3390-4b0e-aaf6-6ff85fd3920d"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" root0="SKIP_INSPECTION" />
   </component>
@@ -55,6 +55,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
@@ -68,7 +69,7 @@
     "npm.back.executor": "Run",
     "npm.front.executor": "Run",
     "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "D:\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Ezzat\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib",
     "vcs.patch.path": "/home/eyasser/Desktop",
     "vue.rearranger.settings.migration": "true"
   }
@@ -117,8 +118,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -164,30 +165,8 @@
       <workItem from="1724577375409" duration="4811000" />
       <workItem from="1724861847248" duration="1861000" />
       <workItem from="1724869517162" duration="5369000" />
-    </task>
-    <task id="LOCAL-00033" summary="deploy back end and updated packages">
-      <option name="closed" value="true" />
-      <created>1722916817739</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1722916817739</updated>
-    </task>
-    <task id="LOCAL-00034" summary="deploy back end and updated packages">
-      <option name="closed" value="true" />
-      <created>1722916875851</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1722916875851</updated>
-    </task>
-    <task id="LOCAL-00035" summary="fix issues in iphone">
-      <option name="closed" value="true" />
-      <created>1723958953876</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1723958953876</updated>
+      <workItem from="1733148786168" duration="613000" />
+      <workItem from="1735687839965" duration="1330000" />
     </task>
     <task id="LOCAL-00036" summary="implement project page and create projects details">
       <option name="closed" value="true" />
@@ -557,7 +536,31 @@
       <option name="project" value="LOCAL" />
       <updated>1724941203609</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="fix problem preview pdf">
+      <option name="closed" value="true" />
+      <created>1733141422467</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1733141422467</updated>
+    </task>
+    <task id="LOCAL-00083" summary="my-4">
+      <option name="closed" value="true" />
+      <created>1733148842844</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1733148842844</updated>
+    </task>
+    <task id="LOCAL-00084" summary="add space to upload pdf">
+      <option name="closed" value="true" />
+      <created>1733149091616</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1733149091616</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,9 +580,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new changes to front" />
-    <MESSAGE value="complete projects-details" />
-    <MESSAGE value="upload nrc" />
     <MESSAGE value="upload photo" />
     <MESSAGE value="upload nrc photo" />
     <MESSAGE value="chnage name of projects" />
@@ -602,7 +602,10 @@
     <MESSAGE value="create loader for pdf perview" />
     <MESSAGE value="create services message when deselect" />
     <MESSAGE value="fix services message" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix services message" />
+    <MESSAGE value="fix problem preview pdf" />
+    <MESSAGE value="my-4" />
+    <MESSAGE value="add space to upload pdf" />
+    <option name="LAST_COMMIT_MESSAGE" value="add space to upload pdf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

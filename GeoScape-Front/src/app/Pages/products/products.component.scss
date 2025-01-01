@@ -18,10 +18,7 @@
 
 /* Start fieldset Style*/
 :host ::ng-deep {
-  .p-fieldset .p-fieldset-legend {
-    padding: 6px;
-    background-color: unset;
-  }
+
 
   .p-card .p-card-title {
     font-size: .8rem
@@ -134,5 +131,12 @@
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+:host ::ng-deep {
+
+  .p-button {
+    //background-color: #B9C8FC
   }
 }

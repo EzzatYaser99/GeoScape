@@ -43,10 +43,7 @@ h2, h4 {
 
 /* Start fieldset Style*/
 :host ::ng-deep {
-  .p-fieldset .p-fieldset-legend {
-    padding: 6px;
-    background-color: unset;
-  }
+
 
   .p-card .p-card-title {
     font-size: .8rem
@@ -72,7 +69,8 @@ h2, h4 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
-  height:270px;
+  height: 270px;
+
   &:hover {
     -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
