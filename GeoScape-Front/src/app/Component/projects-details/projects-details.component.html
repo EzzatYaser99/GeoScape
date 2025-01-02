@@ -1,4 +1,4 @@
-<div *ngIf="isLoading" class="primary-card my-5  flex-design loading-spinner">
+<div *ngIf="isLoading" class="primary-card p-5 my-5  flex-design loading-spinner">
   <p-progressSpinner
     animationDuration=".5s"
     fill="var(--surface-ground)"
@@ -6,7 +6,7 @@
     styleClass="w-4rem h-4rem"/>
 </div>
 
-<div *ngIf="!isLoading" class="my-5 primary-card ">
+<div *ngIf="!isLoading" class="my-5 primary-card p-5 ">
   <div *ngIf="selectedProject">
     <div>
   <span><p class="m-0 "><span class="font-bold">Project Name:

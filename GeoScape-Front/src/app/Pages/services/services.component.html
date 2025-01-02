@@ -42,7 +42,12 @@
           <div class="services-card flex justify-content-center">
             <p-card header="{{ service.name }}">
               <ng-template pTemplate="header">
-                <img loading="lazy" [alt]="service.alt" [src]="'assets/images/services/'+ service.image"/>
+                <p-image
+                  [preview]="true"
+                  [alt]="service.alt" [src]="'assets/images/services/'+ service.image"
+                  height="250px"
+                  loading="lazy"
+                  width="100%"/>
               </ng-template>
               <p class="m-0" style="min-height: 120px;">
                 {{ service.description }}

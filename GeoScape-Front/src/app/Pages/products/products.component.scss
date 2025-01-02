@@ -77,19 +77,6 @@
     padding: 5px 5px;
   }
 
-  .p-carousel-indicator button {
-    background-color: #d1d5db;
-    width: 14px !important;
-    height: 14px !important;
-    -webkit-transition: background-color 0.2s, color 0.2s, -webkit-box-shadow 0.2s;
-    -o-transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
-    border-radius: 50% !important;
-  }
-
-  .p-carousel-indicator.p-highlight button {
-    background-color: #3B82F6 !important;
-  }
 }
 
 @media screen and (max-width: 770px) {

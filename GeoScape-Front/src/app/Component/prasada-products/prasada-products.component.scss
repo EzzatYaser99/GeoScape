@@ -2,10 +2,16 @@
   .p-card .p-card-body {
     padding-bottom: .5rem
   }
+
+  .p-carousel {
+    .p-carousel-item {
+      padding: 0px;
+    }
+  }
 }
 
 img {
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 
@@ -14,5 +20,16 @@ img {
     .p-tabview .p-tabview-nav {
       display: block;
     }
+  }
+}
+
+.products-card {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: white;
+
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
   }
 }
