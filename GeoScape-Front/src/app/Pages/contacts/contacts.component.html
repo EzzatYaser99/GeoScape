@@ -27,71 +27,81 @@
     </div>
   </div>
 
-  <div class="col-12 sm:col-6 mt-2 get-in-Touch">
-    <div class="mt-5 "><h2>Get In Touch</h2></div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input (change)="onChangeName($event)" [(ngModel)]="name" class="w-full" pInputText
-                                                       placeholder="Name *" type="text"/>
-      <span *ngIf="invalidName" class="block"> please add your name * </span></div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input (change)="onChangeEmail($event)" [(ngModel)]="email" class="w-full" pInputText
+  <div class="col-12 sm:col-6 mt-2">
+    <form class="text-center" [formGroup]="getTouchForm" (ngSubmit)="submitForm()">
+      <div class=" get-in-Touch">
+        <div class="mt-5 "><h2>Get In Touch</h2></div>
+        <div class="w-11 md:w-8 lg:w-7 m-auto"><input formControlName="name" class="w-full" pInputText
+                                                      placeholder="Name *" type="text"/>
+
+          <div [style.opacity]=" (!getTouchForm.get('name')?.hasError('required') ||
+        !getTouchForm.get('name')?.touched)? 0 : 1"
+               class="error-msg">please add your name *
+          </div>
+        </div>
+        <div class="w-11 md:w-8 lg:w-7  m-auto"><input formControlName="email" class="w-full" pInputText
                                                        placeholder="example@gmail.com *" type="email"/>
-      <span *ngIf="invalidEmail" class="block"> please add valid email * </span>
-    </div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto"><input (change)="onChangePhoneNumber($event)" [(ngModel)]="phone" class="w-full" pInputText
+          <div [style.opacity]=" (!getTouchForm.get('email')?.hasError('required') ||
+        !getTouchForm.get('email')?.touched)? 0 : 1"
+               class="error-msg">please add your email *
+          </div>
+        </div>
+        <div class="w-11 md:w-8 lg:w-7  m-auto"><input formControlName="phone" class="w-full" pInputText
                                                        placeholder="Phone no *" type="text"/>
-      <span *ngIf="invalidPhoneNumber" class="block"> please add valid phone number *</span>
-    </div>
-    <div class="w-11 md:w-8 lg:w-7 mt-1 m-auto">
-      <p-multiSelect
-        [(ngModel)]="selectedServices"
-        [options]="geoscapeServices"
-        optionLabel="name"
-        placeholder="Select Services">
-        <ng-template let-value pTemplate="selectedItems">
-          <div *ngFor="let service of value" class="inline-flex align-items-center gap-2 px-1">
-            <img [alt]="service.alt"
-                 [class]="'flag flag-' + service.name.toLowerCase()"
-                 [src]="'assets/images/services/'+ service.image"
-                 loading="lazy"
-                 style="width: 36px"/>
-            <div>{{ service.name }},</div>
+          <div [style.opacity]=" (!getTouchForm.get('phone')?.hasError('required') ||
+        !getTouchForm.get('phone')?.touched)? 0 : 1"
+               class="error-msg">please add your phone *
           </div>
-          <div *ngIf="!value || value.length === 0">Select Services</div>
-        </ng-template>
-        <ng-template let-service pTemplate="item">
-          <div class="flex align-items-center gap-2">
-            <img [alt]="service.alt"
-                 [class]="'image-radius flag flag-' + service.name.toLowerCase() "
-                 [src]="'assets/images/services/'+ service.image"
-                 loading="lazy"
-                 style="width: 50px"/>
-            <div>{{ service.name }}</div>
-          </div>
-        </ng-template>
-      </p-multiSelect>
-    </div>
-    <div><textarea [(ngModel)]="message"
-                   class="w-11 md:w-8 lg:w-7 mt-1 m-auto"
-                   cols="30"
-                   pInputTextarea
-                   placeholder="Message"
-                   rows="5">
+        </div>
+      </div>
+      <div class="w-11 md:w-8 lg:w-7  m-auto">
+        <p-multiSelect
+          formControlName="selectedServices"
+          [options]="geoscapeServices"
+          optionLabel="name"
+          placeholder="Select Services">
+          <ng-template let-value pTemplate="selectedItems">
+            <div *ngFor="let service of value" class="inline-flex align-items-center gap-2 px-1">
+              <div>{{ service.name }},</div>
+            </div>
+            <div *ngIf="!value || value.length === 0">Select Services</div>
+          </ng-template>
+          <ng-template let-service pTemplate="item">
+            <div class="flex align-items-center gap-2">
+              <img [alt]="service.alt"
+                   [class]="'image-radius flag flag-' + service.name.toLowerCase() "
+                   [src]="'assets/images/services/'+ service.image"
+                   loading="lazy"
+                   style="width: 50px"/>
+              <div>{{ service.name }}</div>
+            </div>
+          </ng-template>
+        </p-multiSelect>
+      </div>
+      <div><textarea
+        class="w-11 md:w-8 lg:w-7 mt-2 m-auto"
+        cols="30"
+        pInputTextarea
+        formControlName="message"
+        placeholder="Message"
+        rows="5">
     </textarea></div>
-    <div>
-      <button (click)="submitForm()" [disabled]="validateDisable()" class="p-button-success w-11 md:w-8 lg:w-7 mt-1 green-Bg-Color"
-              label="Submit" pButton
-              pRipple></button>
-    </div>
-
-    @if (showMessage) {
-      <div class="w-12 successMessage m-auto">
-        <p-messages [(value)]="successMessage" [enableService]="false"/>
+      <div>
+        <button type="submit" [disabled]="(!getTouchForm.valid || this.isLoading)"
+                class=" w-11 md:w-8 lg:w-7 mt-1 "
+                label="Submit" pButton
+                pRipple></button>
       </div>
-      <div class="w-12 errorMessage m-auto">
-        <p-messages [(value)]="errorMessage" [enableService]="false"/>
-      </div>
-    }
 
+      @if (showMessage) {
+        <div class="w-11 md:w-8 lg:w-7  m-auto successMessage m-auto">
+          <p-messages [(value)]="successMessage" [enableService]="false"/>
+        </div>
+        <div class="w-11 md:w-8 lg:w-7  m-auto errorMessage m-auto">
+          <p-messages [(value)]="errorMessage" [enableService]="false"/>
+        </div>
+      }
+    </form>
   </div>
-
 
 </div>

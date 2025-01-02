@@ -60,7 +60,9 @@
   .errorMessage .p-message .p-message-wrapper {
     padding: 10px .75rem;
   }
-
+  .p-message-close{
+    display:none;
+  }
 }
 
 .image-radius {
@@ -68,10 +70,16 @@
 }
 
 .get-in-Touch {
-  text-align: center;
-
-  span {
-    color: red;
-    margin-left: 10px;
+  .error-msg {
+    color: #c73b3b;
+    transition: opacity 0.3s ease;
+    text-align: start !important;
+    padding:3px 5px;
+  }
+  .ng-invalid{
+    border-left:5px solid #c73b3b;
+  }
+  .ng-valid{
+    border-left:5px solid #86BB46 ;
   }
 }

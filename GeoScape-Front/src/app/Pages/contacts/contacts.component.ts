@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormsModule} from "@angular/forms";
+import {FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {InputTextareaModule} from "primeng/inputtextarea";
 import {ChipsModule} from "primeng/chips";
 import {ButtonModule} from "primeng/button";
@@ -23,7 +23,7 @@ import {GeoscapeServicesService} from "../../core/service/geoscape-services.serv
     RippleModule,
     NgIf,
     NgFor,
-    MultiSelectModule, DropdownModule, MessagesModule
+    MultiSelectModule, DropdownModule, MessagesModule, ReactiveFormsModule
 
   ],
   templateUrl: './contacts.component.html',
@@ -31,16 +31,20 @@ import {GeoscapeServicesService} from "../../core/service/geoscape-services.serv
   providers: [MessageService]
 })
 export class ContactsComponent {
-
-  name: string | undefined;
-  email: string | undefined;
-  message: string | undefined;
-  phone: string | undefined;
-  selectedServices: any | undefined;
+  getTouchForm: FormGroup = new FormGroup({
+    name: new FormControl(null, Validators.required),
+    email: new FormControl(null, [
+      Validators.required,
+      Validators.pattern(/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/),
+    ]),
+    phone: new FormControl(null, [
+      Validators.required,
+      Validators.pattern(/^(?=(?!0{5,}))(?:\+?\d{1,3}[- ]?)?\d{10,11}$/),
+    ]),
+    selectedServices: new FormControl(null),
+    message: new FormControl(null),
+  });
   geoscapeServices: any;
-  invalidName: boolean = false;
-  invalidEmail: boolean = false;
-  invalidPhoneNumber: boolean = false;
   successMessage: any;
   errorMessage: any;
   showMessage: boolean = false;
@@ -49,36 +53,18 @@ export class ContactsComponent {
   constructor(private _http: HttpClient, private _geoscapeServices: GeoscapeServicesService) {
     this.geoscapeServices = this._geoscapeServices.getGeoscapeServices()
 
-
-  }
-
-
-  onChangeName(event: any) {
-    this.name = event.target.value;
-    this.invalidName = !(this.name != '' && this.name);
-  }
-
-  onChangeEmail(event: any) {
-    this.email = event.target.value;
-    this.invalidEmail = this.email?.match('^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$') == null;
-  }
-
-  onChangePhoneNumber(event: any) {
-    this.phone = event.target.value;
-    this.invalidPhoneNumber = !(this.phone?.match(/^((\+?)\d{1,3}[- ]?)?\d{10,11}$/) && !(this.phone?.match(/0{5,}/)));
   }
 
 
   submitForm() {
     this.isLoading = true
-    this.invalidName = !(this.name != '' && this.name);
-    const selectedServiceNames = this.selectedServices.map((item: any) => item.name);
+    const selectedServiceNames = this.getTouchForm.controls['selectedServices'].value?.map((item: any) => item.name);
     const data = {
-      name: this.name || '',
-      phone: this.phone || '',
-      email: this.email || '',
+      name: this.getTouchForm.controls['name'].value || '',
+      phone: this.getTouchForm.controls['email'].value || '',
+      email: this.getTouchForm.controls['phone'].value || '',
       service: selectedServiceNames || '',
-      message: this.message || '',
+      message: this.getTouchForm.controls['message'].value || '',
 
     };
 
@@ -119,12 +105,5 @@ export class ContactsComponent {
 
     return this._http.post(emailUrl, data);
   }
-
-
-  validateDisable() {
-    return !(this.name && this.phone && this.email && !this.isLoading);
-
-  }
-
 
 }
