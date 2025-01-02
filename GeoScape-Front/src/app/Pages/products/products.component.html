@@ -5,7 +5,7 @@
 <div class="my-5 zoomin animation-duration-1000 animation-iteration-1">
   <p-fieldset>
     <ng-template pTemplate="header">
-      <div class="flex align-items-center gap-1 px-2">
+      <div class="flex align-items-center gap-1 ">
         <span class="font-bold">GEOSCAPE Products</span>
         <p-avatar
           [image]="'assets/images/logo-2.png'"
@@ -14,43 +14,24 @@
       </div>
     </ng-template>
     <div class="mt-2">
-      <div class="flex mb-2 gap-2 justify-content-end">
-        <p-button
-          (onClick)="activeIndex = 0"
-          [outlined]="activeIndex !== 0"
-          label="1"
-          rounded="true"
-          styleClass="w-2rem h-2rem p-0"/>
-        <p-button
-          (onClick)="activeIndex = 1"
-          [outlined]="activeIndex !== 1"
-          label="2"
-          rounded="true"
-          styleClass="w-2rem h-2rem p-0"/>
-        <p-button
-          (onClick)="activeIndex = 2"
-          [outlined]="activeIndex !== 2"
-          label="3"
-          rounded="true"
-          styleClass="w-2rem h-2rem p-0"/>
-        <p-button
-          (onClick)="activeIndex = 3"
-          [outlined]="activeIndex !== 3"
-          label="4"
-          rounded="true"
-          styleClass="w-2rem h-2rem p-0"/>
-      </div>
       <p-tabView [(activeIndex)]="activeIndex">
         <p-tabPanel>
           <ng-template pTemplate="header">
+            <p-button
+              (onClick)="activeIndex = 0"
+              [outlined]="activeIndex !== 0"
+              label="1"
+              rounded="false"
+              styleClass="w-2rem h-2rem p-0 mx-2"/>
             <div class="flex align-items-center gap-0">
               <span class="font-bold white-space-nowrap m-0">
                    Plants
                 </span>
               <img alt="GeoScape Plants" height="40" src="assets/images/products-page/plant.webp" width="40">
+
             </div>
           </ng-template>
-          <p class="m-0 my-4">
+          <p class="m-0 my-4 ">
             At GeoScape Co, we offer a diverse selection of plants suitable for various landscaping
             and urban beautification projects. Our nursery includes .</p>
           <div class="grid w-full mx-auto ">
@@ -59,8 +40,13 @@
                 <div class="services-card flex justify-content-center">
                   <p-card header="{{ plant.name }}">
                     <ng-template pTemplate="header">
-                      <img [alt]="plant.alt"  class="" height="250" width="80%"
-                           [src]="'assets/images/products-page/plants/'+ plant.imageSrc"/>
+                      <p-image
+                        [preview]="true"
+                        [src]="'assets/images/products-page/plants/'+ plant.imageSrc"
+                        [alt]="plant.alt"
+                        height="250px"
+                        loading="lazy"
+                        width="100%"/>
                     </ng-template>
                     <p class="m-0" style="min-height: 80px;">
                       {{ plant.description }}
@@ -73,12 +59,19 @@
         </p-tabPanel>
         <p-tabPanel>
           <ng-template pTemplate="header">
+            <p-button
+              (onClick)="activeIndex = 1"
+              [outlined]="activeIndex !== 1"
+              label="2"
+              rounded="false"
+              styleClass="w-2rem h-2rem p-0 mx-2"/>
             <div class="flex align-items-center gap-1">
               <span class="font-bold white-space-nowrap m-0">
                  Trees
                 </span>
-              <img alt="GeoScape Trees" height="40"  src="assets/images/products-page/tree.webp" width="40">
+              <img alt="GeoScape Trees" height="40" src="assets/images/products-page/tree.webp" width="40">
             </div>
+
           </ng-template>
           <p class="m-0 my-4">
             At GeoScape Co, we offer a diverse selection of trees suitable for various landscaping
@@ -89,8 +82,13 @@
                 <div class="services-card flex justify-content-center">
                   <p-card header="{{ tree.name }}">
                     <ng-template pTemplate="header">
-                      <img [alt]="tree.alt"  width="100%" height="250" [src]="'assets/images/products-page/'+
-                      tree.imageSrc"/>
+                      <p-image
+                        [preview]="true"
+                        [src]="'assets/images/products-page/'+tree.imageSrc"
+                        [alt]="tree.alt"
+                        height="250px"
+                        loading="lazy"
+                        width="100%"/>
                     </ng-template>
 
                     <p class="m-0">
@@ -109,11 +107,17 @@
 
         <p-tabPanel>
           <ng-template pTemplate="header">
+            <p-button
+              (onClick)="activeIndex = 2"
+              [outlined]="activeIndex !== 2"
+              label="3"
+              rounded="false"
+              styleClass="w-2rem h-2rem p-0 mx-2"/>
             <div class="flex align-items-center gap-0">
               <span class="font-bold white-space-nowrap m-0">
                  BENITO Urban
                 </span>
-              <img alt="BENITO bench and lamp" height="40"  src="assets/images/products-page/park_bench_and_lamp.webp"
+              <img alt="BENITO bench and lamp" height="40" src="assets/images/products-page/park_bench_and_lamp.webp"
                    width="40">
             </div>
           </ng-template>
@@ -204,11 +208,17 @@
 
         <p-tabPanel>
           <ng-template pTemplate="header">
+            <p-button
+              (onClick)="activeIndex = 3"
+              [outlined]="activeIndex !== 3"
+              label="4"
+              rounded="false"
+              styleClass="w-2rem h-2rem p-0 mx-2"/>
             <div class="flex align-items-center gap-0">
               <span class="font-bold white-space-nowrap mx-1">
                  Prasada
                 </span>
-              <img alt="Prasada Logo" height="40"  ngSrc="assets/images/products-page/prasada.webp"
+              <img alt="Prasada Logo" height="40" ngSrc="assets/images/products-page/prasada.webp"
                    width="120">
             </div>
           </ng-template>
