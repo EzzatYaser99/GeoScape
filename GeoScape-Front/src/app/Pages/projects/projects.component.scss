@@ -46,21 +46,6 @@
   -webkit-box-orient: vertical;
 }
 
-.card {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-
-  img {
-    border-radius: 10px 10px 0 0
-  }
-
-  &:hover {
-    -webkit-transform: scale(1.07);
-    -ms-transform: scale(1.07);
-    transform: scale(1.07);
-  }
-}
 
 .p-card .p-card-body {
   padding: 1rem;

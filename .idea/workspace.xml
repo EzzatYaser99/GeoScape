@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="add space to upload pdf">
+    <list default="true" id="2f785a92-f562-46e3-a0d5-ca6dfbd4f88c" name="Changes" comment="update ui and ux">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +23,12 @@
     &quot;assignee&quot;: &quot;EzzatYaser99&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EzzatYaser99/GeoScape.git",
-    "accountId": "253e5082-3390-4b0e-aaf6-6ff85fd3920d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EzzatYaser99/GeoScape.git&quot;,
+    &quot;accountId&quot;: &quot;253e5082-3390-4b0e-aaf6-6ff85fd3920d&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/GeoScape-Front/src/app/Component/service-details/service-details.component.html" root0="SKIP_INSPECTION" />
   </component>
@@ -50,30 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/home/eyasser/Desktop/fix_message.patch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.back.executor": "Run",
-    "npm.front.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "C:\\Ezzat\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib",
-    "vcs.patch.path": "/home/eyasser/Desktop",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NTG/Desktop/update_ui_and_ux.patch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.back.executor&quot;: &quot;Run&quot;,
+    &quot;npm.front.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Ezzat\\projects\\GeoScape\\GeoScape-Front\\node_modules\\typescript\\lib&quot;,
+    &quot;vcs.patch.path&quot;: &quot;/home/eyasser/Desktop&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\GeoScape\GeoScape-Front\src\assets\images\projects-details\neom-projects\NRC1" />
@@ -166,15 +166,7 @@
       <workItem from="1724861847248" duration="1861000" />
       <workItem from="1724869517162" duration="5369000" />
       <workItem from="1733148786168" duration="613000" />
-      <workItem from="1735687839965" duration="1330000" />
-    </task>
-    <task id="LOCAL-00036" summary="implement project page and create projects details">
-      <option name="closed" value="true" />
-      <created>1723976285430</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1723976285430</updated>
+      <workItem from="1735687839965" duration="1773000" />
     </task>
     <task id="LOCAL-00037" summary="use lazy root">
       <option name="closed" value="true" />
@@ -560,7 +552,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733149091616</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="update ui and ux">
+      <option name="closed" value="true" />
+      <created>1735696627995</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1735696627995</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +580,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="upload photo" />
     <MESSAGE value="upload nrc photo" />
     <MESSAGE value="chnage name of projects" />
     <MESSAGE value="update project" />
@@ -605,7 +604,8 @@
     <MESSAGE value="fix problem preview pdf" />
     <MESSAGE value="my-4" />
     <MESSAGE value="add space to upload pdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="add space to upload pdf" />
+    <MESSAGE value="update ui and ux" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ui and ux" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -617,7 +617,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/GeoScape-Front/src/app/Pages/projects/projects.component.html</url>
-          <line>43</line>
+          <line>41</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

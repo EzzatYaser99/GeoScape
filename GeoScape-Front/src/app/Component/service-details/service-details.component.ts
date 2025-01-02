@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CardModule} from "primeng/card";
 import {PrimeTemplate} from "primeng/api";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, RouterLink} from "@angular/router";
 import {ListboxChangeEvent, ListboxModule} from "primeng/listbox";
 import {FormsModule} from "@angular/forms";
 import {GalleriaModule} from "primeng/galleria";
@@ -10,6 +10,7 @@ import {ProgressSpinnerModule} from "primeng/progressspinner";
 import {NgOptimizedImage} from "@angular/common";
 import {GeoscapeServicesService} from "../../core/service/geoscape-services.service";
 import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
+import {Button} from "primeng/button";
 
 @Component({
   selector: 'app-services-details',
@@ -23,7 +24,9 @@ import {CarouselModule, CarouselResponsiveOptions} from "primeng/carousel";
     ImageModule,
     ProgressSpinnerModule,
     NgOptimizedImage,
-    CarouselModule
+    CarouselModule,
+    Button,
+    RouterLink
   ],
   templateUrl: './service-details.component.html',
   styleUrl: './service-details.component.scss'

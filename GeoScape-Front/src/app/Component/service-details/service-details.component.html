@@ -40,7 +40,7 @@
 
 
     <div *ngIf="!showSelectedProduct" class="w-12 m-auto zoomin animation-duration-1000 animation-iteration-1 carousel-product">
-      <div class="card mb-4 pt-5">
+      <div class="primary-card mb-4 pt-5">
         <p-carousel
           [circular]="true"
           [numScroll]="1"
@@ -94,7 +94,12 @@
     </div>
   </div>
 
-
+  <div class="w-full m-auto ">
+    <p-button
+      icon="pi pi-arrow-left"
+      label="Back"
+      routerLink="/main/services"/>
+  </div>
 </div>
 
 

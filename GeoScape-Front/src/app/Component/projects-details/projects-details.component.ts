@@ -4,10 +4,9 @@ import {ListboxModule} from "primeng/listbox";
 import {ActivatedRoute, RouterLink} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {ImageModule} from "primeng/image";
-import {ButtonDirective} from "primeng/button";
+import {Button} from "primeng/button";
 import {CardModule} from "primeng/card";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
-import {Ripple} from "primeng/ripple";
 import {GeoscapeProjectsService} from "../../core/service/geoscape-projects.service";
 
 @Component({
@@ -18,11 +17,10 @@ import {GeoscapeProjectsService} from "../../core/service/geoscape-projects.serv
     ListboxModule,
     FormsModule,
     ImageModule,
-    ButtonDirective,
     CardModule,
     ProgressSpinnerModule,
-    Ripple,
-    RouterLink
+    RouterLink,
+    Button
   ],
   templateUrl: './projects-details.component.html',
   styleUrl: './projects-details.component.scss'

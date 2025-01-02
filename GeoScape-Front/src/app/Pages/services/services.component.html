@@ -1,4 +1,4 @@
-<div class="mt-3 services-overlay">
+<div class="mt-5 services-overlay">
   <p-carousel [autoplayInterval]="5000"
               [circular]="true"
               [className]="'zoomin animation-duration-1000 animation-iteration-1'"
@@ -7,14 +7,15 @@
               [value]="geoscapeServices">
 
     <ng-template let-service pTemplate="item">
-      <div (click)="navigateToServiceDetails(service)" class="w-10 m-auto card mt-3 cursor-pointer">
-        <div class="text-center">
-          <img [alt]="service.alt" [src]="'assets/images/services/'+service.image" class="product-image" loading="lazy">
-        </div>
-        <div class=" text-center p-3">
-          <h3>{{ service.name }}</h3>
-          <p>{{ service.description }}</p>
-        </div>
+      <div (click)="navigateToServiceDetails(service)" class="services-card w-10 m-auto mt-5 cursor-pointer">
+        <p-card header="{{ service.name }}">
+          <ng-template pTemplate="header">
+            <img [alt]="service.alt" [src]="'assets/images/services/'+ service.image" loading="lazy"/>
+          </ng-template>
+          <p class="m-0" style="min-height: 100px;">
+            {{ service.description }}
+          </p>
+        </p-card>
       </div>
     </ng-template>
   </p-carousel>
@@ -38,17 +39,17 @@
     <div class="grid w-full mx-auto mt-5">
       @for (service of geoscapeServices; track service) {
         <div class="col-12 sm:col-9 md:col-6 lg:col-4 xl:col-3 m-auto mb-3 ">
-          <div class="card flex justify-content-center">
+          <div class="services-card flex justify-content-center">
             <p-card header="{{ service.name }}">
               <ng-template pTemplate="header">
                 <img loading="lazy" [alt]="service.alt" [src]="'assets/images/services/'+ service.image"/>
               </ng-template>
-              <p class="m-0" style="min-height: 145px;">
+              <p class="m-0" style="min-height: 120px;">
                 {{ service.description }}
               </p>
               <ng-template pTemplate="footer">
                 <div class="flex gap-3 mt-1">
-                  <button pButton label="Read More" class="w-full green-Bg-Color"
+                  <button pButton label="Read More" class="w-full"
                           (click)="navigateToServiceDetails(service)"></button>
                 </div>
               </ng-template>

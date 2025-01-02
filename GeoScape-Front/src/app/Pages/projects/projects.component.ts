@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {AvatarModule} from "primeng/avatar";
 import {FieldsetModule} from "primeng/fieldset";
 import {PrimeTemplate} from "primeng/api";
-import {ButtonDirective} from "primeng/button";
+import {Button, ButtonDirective} from "primeng/button";
 import {CardModule} from "primeng/card";
 import {Router} from "@angular/router";
 import {TabViewModule} from "primeng/tabview";
@@ -17,7 +17,8 @@ import {GeoscapeProjectsService} from "../../core/service/geoscape-projects.serv
     PrimeTemplate,
     ButtonDirective,
     CardModule,
-    TabViewModule
+    TabViewModule,
+    Button
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
@@ -25,6 +26,7 @@ import {GeoscapeProjectsService} from "../../core/service/geoscape-projects.serv
 export class ProjectsComponent {
   neomProjects: any;
   riyadhProjects: any;
+  activeIndex: number = 0;
 
   constructor(private _router: Router,
               private _geoscapeProjectsServices: GeoscapeProjectsService) {

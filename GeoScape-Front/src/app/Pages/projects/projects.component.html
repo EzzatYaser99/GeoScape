@@ -23,14 +23,21 @@
       infrastructure projects. Below is a showcase of our recent and ongoing projects, reflecting
       our commitment to excellence and innovation.</p>
     <div class="mt-5">
-      <p-tabView>
+      <p-tabView [(activeIndex)]="activeIndex">
         <p-tabPanel>
           <ng-template pTemplate="header">
             <div class="flex align-items-center gap-2">
+              <p-button
+                (onClick)="activeIndex = 0"
+                [outlined]="activeIndex !== 0"
+                label="1"
+                rounded="false"
+                styleClass="w-2rem h-2rem p-0"/>
               <span class="font-bold white-space-nowrap m-0">
                    Neom Projects
                 </span>
-              <img alt="neom projects" height="40" src="assets/images/projects-details/neom-projects/neom.webp" width="60">
+              <img alt="neom projects" height="40" src="assets/images/projects-details/neom-projects/neom.webp" style="border-radius: 50%"
+                   width="60">
             </div>
           </ng-template>
           <div class="grid w-full mx-auto mt-5">
@@ -52,7 +59,7 @@
                     <span class="desc-length"><p class="m-0"><span
                       class="font-bold">Description : </span>{{ project.description }}</p></span>
                     <ng-template pTemplate="footer">
-                      <div class="flex gap-3 mt-1">
+                      <div class="flex gap-3 mt-2">
                         <button pButton label="Read More" class="w-full"
                                 (click)="navigateToProjectDetails(project)"></button>
                       </div>
@@ -70,10 +77,18 @@
         <p-tabPanel>
           <ng-template pTemplate="header">
             <div class="flex align-items-center gap-2">
+              <p-button
+                (onClick)="activeIndex = 1"
+                [outlined]="activeIndex !== 1"
+                label="2"
+                rounded="false"
+                styleClass="w-2rem h-2rem p-0"/>
               <span class="font-bold white-space-nowrap m-0">
                   Riyadh Projects
                 </span>
-              <img alt="riyadh projects" height="40" src="assets/images/projects-details/riyadh-projects/riyadh.webp" width="40">
+              <img alt="riyadh projects" height="40" src="assets/images/projects-details/riyadh-projects/riyadh.webp"
+                   style="border-radius: 50%"
+                   width="40">
             </div>
           </ng-template>
           <div class="grid w-full mx-auto mt-5">
@@ -94,7 +109,7 @@
                     <span class="desc-length"><p class="m-0"><span
                       class="font-bold">Description : </span>{{ project.description }}</p></span>
                     <ng-template pTemplate="footer">
-                      <div class="flex gap-3 mt-1">
+                      <div class="flex gap-3 mt-2">
                         <button pButton label="Read More" class="w-full"
                                 (click)="navigateToProjectDetails(project)"></button>
                       </div>

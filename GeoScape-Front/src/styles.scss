@@ -80,7 +80,6 @@ body::-webkit-scrollbar-thumb {
 
 .p-fieldset {
   background-color: #EEECEC54 !important;
-  //border: 2px solid #B9C8FC;
 
   .p-fieldset-legend {
     padding: 8px;
@@ -117,3 +116,104 @@ body::-webkit-scrollbar-thumb {
   background-color: #EEECEC54 !important;
 
 }
+
+.card {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: white;
+
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+
+.services-card {
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+}
+
+.p-card {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+
+  }
+}
+
+.p-card .p-card-title {
+  font-size: 1rem
+
+}
+
+.p-card .p-card-content {
+  padding: 0;
+
+}
+
+.p-card .p-card-footer {
+  padding: 0;
+
+}
+
+.p-card .p-card-body {
+  padding: 1rem;
+}
+
+.primary-card {
+  background-color: #EEECEC54;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 20px
+}
+
+/* Start carsoul Style*/
+.p-carousel {
+  .p-carousel-item {
+    padding: 10px;
+  }
+
+  .p-carousel-indicators {
+    padding: 20px 0;
+    margin-top: 30px;
+
+    .p-carousel-indicator button {
+      background-color: #d1d5db;
+      width: 14px !important;
+      height: 14px !important;
+      -webkit-transition: background-color 0.2s, color 0.2s, -webkit-box-shadow 0.2s;
+      -o-transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+      transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+      border-radius: 50% !important;
+    }
+
+    .p-carousel-indicator.p-highlight button {
+      background-color: #3B82F6 !important;
+    }
+
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -ms-flex-line-pack: end !important;
+    align-content: end !important;
+  }
+
+  .p-carousel-content {
+    .p-carousel-prev, .p-carousel-next {
+      background-color: #d1d5db;
+      color: #3B82F6 !important;
+      border-radius: 50%;
+    }
+
+  }
+}
+

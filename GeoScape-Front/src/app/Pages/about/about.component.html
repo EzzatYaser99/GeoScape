@@ -208,35 +208,35 @@
           shape="circle"/>
       </div>
     </ng-template>
-    <div class="card">
-      <p-carousel
-        [circular]="true"
-        [numScroll]="1"
-        [numVisible]="5"
-        [responsiveOptions]="responsiveOptions"
-        [value]="clients"
-        autoplayInterval="2000"
+    <!--    <div class="card">-->
+    <p-carousel
+      [circular]="true"
+      [numScroll]="1"
+      [numVisible]="5"
+      [responsiveOptions]="responsiveOptions"
+      [value]="clients"
+      autoplayInterval="2000"
 
-      >
-        <ng-template let-client pTemplate="item">
-          <div class="border-1 surface-border border-round m-2 p-3">
-            <div class="mb-3">
-              <div class="relative m-auto text-center">
-                <img [alt]="client.alt" [src]="'assets/images/about-page/client/'+ client.image " class="border-round m-auto"
-                     height="120px"
-                     loading="lazy"
-                     width="100%"/>
+    >
+      <ng-template let-client pTemplate="item">
+        <div class=" card border-1 surface-border border-round m-2 p-3">
+          <div class="mb-3">
+            <div class="relative m-auto text-center">
+              <img [alt]="client.alt" [src]="'assets/images/about-page/client/'+ client.image " class="border-round m-auto"
+                   height="120px"
+                   loading="lazy"
+                   width="100%"/>
 
-              </div>
             </div>
-            <div class="mb-3 font-medium text-center">
-              {{ client.name }}
-            </div>
-
           </div>
-        </ng-template>
-      </p-carousel>
-    </div>
+          <div class="mb-3 font-medium text-center">
+            {{ client.name }}
+          </div>
+
+        </div>
+      </ng-template>
+    </p-carousel>
+    <!--    </div>-->
 
 
   </p-fieldset>

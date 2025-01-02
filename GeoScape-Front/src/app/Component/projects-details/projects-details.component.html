@@ -1,4 +1,4 @@
-<div *ngIf="isLoading" class="card  flex-design loading-spinner">
+<div *ngIf="isLoading" class="primary-card my-5  flex-design loading-spinner">
   <p-progressSpinner
     animationDuration=".5s"
     fill="var(--surface-ground)"
@@ -6,8 +6,8 @@
     styleClass="w-4rem h-4rem"/>
 </div>
 
-<div *ngIf="!isLoading" class="my-5">
-  <p-card *ngIf="selectedProject" header=" ">
+<div *ngIf="!isLoading" class="my-5 primary-card ">
+  <div *ngIf="selectedProject">
     <div>
   <span><p class="m-0 "><span class="font-bold">Project Name:
   </span>{{ selectedProject.name }}<p></span>
@@ -17,7 +17,7 @@
       <span><p class="m-0"><span class="font-bold">Progress : </span>{{ selectedProject.progress }}</p></span>
       <span><p class="m-0"><span class="font-bold">Status : </span>{{ selectedProject.status }}</p></span>
       <span><p class="m-0"><span class="font-bold">Description : </span>{{ selectedProject.description }}</p></span>
-      <span><p class="m-0"><span class="font-bold">Images : </span></p></span>
+      <span><p class="m-0"><span class="font-bold">Project Images : </span></p></span>
     </div>
     <div class="zoomin animation-duration-1000 animation-iteration-1">
       <div class="flex flex-wrap m-auto justify-content-center">
@@ -32,13 +32,16 @@
         </div>
       </div>
 
-      <div class="w-full m-auto text-center">
-        <button class="my-2" label="Back" pButton pRipple routerLink="/main/projects"></button>
-      </div>
     </div>
 
 
-  </p-card>
+  </div>
+</div>
+<div class="w-full m-auto ">
+  <p-button
+    icon="pi pi-arrow-left"
+    label="Back"
+    routerLink="/main/projects"/>
 </div>
 
 
