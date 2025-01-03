@@ -61,8 +61,8 @@ export class ContactsComponent {
     const selectedServiceNames = this.getTouchForm.controls['selectedServices'].value?.map((item: any) => item.name);
     const data = {
       name: this.getTouchForm.controls['name'].value || '',
-      phone: this.getTouchForm.controls['email'].value || '',
-      email: this.getTouchForm.controls['phone'].value || '',
+      phone: this.getTouchForm.controls['phone'].value || '',
+      email: this.getTouchForm.controls['email'].value || '',
       service: selectedServiceNames || '',
       message: this.getTouchForm.controls['message'].value || '',
 
@@ -101,7 +101,7 @@ export class ContactsComponent {
 
   sendEmail(data: any) {
     // let emailUrl = 'http://localhost:3000/send-email';
-    let emailUrl = 'https://backend.bassamabassy.me/bundle.js';
+    let emailUrl = 'send-email';
 
     return this._http.post(emailUrl, data);
   }
