@@ -1,0 +1,41 @@
+
+.lang {
+  transition: all 0.2s ease-in-out;
+  padding: 8px 12px;
+  align-items: center;
+
+  &.theme-light {
+    &:hover {
+      background-color: transparent;
+      border-radius: 8px
+    }
+    span {
+      color: white;
+    }
+
+    i {
+      color: white;
+    }
+  }
+
+  &.theme-dark {
+    &:hover {
+      border-radius: 8px;
+    }
+    span {
+      color: black;
+    }
+
+    i {
+      color: black;
+    }
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  i {
+    font-size:18px;
+  }
+}

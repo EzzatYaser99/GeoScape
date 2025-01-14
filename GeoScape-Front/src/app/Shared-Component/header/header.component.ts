@@ -4,6 +4,7 @@ import {MenubarModule} from "primeng/menubar";
 import {RippleModule} from "primeng/ripple";
 import {NgClass, NgOptimizedImage} from "@angular/common";
 import {FooterInfo} from "../footer/FooterInfo";
+import {SwitchLangButtonComponent} from "../switch-lang-button/switch-lang-button.component";
 
 @Component({
   selector: 'app-header',
@@ -14,6 +15,7 @@ import {FooterInfo} from "../footer/FooterInfo";
     RippleModule,
     NgClass,
     NgOptimizedImage,
+    SwitchLangButtonComponent,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
